@@ -1,0 +1,413 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\bgservices\\bgsyncdatapm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\bgservices\\bgsyncdatapm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\bgservices\\bgsyncdatacm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\bgservices\\bgsyncdatacm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\controllers\\cmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\controllers\\cmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\connectdb\\fb_current.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\connectdb\\fb_current.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\connectdb\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\connectdb\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\settings\\useriddb.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\settings\\useriddb.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\settings\\urlapi.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\settings\\urlapi.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\settings\\serverdb.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\settings\\serverdb.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\settings\\ncountpoint.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\settings\\ncountpoint.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\settings\\passworddb.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\settings\\passworddb.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\services\\mail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\services\\mail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\services\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\services\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\entity\\current_get.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\entity\\current_get.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\entity\\current.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\entity\\current.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\controllers\\pmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\controllers\\pmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\connectdb\\fb_voltage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\connectdb\\fb_voltage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\connectdb\\fb_point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\connectdb\\fb_point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\cm_server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\cm_server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\entity\\voltage_get.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\entity\\voltage_get.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\entity\\voltage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\entity\\voltage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\entity\\pointget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\entity\\pointget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\entity\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\entity\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|c:\\users\\thuannguyenvan\\onedrive - cong ty tnhh ky thuat s4m\\onedrive\\r\u0026d_s4m\\cm\\be_cm_server_net7\\cm_server\\cm_server\\entity\\mailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A528D22-CCEF-476B-B0F8-C868837760AF}|CM_Server\\CM_Server.csproj|solutionrelative:cm_server\\entity\\mailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "useriddb.txt",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Settings\\useriddb.txt",
+              "RelativeDocumentMoniker": "CM_Server\\Settings\\useriddb.txt",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Settings\\useriddb.txt",
+              "RelativeToolTip": "CM_Server\\Settings\\useriddb.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-08T07:45:56.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Program.cs",
+              "RelativeDocumentMoniker": "CM_Server\\Program.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Program.cs",
+              "RelativeToolTip": "CM_Server\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T02:51:13.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Current_get.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\Current_get.cs",
+              "RelativeDocumentMoniker": "CM_Server\\Entity\\Current_get.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\Current_get.cs",
+              "RelativeToolTip": "CM_Server\\Entity\\Current_get.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:54:23.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BgSyncDataCM.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\BgServices\\BgSyncDataCM.cs",
+              "RelativeDocumentMoniker": "CM_Server\\BgServices\\BgSyncDataCM.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\BgServices\\BgSyncDataCM.cs",
+              "RelativeToolTip": "CM_Server\\BgServices\\BgSyncDataCM.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwC0AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:40:45.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Connect.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\ConnectDB\\Connect.cs",
+              "RelativeDocumentMoniker": "CM_Server\\ConnectDB\\Connect.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\ConnectDB\\Connect.cs",
+              "RelativeToolTip": "CM_Server\\ConnectDB\\Connect.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAA5wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:42:43.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FB_Current.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\ConnectDB\\FB_Current.cs",
+              "RelativeDocumentMoniker": "CM_Server\\ConnectDB\\FB_Current.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\ConnectDB\\FB_Current.cs",
+              "RelativeToolTip": "CM_Server\\ConnectDB\\FB_Current.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:56:55.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "cmController.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Controllers\\cmController.cs",
+              "RelativeDocumentMoniker": "CM_Server\\Controllers\\cmController.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Controllers\\cmController.cs",
+              "RelativeToolTip": "CM_Server\\Controllers\\cmController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAIwCcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:43:08.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BgSyncDataPM.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\BgServices\\BgSyncDataPM.cs",
+              "RelativeDocumentMoniker": "CM_Server\\BgServices\\BgSyncDataPM.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\BgServices\\BgSyncDataPM.cs",
+              "RelativeToolTip": "CM_Server\\BgServices\\BgSyncDataPM.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAYwEoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:51:32.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "urlapi.txt",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Settings\\urlapi.txt",
+              "RelativeDocumentMoniker": "CM_Server\\Settings\\urlapi.txt",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Settings\\urlapi.txt",
+              "RelativeToolTip": "CM_Server\\Settings\\urlapi.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-08T07:40:59.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "serverdb.txt",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Settings\\serverdb.txt",
+              "RelativeDocumentMoniker": "CM_Server\\Settings\\serverdb.txt",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Settings\\serverdb.txt",
+              "RelativeToolTip": "CM_Server\\Settings\\serverdb.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-08T07:45:57.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "nCountpoint.txt",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Settings\\nCountpoint.txt",
+              "RelativeDocumentMoniker": "CM_Server\\Settings\\nCountpoint.txt",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Settings\\nCountpoint.txt",
+              "RelativeToolTip": "CM_Server\\Settings\\nCountpoint.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-08T07:45:57.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "passworddb.txt",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Settings\\passworddb.txt",
+              "RelativeDocumentMoniker": "CM_Server\\Settings\\passworddb.txt",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Settings\\passworddb.txt",
+              "RelativeToolTip": "CM_Server\\Settings\\passworddb.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-08T07:45:57.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Mail.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Services\\Mail.cs",
+              "RelativeDocumentMoniker": "CM_Server\\Services\\Mail.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Services\\Mail.cs",
+              "RelativeToolTip": "CM_Server\\Services\\Mail.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:43:31.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Services\\Logger.cs",
+              "RelativeDocumentMoniker": "CM_Server\\Services\\Logger.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Services\\Logger.cs",
+              "RelativeToolTip": "CM_Server\\Services\\Logger.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:43:28.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Current.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\Current.cs",
+              "RelativeDocumentMoniker": "CM_Server\\Entity\\Current.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\Current.cs",
+              "RelativeToolTip": "CM_Server\\Entity\\Current.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:54:14.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "pmController.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Controllers\\pmController.cs",
+              "RelativeDocumentMoniker": "CM_Server\\Controllers\\pmController.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Controllers\\pmController.cs",
+              "RelativeToolTip": "CM_Server\\Controllers\\pmController.cs",
+              "ViewState": "AQIAAHYBAAAAAAAAAAAYwHwBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T03:12:39.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FB_Voltage.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\ConnectDB\\FB_Voltage.cs",
+              "RelativeDocumentMoniker": "CM_Server\\ConnectDB\\FB_Voltage.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\ConnectDB\\FB_Voltage.cs",
+              "RelativeToolTip": "CM_Server\\ConnectDB\\FB_Voltage.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:57:15.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FB_Point.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\ConnectDB\\FB_Point.cs",
+              "RelativeDocumentMoniker": "CM_Server\\ConnectDB\\FB_Point.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\ConnectDB\\FB_Point.cs",
+              "RelativeToolTip": "CM_Server\\ConnectDB\\FB_Point.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:43:00.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CM_Server",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\CM_Server.csproj",
+              "RelativeDocumentMoniker": "CM_Server\\CM_Server.csproj",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\CM_Server.csproj",
+              "RelativeToolTip": "CM_Server\\CM_Server.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-09T02:46:10.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Voltage_get.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\Voltage_get.cs",
+              "RelativeDocumentMoniker": "CM_Server\\Entity\\Voltage_get.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\Voltage_get.cs",
+              "RelativeToolTip": "CM_Server\\Entity\\Voltage_get.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:54:29.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Voltage.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\Voltage.cs",
+              "RelativeDocumentMoniker": "CM_Server\\Entity\\Voltage.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\Voltage.cs",
+              "RelativeToolTip": "CM_Server\\Entity\\Voltage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:54:26.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Pointget.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\Pointget.cs",
+              "RelativeDocumentMoniker": "CM_Server\\Entity\\Pointget.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\Pointget.cs",
+              "RelativeToolTip": "CM_Server\\Entity\\Pointget.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:43:23.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Point.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\Point.cs",
+              "RelativeDocumentMoniker": "CM_Server\\Entity\\Point.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\Point.cs",
+              "RelativeToolTip": "CM_Server\\Entity\\Point.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:43:18.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MailInfo.cs",
+              "DocumentMoniker": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\MailInfo.cs",
+              "RelativeDocumentMoniker": "CM_Server\\Entity\\MailInfo.cs",
+              "ToolTip": "C:\\Users\\ThuanNguyenVan\\OneDrive - CONG TY TNHH KY THUAT S4M\\OneDrive\\R\u0026D_S4M\\CM\\be_CM_Server_NET7\\CM_Server\\CM_Server\\Entity\\MailInfo.cs",
+              "RelativeToolTip": "CM_Server\\Entity\\MailInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:43:15.188Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_ADS" Id="{660a65a7-771a-4a5f-9571-510211e81f66}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	aFFTI1 					: ARRAY[1..cFFTResult] OF LREAL;
+	aFFTI2					: ARRAY[1..cFFTResult] OF LREAL;
+	aFFTI3					: ARRAY[1..cFFTResult] OF LREAL;
+	RMSI1					: LREAL;
+	RMSI2					: LREAL;
+	RMSI3					: LREAL;
+	Frequency				: REAL;
+	
+	aFFTU1 					: ARRAY[1..cFFTResult] OF LREAL;
+	aFFTU2					: ARRAY[1..cFFTResult] OF LREAL;
+	aFFTU3					: ARRAY[1..cFFTResult] OF LREAL;
+	RMSU1					: LREAL;
+	RMSU2					: LREAL;
+	RMSU3					: LREAL;	
+	//bAdd
+	bAddData				: BOOL;
+	bCheckADS				: BOOL;
+	bError					: BOOL;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="PRG_Database" Id="{b3dcad82-b823-4b74-9063-472eff0074e5}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_Database
+VAR
+	fbSystemTime			:	FB_SystemTime;
+	bSaveData				: BOOL;
+	bLoadData				: BOOL;
+	nStateSave, nStateLoad	: INT;
+	tTimer1, tTimer2		: TON;
+	bTest					: BOOL;
+	nStateADS				: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbSystemTime();
+sCurrentTime	:= fbSystemTime.sTime;
+nCurrentSec		:= fbSystemTime.wSecond;
+CASE nStateSave OF
+	0:
+		tTimer1(IN := FALSE);
+		IF nCurrentSec = 70 OR sCurrentTime = '06:00:00' OR sCurrentTime = '14:00:00' OR sCurrentTime = '22:00:00' THEN
+			nStateSave			:= 1;
+		END_IF
+	1:
+		aFFTAcceleration1Add		:= aMagSpecResult[1];
+		aFFTVelocity1Add			:= aVeloSpecResult[1];
+		aFFTEnvelope1Add			:= aEnvSpecResult[1];
+		RMSAcc1Add					:= aRMSResult[1][1]/9.81;
+		RMSVel1Add					:= aRMSResult[1][2]*1000;
+		RMSEnv1Add					:= aRMSEnvResult[1]/9.81;
+		
+		aFFTAcceleration2Add		:= aMagSpecResult[2];
+		aFFTVelocity2Add			:= aVeloSpecResult[2];
+		aFFTEnvelope2Add			:= aEnvSpecResult[2];
+		RMSAcc2Add					:= aRMSResult[2][1]/9.81;
+		RMSVel2Add					:= aRMSResult[2][2]*1000;
+		RMSEnv2Add					:= aRMSEnvResult[2]/9.81;		
+		bAddData					:= TRUE;
+		nStateSave					:= 2;
+	2:
+		IF NOT bAddData THEN
+			tTimer1(IN := TRUE,PT := T#2S);
+			IF tTimer1.Q THEN
+				nStateSave			:= 0;		
+			END_IF	
+		END_IF
+			
+		
+END_CASE
+
+CASE nStateADS OF
+	0:
+		IF bCheckADS THEN
+			nStateADS := 1;
+		ELSE
+			tTimer2(IN := TRUE,PT := T#5S);
+			IF tTimer2.Q THEN
+				nStateADS := 2;
+			END_IF
+		END_IF
+		
+	1:
+		bCheckADS := FALSE;
+		bError	:= FALSE;
+		tTimer2(IN := FALSE);
+		nStateADS := 0;
+	2:
+		bError := TRUE;
+		tTimer2(IN := FALSE);
+		IF bCheckADS THEN
+			nStateADS := 0;
+		END_IF
+END_CASE]]></ST>
+    </Implementation>
+    <LineIds Name="PRG_Database">
+      <LineId Id="7" Count="0" />
+      <LineId Id="91" Count="1" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="17" Count="0" />
+      <LineId Id="115" Count="0" />
+      <LineId Id="20" Count="1" />
+      <LineId Id="19" Count="0" />
+      <LineId Id="23" Count="0" />
+      <LineId Id="32" Count="0" />
+      <LineId Id="93" Count="5" />
+      <LineId Id="100" Count="4" />
+      <LineId Id="99" Count="0" />
+      <LineId Id="105" Count="0" />
+      <LineId Id="36" Count="0" />
+      <LineId Id="28" Count="0" />
+      <LineId Id="106" Count="0" />
+      <LineId Id="111" Count="3" />
+      <LineId Id="110" Count="0" />
+      <LineId Id="107" Count="1" />
+      <LineId Id="18" Count="0" />
+      <LineId Id="66" Count="22" />
+      <LineId Id="65" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

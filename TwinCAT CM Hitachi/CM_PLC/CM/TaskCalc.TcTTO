@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <Task Name="TaskCalc" Id="{628d2a1e-b407-4f45-b435-117ba41b8a1f}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>1000</CycleTime>
+    <Priority>8</Priority>
+    <PouCall>
+      <Name>PRG_Calculate</Name>
+    </PouCall>
+    <TaskFBGuid>{cb050455-f768-4923-8604-5f8eb86307e0}</TaskFBGuid>
+    <Fb_init>{d96e7bad-029d-41b4-90e7-275505f3025d}</Fb_init>
+    <Fb_exit>{6ced1af5-0bcc-467a-85db-54450779cd9c}</Fb_exit>
+    <CycleUpdate>{4d99faea-65a7-43c6-bc4c-be2e003cc6eb}</CycleUpdate>
+    <PostCycleUpdate>{d09043ae-810c-4fb4-910e-e6f40fe4364a}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

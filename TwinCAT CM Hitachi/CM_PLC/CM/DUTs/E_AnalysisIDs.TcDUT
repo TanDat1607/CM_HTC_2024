@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="E_AnalysisIDs" Id="{986ef521-a979-48e2-815b-4873c48699c5}">
+    <Declaration><![CDATA[TYPE E_AnalysisIDs :
+(
+	(* analysis chain *)
+	eID_Source := 1,
+	
+	// Magnetude Spectrum
+	eID_MagSpectrum,	
+	eID_MagSpec_Sink, 
+	
+	// RMS intergrate
+	eID_RMS,	
+	eID_RMS_Sink,
+	
+	// Envelope Spectrum
+	eID_EnvSpectrum,	
+	eID_EnvSpec_Sink,
+	
+	// Envelope 
+	eID_Env,	
+	eID_Env_Sink	
+	
+) UDINT;
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

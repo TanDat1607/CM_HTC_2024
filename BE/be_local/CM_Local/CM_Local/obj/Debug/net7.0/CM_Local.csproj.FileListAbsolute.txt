@@ -1,0 +1,202 @@
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\appsettings.json
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.exe
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.deps.json
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.runtimeconfig.json
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.pdb
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.csproj.AssemblyReference.cache
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.AssemblyInfoInputs.cache
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.AssemblyInfo.cs
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.csproj.CoreCompileInputs.cache
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets\msbuild.CM_Local.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets\msbuild.build.CM_Local.props
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.CM_Local.props
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.CM_Local.props
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\scopedcss\bundle\CM_Local.styles.css
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.csproj.Up2Date
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\refint\CM_Local.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.pdb
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.genruntimeconfig.cache
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\ref\CM_Local.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\Interop.TcEventLoggerAdsProxyLib.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.csproj.ResolveComReference.cache
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\TwinCAT.Ads.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\TwinCAT.Ads.Abstractions.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\TwinCAT.Ads.Server.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.ComponentModel.Composition.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Data.SqlClient.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Reactive.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ThuanNguyenVan\OneDrive - CONG TY TNHH KY THUAT S4M\OneDrive\R&D_S4M\CM\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\appsettings.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.exe
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.deps.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.runtimeconfig.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.pdb
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\AWSSDK.Core.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\AWSSDK.SecurityToken.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\TwinCAT.Ads.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\TwinCAT.Ads.Abstractions.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\TwinCAT.Ads.Server.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\DnsClient.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\MongoDB.Bson.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\MongoDB.Driver.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\MongoDB.Driver.Core.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\SharpCompress.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Snappier.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.ComponentModel.Composition.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Data.SqlClient.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Reactive.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\ZstdSharp.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.csproj.AssemblyReference.cache
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\Interop.TcEventLoggerAdsProxyLib.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.csproj.ResolveComReference.cache
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.AssemblyInfoInputs.cache
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.AssemblyInfo.cs
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.csproj.CoreCompileInputs.cache
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.sourcelink.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets\msbuild.CM_Local.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets\msbuild.build.CM_Local.props
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.CM_Local.props
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.CM_Local.props
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\scopedcss\bundle\CM_Local.styles.css
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.csproj.Up2Date
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\refint\CM_Local.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.pdb
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.genruntimeconfig.cache
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\ref\CM_Local.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\appsettings.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.exe
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.deps.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.runtimeconfig.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\CM_Local.pdb
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\AWSSDK.Core.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\AWSSDK.SecurityToken.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\TwinCAT.Ads.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\TwinCAT.Ads.Abstractions.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\TwinCAT.Ads.Server.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\DnsClient.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\MongoDB.Bson.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\MongoDB.Driver.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\MongoDB.Driver.Core.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\SharpCompress.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Snappier.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.ComponentModel.Composition.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Data.SqlClient.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Reactive.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\ZstdSharp.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.csproj.AssemblyReference.cache
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\Interop.TcEventLoggerAdsProxyLib.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.csproj.ResolveComReference.cache
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.AssemblyInfoInputs.cache
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.AssemblyInfo.cs
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.csproj.CoreCompileInputs.cache
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.sourcelink.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets\msbuild.CM_Local.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets\msbuild.build.CM_Local.props
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.CM_Local.props
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.CM_Local.props
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\scopedcss\bundle\CM_Local.styles.css
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.csproj.Up2Date
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\refint\CM_Local.dll
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.pdb
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\CM_Local.genruntimeconfig.cache
+C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_MongoDB\be_CM_Local_NET7\CM_Local\CM_Local\obj\Debug\net7.0\ref\CM_Local.dll

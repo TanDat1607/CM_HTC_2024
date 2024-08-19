@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="PRG_Calculate" Id="{58eb7224-ffa4-4379-91dc-0607d1bc1b53}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_Calculate
+VAR
+		state, m, n, i, j, k, t		: UDINT := 1;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[//========== Frequency calculate ========//
+fSampleRate							  := cOversamples * (1000.0 / fSampleTaskCycleTime);
+fResolution 						  := fSampleRate / cFFTLength;	
+
+//========== Create array for HMI ========//
+IF timeArray[cScaleHMI*cOversamples] <> cScaleHMI*cOversamples THEN
+	FOR n := 1 TO cScaleHMI*cOversamples DO timeArray[n] := n;	END_FOR
+	FOR t := 1 TO cFFTResult 			 DO freqArray[t] := (t-1)*fResolution;	END_FOR
+END_IF
+
+IF m < cScaleHMI THEN
+	FOR j := 1 TO cOversamples DO //fill first data to HMI array
+		signal_UI.aIL[1][(m-1)*10+j]  := stEL3773_1_Scaled.aIL1[j];
+		signal_UI.aIL[2][(m-1)*10+j]  := stEL3773_1_Scaled.aIL2[j];
+		signal_UI.aIL[3][(m-1)*10+j]  := stEL3773_1_Scaled.aIL3[j];
+		signal_UI.aUL[1][(m-1)*10+j]  := stEL3773_1_Scaled.aUL1[j];
+		signal_UI.aUL[2][(m-1)*10+j]  := stEL3773_1_Scaled.aUL2[j];
+		signal_UI.aUL[3][(m-1)*10+j]  := stEL3773_1_Scaled.aUL3[j];		
+	END_FOR
+	m := m + 1;
+ELSE
+	m := cScaleHMI;
+	FOR i := 1 TO cScaleHMI-1 DO
+		FOR j := 1 TO cOversamples DO //move data to 1st slot empty
+			signal_UI.aIL[1][(i-1)*10+j]	:= signal_UI.aIL[1][(i)*10+j];
+			signal_UI.aIL[2][(i-1)*10+j]	:= signal_UI.aIL[2][(i)*10+j];
+			signal_UI.aIL[3][(i-1)*10+j]	:= signal_UI.aIL[3][(i)*10+j];	
+			signal_UI.aUL[1][(i-1)*10+j]	:= signal_UI.aUL[1][(i)*10+j];
+			signal_UI.aUL[2][(i-1)*10+j]	:= signal_UI.aUL[2][(i)*10+j];
+			signal_UI.aUL[3][(i-1)*10+j]	:= signal_UI.aUL[3][(i)*10+j];				
+		END_FOR
+	END_FOR
+	FOR k := 1 TO cOversamples DO //newest data in the 1st slot
+		signal_UI.aIL[1][(m-1)*10+k]  := stEL3773_1_Scaled.aIL1[k];
+		signal_UI.aIL[2][(m-1)*10+k]  := stEL3773_1_Scaled.aIL2[k];
+		signal_UI.aIL[3][(m-1)*10+k]  := stEL3773_1_Scaled.aIL3[k];
+		signal_UI.aUL[1][(m-1)*10+k]  := stEL3773_1_Scaled.aUL1[k];
+		signal_UI.aUL[2][(m-1)*10+k]  := stEL3773_1_Scaled.aUL2[k];
+		signal_UI.aUL[3][(m-1)*10+k]  := stEL3773_1_Scaled.aUL3[k];		
+	END_FOR	
+END_IF	]]></ST>
+    </Implementation>
+    <LineIds Name="PRG_Calculate">
+      <LineId Id="56" Count="0" />
+      <LineId Id="51" Count="0" />
+      <LineId Id="50" Count="0" />
+      <LineId Id="58" Count="0" />
+      <LineId Id="57" Count="0" />
+      <LineId Id="7" Count="1" />
+      <LineId Id="45" Count="0" />
+      <LineId Id="9" Count="6" />
+      <LineId Id="33" Count="1" />
+      <LineId Id="32" Count="0" />
+      <LineId Id="16" Count="8" />
+      <LineId Id="36" Count="1" />
+      <LineId Id="35" Count="0" />
+      <LineId Id="25" Count="5" />
+      <LineId Id="39" Count="1" />
+      <LineId Id="38" Count="0" />
+      <LineId Id="31" Count="0" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

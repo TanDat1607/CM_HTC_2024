@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN_CM" Id="{a4bbe322-8edd-4c70-a772-9f2cb18a3983}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN_CM
+VAR
+	fbMagSpec			: FB_CMA_MagnitudeSpectrum 
+						:= (	stInitPars 	:= cInitSpectrum, 
+								nOwnID 		:= eID_MagSpectrum, 
+								aDestIDs 	:= [eID_MagSpec_Sink] ); 
+										
+	fbEnvSpec			: FB_CMA_EnvelopeSpectrum 
+						:= ( 	stInitPars 	:= cInitEnvSpec, 
+								nOwnID 		:= eID_EnvSpectrum, 
+								aDestIDs 	:= [eID_EnvSpec_Sink] );	
+								
+	fbEnv				: FB_CMA_Envelope 
+						:= ( 	stInitPars 	:= cInitEnv, 
+								nOwnID 		:= eID_Env, 
+								aDestIDs 	:= [eID_Env_Sink] );	
+								
+	fbRMS				: FB_CMA_IntegratedRMS
+						:= ( 	stInitPars	:= cInitIRMS,
+								nOwnID		:= eID_RMS,
+								aDestIDs	:= [eID_RMS_Sink]);
+		
+	nErrorID			: UDINT;
+	fbErrHist			: FB_HRErrHist; 
+	hrErrList			: ARRAY[1..2] OF HRESULT;
+	bPause				: BOOL;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF NOT bPause THEN
+//
+END_IF
+
+PRG_Database();
+PRG_Motor_Sensor();
+
+fbMagSpec.Call();
+fbEnvSpec.Call();
+fbEnv.Call();
+
+fbRMS.Call();
+//fbHistArray.CallEx(nAppendData := cAppendData, bResetData := bResetHist);
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN_CM">
+      <LineId Id="770" Count="4" />
+      <LineId Id="811" Count="0" />
+      <LineId Id="776" Count="6" />
+      <LineId Id="16" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

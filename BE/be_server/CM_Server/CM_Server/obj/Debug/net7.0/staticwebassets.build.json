@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yYa2Cglf51yyx0LMSEkp6yZwjZx2o4a03SX60rsqZcc=",
+  "Source": "CM_Server",
+  "BasePath": "_content/CM_Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

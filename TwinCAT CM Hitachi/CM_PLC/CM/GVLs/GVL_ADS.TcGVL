@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_ADS" Id="{dd8c9214-c0f8-4f89-aa33-d6e95d86f9cb}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	aFFTAcceleration1Add 	: ARRAY[1..cFFTResult] OF LREAL;
+	aFFTVelocity1Add 		: ARRAY[1..cFFTResult] OF LREAL;
+	aFFTEnvelope1Add 		: ARRAY[1..cFFTResult] OF LREAL;
+	RMSAcc1Add				: LREAL;
+	RMSVel1Add				: LREAL;
+	RMSEnv1Add				: LREAL;
+	Temperature1Add			: REAL;
+	//point_2
+	aFFTAcceleration2Add 	: ARRAY[1..cFFTResult] OF LREAL;
+	aFFTVelocity2Add 		: ARRAY[1..cFFTResult] OF LREAL;
+	aFFTEnvelope2Add 		: ARRAY[1..cFFTResult] OF LREAL;
+	RMSAcc2Add				: LREAL;
+	RMSVel2Add				: LREAL;
+	RMSEnv2Add				: LREAL;
+	Temperature2Add			: REAL;
+	//bAdd
+	bAddData				: BOOL;
+	bCheckADS				: BOOL;
+	bError					: BOOL;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

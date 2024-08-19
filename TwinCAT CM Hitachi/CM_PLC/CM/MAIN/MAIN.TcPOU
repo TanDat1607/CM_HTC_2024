@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{f43e4d9a-cbdc-4819-b719-b866da5ea61a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	nSample				: UDINT;
+	
+	fbSource			: FB_CMA_Source := (	stInitPars 	:= cInitSource, 
+												nOwnID 		:= eID_Source, 
+												aDestIDs 	:= [eID_MagSpectrum,
+																eID_EnvSpectrum,
+																eID_Env,
+																eID_RMS]);		
+										
+	fbSinkMagSpec		: FB_CMA_Sink 	:= ( 	nOwnID 		:= eID_MagSpec_Sink);
+	fbSinkEnvSpec		: FB_CMA_Sink 	:= ( 	nOwnID 		:= eID_EnvSpec_Sink);
+	fbSinkEnv			: FB_CMA_Sink 	:= ( 	nOwnID 		:= eID_Env_Sink);
+	fbSinkRMS			: FB_CMA_Sink 	:= ( 	nOwnID 		:= eID_RMS_Sink); 
+	
+	nChannelIdx			: UDINT;
+
+	k, m, l: UDINT;
+	nChnIdx: UDINT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Source();
+Sink();
+// input from EL3632
+FOR nChannelIdx := 1 TO cMaxChannels DO
+	FOR k := 1 TO cOversamples DO
+		aAccBuffer[nChannelIdx][k] 		:= INT_TO_LREAL(aEl3632[nChannelIdx][k])*(5/EXPT(2,15))/(0.1)*9.81;
+	END_FOR	
+END_FOR
+
+]]></ST>
+    </Implementation>
+    <Action Name="Sink" Id="{8275253b-e5d2-4fce-8863-ef6bc3f3c7a7}">
+      <Implementation>
+        <ST><![CDATA[// Push results to sink
+
+fbSinkMagSpec.Output2DStd(	pDataOut 	:= ADR(aMagSpecResult), 
+					nDataOutSize 		:= SIZEOF(aMagSpecResult), 
+					eElementType 		:= eMA_TypeCode_LREAL, 
+					nOptionPars			:= 0);
+				
+fbSinkEnvSpec.Output2DStd(	pDataOut 	:= ADR(aEnvSpecResult), 
+					nDataOutSize 		:= SIZEOF(aEnvSpecResult), 
+					eElementType 		:= eMA_TypeCode_LREAL, 
+					nOptionPars			:= 0); 
+					
+fbSinkEnv.Output2DStd(	pDataOut 		:= ADR(aEnvResult), 
+					nDataOutSize 		:= SIZEOF(aEnvResult), 
+					eElementType 		:= eMA_TypeCode_LREAL, 
+					nOptionPars			:= 0); 								
+				
+fbSinkRMS.Output2DStd(	pDataOut 		:= ADR(aRMSResult), 
+					nDataOutSize 		:= SIZEOF(aRMSResult), 
+					eElementType 		:= eMA_TypeCode_LREAL, 
+					nOptionPars			:= 0); 						
+			]]></ST>
+      </Implementation>
+    </Action>
+    <Action Name="Source" Id="{61bbab0f-1f8f-4023-aa28-0a5332181413}">
+      <Implementation>
+        <ST><![CDATA[fbSource.Input2DStd( pDataIn 			:= ADR(aAccBuffer),
+				  nDataInSize 			:= SIZEOF(aAccBuffer), 
+				  eElementType 			:= eMA_TypeCode_LREAL,
+				  nOptionPars			:= cCMA_Option_MarkInterruption ); 
+]]></ST>
+      </Implementation>
+    </Action>
+    <LineIds Name="MAIN">
+      <LineId Id="694" Count="1" />
+      <LineId Id="454" Count="5" />
+      <LineId Id="968" Count="0" />
+      <LineId Id="828" Count="0" />
+    </LineIds>
+    <LineIds Name="MAIN.Sink">
+      <LineId Id="3" Count="0" />
+      <LineId Id="40" Count="0" />
+      <LineId Id="4" Count="3" />
+      <LineId Id="9" Count="4" />
+      <LineId Id="25" Count="0" />
+      <LineId Id="27" Count="2" />
+      <LineId Id="26" Count="0" />
+      <LineId Id="41" Count="0" />
+      <LineId Id="43" Count="2" />
+      <LineId Id="42" Count="0" />
+      <LineId Id="34" Count="0" />
+    </LineIds>
+    <LineIds Name="MAIN.Source">
+      <LineId Id="52" Count="2" />
+      <LineId Id="51" Count="0" />
+      <LineId Id="34" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

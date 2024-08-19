@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_SystemTime" Id="{31552c93-32b7-4f00-a134-e901f8c7c218}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_SystemTime
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	GetLocalSystemTime 	: FB_LocalSystemTime;
+	wDateW				: WORD;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[GetLocalSystemTime(bEnable := TRUE);]]></ST>
+    </Implementation>
+    <Property Name="dtDateTimeFull" Id="{d55bf6a2-5378-4d0d-bd4a-5f9d6788fe6c}">
+      <Declaration><![CDATA[PROPERTY dtDateTimeFull : DT]]></Declaration>
+      <Get Name="Get" Id="{5e41d91a-f35f-4a42-96f5-52d39bfa7541}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[dtDateTimeFull 	:= SYSTEMTIME_TO_DT(GetLocalSystemTime.systemTime);]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="sDate" Id="{1c599e7c-ea74-4cd5-978a-1ec2ddb7ed4c}">
+      <Declaration><![CDATA[PROPERTY sDate : STRING]]></Declaration>
+      <Get Name="Get" Id="{0956643a-df73-40c8-94a2-7d324c3465fe}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[sDate	:= MID(sDateTimeFull,10,1);]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="sDateTime" Id="{03f9a243-6aea-4a60-955e-ac73c22ea7e8}">
+      <Declaration><![CDATA[PROPERTY sDateTime : STRING]]></Declaration>
+      <Get Name="Get" Id="{7f508d2c-8cde-48e5-9448-df7f5c8d5945}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[sDateTime := MID(sDateTimeFull,19,1);]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="sDateTimeFull" Id="{bd750e46-94af-4a5c-9fa8-045960809265}">
+      <Declaration><![CDATA[PROPERTY sDateTimeFull : STRING]]></Declaration>
+      <Get Name="Get" Id="{60f2610d-ab67-4424-bf59-3114699a0b73}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[sDateTimeFull 	:= SYSTEMTIME_TO_STRING(GetLocalSystemTime.systemTime);]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="sDayOfWeek" Id="{fc363c62-735b-4c86-a93f-1f2138738875}">
+      <Declaration><![CDATA[PROPERTY sDayOfWeek : STRING]]></Declaration>
+      <Get Name="Get" Id="{25e5ed67-b5ca-4b1c-aff9-6fffcb20b5cc}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[wDateW	:=  GetLocalSystemTime.systemTime.wDayOfWeek;
+IF wDateW = 0 THEN
+	sDayOfWeek := 'Sunday';
+ELSIF wDateW = 1 THEN
+	sDayOfWeek := 'Monday';
+ELSIF wDateW = 2 THEN
+	sDayOfWeek := 'Tuesday';
+ELSIF wDateW = 3 THEN
+	sDayOfWeek := 'Wednesday';
+ELSIF wDateW = 4 THEN
+	sDayOfWeek := 'Thursday';
+ELSIF wDateW = 5 THEN
+	sDayOfWeek := 'Friday';
+ELSIF wDateW = 6 THEN
+	sDayOfWeek := 'Saturday';
+END_IF]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="sTime" Id="{4fe46746-6e68-4dd1-930f-748eaea121ea}">
+      <Declaration><![CDATA[PROPERTY sTime : STRING]]></Declaration>
+      <Get Name="Get" Id="{59f93972-8a88-4464-99c6-21ad1926dff1}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[sTime := MID(sDateTimeFull,8,12);]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="wDay" Id="{286f771c-0932-4030-bf78-bcb551a2b48e}">
+      <Declaration><![CDATA[PROPERTY wDay : Word]]></Declaration>
+      <Get Name="Get" Id="{4ba9387f-472e-48e5-9fcb-d00f48840d88}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[wDay :=  GetLocalSystemTime.systemTime.wDay;]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="wHour" Id="{a4f3c154-2011-43b4-a917-80acff9d0ab3}">
+      <Declaration><![CDATA[PROPERTY wHour : WORD]]></Declaration>
+      <Get Name="Get" Id="{957542ff-0af3-4de5-8b9b-10e27bdb7b11}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[wHour	:=	GetLocalSystemTime.systemTime.wHour;]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="wMilliSeconds" Id="{179e4f99-e501-41dd-b893-b4b386b545c4}">
+      <Declaration><![CDATA[PROPERTY wMilliSeconds : WORD]]></Declaration>
+      <Get Name="Get" Id="{9659eab7-1049-4d15-9b03-1ef716fd347d}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[wMilliseconds	:=	GetLocalSystemTime.systemTime.wMilliseconds;]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="wMinute" Id="{7628e342-7dc7-45cb-abae-e59d54e08b33}">
+      <Declaration><![CDATA[PROPERTY wMinute : WORD]]></Declaration>
+      <Get Name="Get" Id="{407a1750-eeea-4f93-889b-d1b297721062}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[wMinute	:=	GetLocalSystemTime.systemTime.wMinute;]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="wMonth" Id="{3319d4ec-f4d3-40ca-b2e3-cc7bdb570352}">
+      <Declaration><![CDATA[PROPERTY wMonth : Word]]></Declaration>
+      <Get Name="Get" Id="{d6d1debe-40ad-4854-be42-bbe5004ae68a}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[wMonth	:=  GetLocalSystemTime.systemTime.wMonth;]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="wSecond" Id="{7fc37835-33d7-4beb-9c8c-f2a2158b0cba}">
+      <Declaration><![CDATA[PROPERTY wSecond : WORD]]></Declaration>
+      <Get Name="Get" Id="{1046b553-d70d-4091-9bc3-178e237491f0}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[wSecond	:=	GetLocalSystemTime.systemTime.wSecond;]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="wYear" Id="{0228e2b4-a364-46e1-8420-7b6362967808}">
+      <Declaration><![CDATA[PROPERTY wYear : Word]]></Declaration>
+      <Get Name="Get" Id="{401493e0-fb57-40c3-9e55-194f2355520c}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[wYear :=  GetLocalSystemTime.systemTime.wYear;]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <LineIds Name="FB_SystemTime">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.dtDateTimeFull.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.sDate.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.sDateTime.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.sDateTimeFull.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.sDayOfWeek.Get">
+      <LineId Id="2" Count="0" />
+      <LineId Id="5" Count="1" />
+      <LineId Id="8" Count="3" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="12" Count="0" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="14" Count="0" />
+      <LineId Id="17" Count="0" />
+      <LineId Id="16" Count="0" />
+      <LineId Id="19" Count="0" />
+      <LineId Id="18" Count="0" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.sTime.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.wDay.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.wHour.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.wMilliSeconds.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.wMinute.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.wMonth.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.wSecond.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_SystemTime.wYear.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

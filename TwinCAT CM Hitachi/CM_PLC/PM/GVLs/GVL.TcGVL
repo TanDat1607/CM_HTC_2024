@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL" Id="{3d3d8d26-d796-4716-8d9f-39d63b484f11}">
+    <Declaration><![CDATA[VAR_GLOBAL CONSTANT
+	cOversamples				: UDINT 					:= 10;					// number of oversamples
+	cSamplerate					: UDINT 					:= 1000 * cOversamples;	// samplerate
+	cFFTLength					: UDINT 					:= 4096;				// length of fft
+	cWindowLength				: UDINT 					:= 3200;				// internal buffer size with 50% overlapping
+	cBufferLength				: UDINT 					:= cWindowLength/2;		// buffer size
+	cHarmonicBands				: UDINT 					:= 20;					// number of harmonics
+	cFreqMode					: LREAL 					:= 50.0;				// base frequency	
+	cFFTResult					: UDINT						:= cFFTLength/2 +1;
+	cScaleHMI					: UDINT						:= 250;
+	//FB_Scaling signal from IO s
+	cScalingEL3773Pars			: ST_PMA_Scaling_EL3773_InitPars 	 	
+									:=( nOversamples 		:= cOversamples, 
+										fOffsetVoltage 		:= 0, 
+										fGainVoltage 		:= 1, 
+										fOffsetCurrent 		:= 0, 
+										fGainCurrent 		:= 1, 
+										fFactorCurrentTransformer := 100); //In/Out value of CT
+	
+	//FB_Source for period
+	cSource_PeriodInitPars		: ST_PMA_Source_InitPars 		 		
+									:=( nBufferLength 		:= cOversamples);	
+	
+	//FB_Source freq domain								
+	cSourceInitPars				: ST_PMA_Source_InitPars 				
+									:=( nBufferLength 		:= cBufferLength);
+		
+	//FB_Frequence - period							
+	cFrequencyInitPars			: ST_PMA_Frequency_Period_InitPars 		
+									:=( nBufferLength 		:= cOversamples, 
+										fSampleRate 		:= cSamplerate, 
+										fMinFreq 			:= 10, 
+										fMaxFreq 			:= 70, 
+										nPeriods 			:= 10, 
+										nFilterOrder 		:= 2, 
+										fCutoff 			:= 70, 
+										eInputSelect 		:= E_PMA_InputSelect.Current, 
+										fMinInput 			:= 0);
+	
+	//Basic value in time domain									
+	cBasicValuesInitPars		: ST_PMA_BasicValues_Period_InitPars 	
+									:=( nBufferLength 		:= cOversamples, 
+										fSampleRate 		:= cSamplerate, 
+										fMinInputCurrent 	:= 0.0,
+										nPeriods         	:= 20 );
+	
+	//Power value in period									
+	cPowerValuesPedInitPars		: ST_PMA_PowerValues_Period_InitPars 	
+									:=( nBufferLength 		:= cOversamples, 
+										fSampleRate 		:= cSamplerate, 
+										fMinInputCurrent 	:= 0.0,
+										nPeriods			:= 10);
+		
+	//Harmonics in period								
+	cHarmonicsPedInitPars		: ST_PMA_Harmonics_Period_InitPars		
+									:=( nBufferLength 		:= cOversamples, 
+										fSampleRate 		:= cSamplerate, 
+										nNumHarmonics 		:= cHarmonicBands, 
+										nPeriods 			:= 10, 
+										bTransformToPercent := TRUE);
+											
+	//Power value in freq domain
+	cPowerValuesInitPars		: ST_PMA_PowerValues_InitPars
+									:=( uTimeLagCurrentTransformer := (aTimeLag := [0.0, 0.0, 0.0]),
+										fSampleRate 		:= cSamplerate,			// in Hz 
+										fBaseFreq 			:= cFreqMode,			// in Hz
+										nFFT_Length 		:= cFFTLength,
+										nWindowLength 		:= cWindowLength,
+										nNumBands 			:= 20,
+										fBandwidth 			:= 20.0,
+										fMinInputCurrent	:= 0.0,
+										eWindowType 		:= E_PMA_WindowType.HannWindow);
+										
+	// FB_PMA_Spectrum in freq domain
+	cSpectrumInitPars			: ST_PMA_Spectrum_InitPars
+									:=(	nFFT_Length 		:= cFFTLength,
+										nWindowLength 		:= cWindowLength, 
+										fSampleRate 		:= cSamplerate,			// in Hz
+										bTransformToDecibel := FALSE,
+										eWindowType 		:= E_PMA_WindowType.HannWindow,
+										eScalingType 		:= E_PMA_ScalingType.RMS);	
+										
+	// FB_PMA_Harmonics	in freq domain								
+	cHarmonicsInitPars			: ST_PMA_Harmonics_InitPars
+									:=(	nFFT_Length 		:= cFFTLength,
+										nWindowLength 		:= cWindowLength,
+										fSampleRate 		:= cSamplerate,			// in Hz
+										nNumBands 			:= cHarmonicBands,
+										fBaseFreq 			:= cFreqMode,			// in Hz
+										fBandwidth 			:= 20.0,
+										eWindowType 		:= E_PMA_WindowType.HannWindow,	
+										bTransformToDecibel := FALSE,
+										bTransformToPercent := FALSE);	
+END_VAR
+
+VAR_GLOBAL
+	stEL3773_1_In 			AT%I* 	: ST_EL3773_InputSamples;
+	stEL3773_1_Scaled				: ST_EL3773_InputSamples_Scaled;	
+	signal_UI						: ST_Signal_HMI;
+	signal_UI_Zeros					: ST_Signal_HMI;
+	
+
+	fSampleTaskCycleTime			: LREAL := 1; 	// ms
+	fSampleRate						: LREAL; 		// Hz  ( sample rate = oversampling factor / cycle time )
+	fResolution						: LREAL; 		// Hz/Idx		
+	sendArray						: BOOL;
+	timeArray						: ARRAY[1..cOversamples*cScaleHMI] OF UDINT;
+	freqArray						: ARRAY[1..cFFTResult] OF LREAL;
+	aHarmonicsPed 					: ARRAY[0..5] OF ARRAY [0..cHarmonicBands-1] OF LREAL; 
+	
+	aSpectrum						: ARRAY[0..5] OF ARRAY [0..cFFTLength/2] OF LREAL;		// dims: [UL1..UL3 + IL1..IL3][FFTLength/2 + 1]
+	aHarmonics						: ARRAY[0..5] OF ARRAY [0..cHarmonicBands-1] OF LREAL;	// dims: [UL1..UL3 + IL1..IL3][NumBands]
+
+	nCurrentDate					: WORD;
+	sCurrentTime					: STRING;
+	nCurrentHour					: WORD;
+	nCurrentSec						: WORD;		
+END_VAR
+
+VAR_GLOBAL PERSISTENT
+	alarmCurrent					: ARRAY [1..2] OF ARRAY [1..3] OF LREAL; //1 : alram, 2 : warning
+	alarmVoltage					: ARRAY [1..2] OF ARRAY [1..3] OF LREAL;	
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

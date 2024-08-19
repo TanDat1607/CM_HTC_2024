@@ -1,0 +1,501 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\cm_local.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\cm_local.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\adstwincat\\bgadspm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\adstwincat\\bgadspm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\adstwincat\\bgadscm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\adstwincat\\bgadscm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\logs\\log.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\logs\\log.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\adstwincat\\fb_ads.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\adstwincat\\fb_ads.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\adstwincat\\fb_ads1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\adstwincat\\fb_ads1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\controllers\\pmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\controllers\\pmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\settings\\netid.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\settings\\netid.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\settings\\useriddb.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\settings\\useriddb.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\settings\\urlapi.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\settings\\urlapi.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\settings\\serverdb.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\settings\\serverdb.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\settings\\portpm.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\settings\\portpm.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\settings\\portcm.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\settings\\portcm.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\settings\\passworddb.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\settings\\passworddb.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\controllers\\cmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\controllers\\cmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\entity\\current_get.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\entity\\current_get.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\settings\\ncountpoint.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\settings\\ncountpoint.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\services\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\services\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\entity\\voltage_get.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\entity\\voltage_get.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\entity\\voltage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\entity\\voltage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\entity\\point_get.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\entity\\point_get.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\entity\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\entity\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|c:\\users\\datnguyentan\\onedrive - cong ty tnhh ky thuat s4m\\project\\2024\\condition monitoring\\source\\c#_mongodb\\be_cm_local_net7\\cm_local\\cm_local\\entity\\current.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9874C059-AF8D-4236-A6B2-1DA93985520D}|CM_Local\\CM_Local.csproj|solutionrelative:cm_local\\entity\\current.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\Connect1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CM_Local\\ConnectDB\\Connect1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\Connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CM_Local\\ConnectDB\\Connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\FB_Current.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CM_Local\\ConnectDB\\FB_Current.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\FB_Voltage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CM_Local\\ConnectDB\\FB_Voltage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\FB_Point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CM_Local\\ConnectDB\\FB_Point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Connect1.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\Connect1.cs",
+              "RelativeDocumentMoniker": "CM_Local\\ConnectDB\\Connect1.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\Connect1.cs",
+              "RelativeToolTip": "CM_Local\\ConnectDB\\Connect1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T08:00:06.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "log.txt",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Logs\\log.txt",
+              "RelativeDocumentMoniker": "CM_Local\\Logs\\log.txt",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Logs\\log.txt",
+              "RelativeToolTip": "CM_Local\\Logs\\log.txt",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-08T03:53:53.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BgADSPM.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\AdsTwincat\\BgADSPM.cs",
+              "RelativeDocumentMoniker": "CM_Local\\AdsTwincat\\BgADSPM.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\AdsTwincat\\BgADSPM.cs",
+              "RelativeToolTip": "CM_Local\\AdsTwincat\\BgADSPM.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAgwA8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T03:44:14.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FB_ADS.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\AdsTwincat\\FB_ADS.cs",
+              "RelativeDocumentMoniker": "CM_Local\\AdsTwincat\\FB_ADS.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\AdsTwincat\\FB_ADS.cs",
+              "RelativeToolTip": "CM_Local\\AdsTwincat\\FB_ADS.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:56:53.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Connect.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\Connect.cs",
+              "RelativeDocumentMoniker": "CM_Local\\ConnectDB\\Connect.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\Connect.cs",
+              "RelativeToolTip": "CM_Local\\ConnectDB\\Connect.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwBUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:50:38.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FB_Current.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\FB_Current.cs",
+              "RelativeDocumentMoniker": "CM_Local\\ConnectDB\\FB_Current.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\FB_Current.cs",
+              "RelativeToolTip": "CM_Local\\ConnectDB\\FB_Current.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:54:44.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FB_Voltage.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\FB_Voltage.cs",
+              "RelativeDocumentMoniker": "CM_Local\\ConnectDB\\FB_Voltage.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\FB_Voltage.cs",
+              "RelativeToolTip": "CM_Local\\ConnectDB\\FB_Voltage.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwAgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:54:52.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BgADSCM.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\AdsTwincat\\BgADSCM.cs",
+              "RelativeDocumentMoniker": "CM_Local\\AdsTwincat\\BgADSCM.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\AdsTwincat\\BgADSCM.cs",
+              "RelativeToolTip": "CM_Local\\AdsTwincat\\BgADSCM.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:47:30.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CM_Local.csproj",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\CM_Local.csproj",
+              "RelativeDocumentMoniker": "CM_Local\\CM_Local.csproj",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\CM_Local.csproj",
+              "RelativeToolTip": "CM_Local\\CM_Local.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-08T03:47:27.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Program.cs",
+              "RelativeDocumentMoniker": "CM_Local\\Program.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Program.cs",
+              "RelativeToolTip": "CM_Local\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T04:43:14.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "FB_Point.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\FB_Point.cs",
+              "RelativeDocumentMoniker": "CM_Local\\ConnectDB\\FB_Point.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\ConnectDB\\FB_Point.cs",
+              "RelativeToolTip": "CM_Local\\ConnectDB\\FB_Point.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:54:48.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FB_ADS1.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\AdsTwincat\\FB_ADS1.cs",
+              "RelativeDocumentMoniker": "CM_Local\\AdsTwincat\\FB_ADS1.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\AdsTwincat\\FB_ADS1.cs",
+              "RelativeToolTip": "CM_Local\\AdsTwincat\\FB_ADS1.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T04:18:06.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "pmController.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Controllers\\pmController.cs",
+              "RelativeDocumentMoniker": "CM_Local\\Controllers\\pmController.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Controllers\\pmController.cs",
+              "RelativeToolTip": "CM_Local\\Controllers\\pmController.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAQwFwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:54:36.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "useriddb.txt",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\useriddb.txt",
+              "RelativeDocumentMoniker": "CM_Local\\Settings\\useriddb.txt",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\useriddb.txt",
+              "RelativeToolTip": "CM_Local\\Settings\\useriddb.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-08T04:35:11.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "urlapi.txt",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\urlapi.txt",
+              "RelativeDocumentMoniker": "CM_Local\\Settings\\urlapi.txt",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\urlapi.txt",
+              "RelativeToolTip": "CM_Local\\Settings\\urlapi.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-08T04:34:30.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "portCm.txt",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\portCm.txt",
+              "RelativeDocumentMoniker": "CM_Local\\Settings\\portCm.txt",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\portCm.txt",
+              "RelativeToolTip": "CM_Local\\Settings\\portCm.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-08T04:34:28.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "passworddb.txt",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\passworddb.txt",
+              "RelativeDocumentMoniker": "CM_Local\\Settings\\passworddb.txt",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\passworddb.txt",
+              "RelativeToolTip": "CM_Local\\Settings\\passworddb.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-08T04:33:56.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "netid.txt",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\netid.txt",
+              "RelativeDocumentMoniker": "CM_Local\\Settings\\netid.txt",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\netid.txt",
+              "RelativeToolTip": "CM_Local\\Settings\\netid.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-08T04:33:54.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "serverdb.txt",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\serverdb.txt",
+              "RelativeDocumentMoniker": "CM_Local\\Settings\\serverdb.txt",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\serverdb.txt",
+              "RelativeToolTip": "CM_Local\\Settings\\serverdb.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-11T03:58:41.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "cmController.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Controllers\\cmController.cs",
+              "RelativeDocumentMoniker": "CM_Local\\Controllers\\cmController.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Controllers\\cmController.cs",
+              "RelativeToolTip": "CM_Local\\Controllers\\cmController.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAQwDQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:54:30.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "portPm.txt",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\portPm.txt",
+              "RelativeDocumentMoniker": "CM_Local\\Settings\\portPm.txt",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\portPm.txt",
+              "RelativeToolTip": "CM_Local\\Settings\\portPm.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-11T03:45:32.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Current_get.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Entity\\Current_get.cs",
+              "RelativeDocumentMoniker": "CM_Local\\Entity\\Current_get.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Entity\\Current_get.cs",
+              "RelativeToolTip": "CM_Local\\Entity\\Current_get.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:54:10.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CM_Local\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CM_Local\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-08T04:34:42.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Services\\Logger.cs",
+              "RelativeDocumentMoniker": "CM_Local\\Services\\Logger.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Services\\Logger.cs",
+              "RelativeToolTip": "CM_Local\\Services\\Logger.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:53:41.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Voltage_get.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Entity\\Voltage_get.cs",
+              "RelativeDocumentMoniker": "CM_Local\\Entity\\Voltage_get.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Entity\\Voltage_get.cs",
+              "RelativeToolTip": "CM_Local\\Entity\\Voltage_get.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:54:25.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Voltage.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Entity\\Voltage.cs",
+              "RelativeDocumentMoniker": "CM_Local\\Entity\\Voltage.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Entity\\Voltage.cs",
+              "RelativeToolTip": "CM_Local\\Entity\\Voltage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:54:22.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Point_get.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Entity\\Point_get.cs",
+              "RelativeDocumentMoniker": "CM_Local\\Entity\\Point_get.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Entity\\Point_get.cs",
+              "RelativeToolTip": "CM_Local\\Entity\\Point_get.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:54:18.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Point.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Entity\\Point.cs",
+              "RelativeDocumentMoniker": "CM_Local\\Entity\\Point.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Entity\\Point.cs",
+              "RelativeToolTip": "CM_Local\\Entity\\Point.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:54:14.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "nCountpoint.txt",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\nCountpoint.txt",
+              "RelativeDocumentMoniker": "CM_Local\\Settings\\nCountpoint.txt",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Settings\\nCountpoint.txt",
+              "RelativeToolTip": "CM_Local\\Settings\\nCountpoint.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-08T03:53:38.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Current.cs",
+              "DocumentMoniker": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Entity\\Current.cs",
+              "RelativeDocumentMoniker": "CM_Local\\Entity\\Current.cs",
+              "ToolTip": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\Entity\\Current.cs",
+              "RelativeToolTip": "CM_Local\\Entity\\Current.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T03:53:58.587Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

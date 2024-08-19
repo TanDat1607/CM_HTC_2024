@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_IO" Id="{9a7e8e54-9d5a-417d-b728-f2e366fe1d2a}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	aEl3632 AT %I*		: ARRAY[1..cMaxChannels] OF ARRAY[1..cOversamples] OF INT;	// Input from hardware e.g. EL3632	
+	wMotorRun	AT %Q*	: WORD;
+	wFreq		AT %Q*	: WORD;
+	bRev		AT %I*	: BOOL;
+	bMotorRun			: BOOL;
+	fFreq				: REAL;
+	iActSpeed			: INT;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

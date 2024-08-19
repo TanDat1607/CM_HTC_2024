@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="PRG_Calculate" Id="{b71a404f-3110-4a01-8817-53e6d102e16a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_Calculate
+VAR
+	nChnIdx, i, k		: UDINT;
+	m, n, p, j, l, q	: UDINT:= 1;
+	fSumRMSEnv			: LREAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[FOR nChnIdx := 1 TO cMaxChannels DO
+	// Calculate Frequency
+	fSampleRate								:= cOversamples * (1000.0 / fSampleTaskCycleTime);
+	fResolution 							:= fSampleRate / cFFTLength;	
+	
+	// Calculate velocity spectrum                              	     	
+	FOR i := 1 TO cFFTResult DO             	
+		fFrequency[nChnIdx][i]				:= (i - 1) * fResolution;			
+		IF i <> 1 THEN
+			aVeloSpecResult[nChnIdx][i]		:= aMagSpecResult[nChnIdx][i]/(2*PI*fFrequency[nChnIdx][i])*1000;
+		ELSE
+			aVeloSpecResult[nChnIdx][i]		:= 0;
+		END_IF
+	END_FOR
+	
+	//Calculate RMS of Envelope
+	fSumRMSEnv 								:= 0;
+	FOR p := 1 TO cBufferLength DO
+		fSumRMSEnv							:= fSumRMSEnv + EXPT(aEnvResult[nChnIdx][p],2);
+	END_FOR
+	aRmsEnvResult[nChnIdx]					:= SQRT(fSumRMSEnv/cBufferLength);
+	
+	//Scale up for HMI 
+	IF m < cScaleHMI THEN
+		FOR n := 1 TO cOversamples DO
+			aTWFBuffer[nChnIdx][(m-1)*10+n]		:= aAccBuffer[nChnIdx][n];   
+		END_FOR
+		m										:= m + 1;
+	ELSE
+		m										:= cScaleHMI;
+		FOR l := 1 TO cScaleHMI-1 DO
+			FOR n := 1 TO cOversamples DO
+				aTWFBuffer[nChnIdx][(l-1)*10+n]	:= aTWFBuffer[nChnIdx][(l)*10+n];   
+			END_FOR
+		END_FOR
+		FOR q := 1 TO cOversamples DO
+			aTWFBuffer[nChnIdx][(m-1)*10+q]		:= aAccBuffer[nChnIdx][q];   
+		END_FOR	
+	END_IF	
+	
+END_FOR
+
+IF aTime[cOversamples*cScaleHMI] <> cOversamples*cScaleHMI THEN
+	FOR k := 1 TO cOversamples*cScaleHMI DO aTime[k] := k; END_FOR
+END_IF
+
+
+
+
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="PRG_Calculate">
+      <LineId Id="6" Count="7" />
+      <LineId Id="15" Count="12" />
+      <LineId Id="78" Count="0" />
+      <LineId Id="95" Count="0" />
+      <LineId Id="80" Count="14" />
+      <LineId Id="48" Count="0" />
+      <LineId Id="79" Count="0" />
+      <LineId Id="49" Count="0" />
+      <LineId Id="54" Count="1" />
+      <LineId Id="61" Count="1" />
+      <LineId Id="56" Count="0" />
+      <LineId Id="109" Count="0" />
+      <LineId Id="59" Count="1" />
+      <LineId Id="53" Count="0" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

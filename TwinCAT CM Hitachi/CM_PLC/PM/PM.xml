@@ -1,0 +1,2972 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0200">
+  <fileHeader companyName="Beckhoff Automation GmbH" productName="TwinCAT PLC Control" productVersion="3.5.13.21" creationDateTime="2024-07-22T16:13:01.291452" />
+  <contentHeader name="PM" modificationDateTime="2024-07-22T16:13:01.291452">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1" />
+      </fbd>
+      <ld>
+        <scaling x="1" y="1" />
+      </ld>
+      <sfc>
+        <scaling x="1" y="1" />
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="http://www.3s-software.com/plcopenxml/projectinformation" handleUnknown="implementation">
+        <ProjectInformation />
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes />
+    <pous />
+  </types>
+  <instances>
+    <configurations />
+  </instances>
+  <addData>
+    <data name="http://www.3s-software.com/plcopenxml/application" handleUnknown="implementation">
+      <resource name="PM">
+        <task name="PlcTask" interval="PT0S" priority="6">
+          <pouInstance name="MAIN" typeName="">
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+            </documentation>
+          </pouInstance>
+          <addData>
+            <data name="http://www.3s-software.com/plcopenxml/tasksettings" handleUnknown="implementation">
+              <TaskSettings KindOfTask="Cyclic" Interval="1000" IntervalUnit="us">
+                <Watchdog Enabled="false" TimeUnit="ms" />
+              </TaskSettings>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+              <ObjectId>7b793146-eeb2-4ab5-a2c4-f00364135916</ObjectId>
+            </data>
+          </addData>
+        </task>
+        <task name="PlcTaskPM" interval="PT0S" priority="16">
+          <pouInstance name="MAIN_PM" typeName="">
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+            </documentation>
+          </pouInstance>
+          <addData>
+            <data name="http://www.3s-software.com/plcopenxml/tasksettings" handleUnknown="implementation">
+              <TaskSettings KindOfTask="Cyclic" Interval="10000" IntervalUnit="us">
+                <Watchdog Enabled="false" TimeUnit="ms" />
+              </TaskSettings>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+              <ObjectId>25b7620b-3fa3-4a0f-b804-3bef393c6589</ObjectId>
+            </data>
+          </addData>
+        </task>
+        <task name="TaskCalc" interval="PT0S" priority="8">
+          <pouInstance name="PRG_Calculate" typeName="">
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+            </documentation>
+          </pouInstance>
+          <addData>
+            <data name="http://www.3s-software.com/plcopenxml/tasksettings" handleUnknown="implementation">
+              <TaskSettings KindOfTask="Cyclic" Interval="1000" IntervalUnit="us">
+                <Watchdog Enabled="false" TimeUnit="ms" />
+              </TaskSettings>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+              <ObjectId>707d81dc-827d-4a78-8816-329bdcca102b</ObjectId>
+            </data>
+          </addData>
+        </task>
+        <globalVars name="GVL" constant="true">
+          <variable name="cOversamples">
+            <type>
+              <UDINT />
+            </type>
+            <initialValue>
+              <simpleValue value="10" />
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> number of oversamples</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cSamplerate">
+            <type>
+              <UDINT />
+            </type>
+            <initialValue>
+              <simpleValue value="(1000 * cOversamples)" />
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> samplerate</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cFFTLength">
+            <type>
+              <UDINT />
+            </type>
+            <initialValue>
+              <simpleValue value="4096" />
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> length of fft</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cWindowLength">
+            <type>
+              <UDINT />
+            </type>
+            <initialValue>
+              <simpleValue value="3200" />
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> internal buffer size with 50% overlapping</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cBufferLength">
+            <type>
+              <UDINT />
+            </type>
+            <initialValue>
+              <simpleValue value="(cWindowLength / 2)" />
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> buffer size</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cHarmonicBands">
+            <type>
+              <UDINT />
+            </type>
+            <initialValue>
+              <simpleValue value="20" />
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> number of harmonics</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cFreqMode">
+            <type>
+              <LREAL />
+            </type>
+            <initialValue>
+              <simpleValue value="50.0" />
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> base frequency	</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cFFTResult">
+            <type>
+              <UDINT />
+            </type>
+            <initialValue>
+              <simpleValue value="((cFFTLength / 2) + 1)" />
+            </initialValue>
+          </variable>
+          <variable name="cScaleHMI">
+            <type>
+              <UDINT />
+            </type>
+            <initialValue>
+              <simpleValue value="250" />
+            </initialValue>
+          </variable>
+          <variable name="cScalingEL3773Pars">
+            <type>
+              <derived name="ST_PMA_Scaling_EL3773_InitPars" />
+            </type>
+            <initialValue>
+              <structValue>
+                <value member="nOversamples">
+                  <simpleValue value="cOversamples" />
+                </value>
+                <value member="fOffsetVoltage">
+                  <simpleValue value="0" />
+                </value>
+                <value member="fGainVoltage">
+                  <simpleValue value="1" />
+                </value>
+                <value member="fOffsetCurrent">
+                  <simpleValue value="0" />
+                </value>
+                <value member="fGainCurrent">
+                  <simpleValue value="1" />
+                </value>
+                <value member="fFactorCurrentTransformer">
+                  <simpleValue value="100" />
+                </value>
+              </structValue>
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml">FB_Scaling signal from IO s</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cSource_PeriodInitPars">
+            <type>
+              <derived name="ST_PMA_Source_InitPars" />
+            </type>
+            <initialValue>
+              <structValue>
+                <value member="nBufferLength">
+                  <simpleValue value="cOversamples" />
+                </value>
+              </structValue>
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml">In/Out value of CT
+FB_Source for period</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cSourceInitPars">
+            <type>
+              <derived name="ST_PMA_Source_InitPars" />
+            </type>
+            <initialValue>
+              <structValue>
+                <value member="nBufferLength">
+                  <simpleValue value="cBufferLength" />
+                </value>
+              </structValue>
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml">FB_Source freq domain								</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cFrequencyInitPars">
+            <type>
+              <derived name="ST_PMA_Frequency_Period_InitPars" />
+            </type>
+            <initialValue>
+              <structValue>
+                <value member="nBufferLength">
+                  <simpleValue value="cOversamples" />
+                </value>
+                <value member="fSampleRate">
+                  <simpleValue value="cSamplerate" />
+                </value>
+                <value member="fMinFreq">
+                  <simpleValue value="10" />
+                </value>
+                <value member="fMaxFreq">
+                  <simpleValue value="70" />
+                </value>
+                <value member="nPeriods">
+                  <simpleValue value="10" />
+                </value>
+                <value member="nFilterOrder">
+                  <simpleValue value="2" />
+                </value>
+                <value member="fCutoff">
+                  <simpleValue value="70" />
+                </value>
+                <value member="eInputSelect">
+                  <simpleValue value="E_PMA_InputSelect.Current" />
+                </value>
+                <value member="fMinInput">
+                  <simpleValue value="0" />
+                </value>
+              </structValue>
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml">FB_Frequence - period							</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cBasicValuesInitPars">
+            <type>
+              <derived name="ST_PMA_BasicValues_Period_InitPars" />
+            </type>
+            <initialValue>
+              <structValue>
+                <value member="nBufferLength">
+                  <simpleValue value="cOversamples" />
+                </value>
+                <value member="fSampleRate">
+                  <simpleValue value="cSamplerate" />
+                </value>
+                <value member="fMinInputCurrent">
+                  <simpleValue value="0.0" />
+                </value>
+                <value member="nPeriods">
+                  <simpleValue value="20" />
+                </value>
+              </structValue>
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml">Basic value in time domain									</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cPowerValuesPedInitPars">
+            <type>
+              <derived name="ST_PMA_PowerValues_Period_InitPars" />
+            </type>
+            <initialValue>
+              <structValue>
+                <value member="nBufferLength">
+                  <simpleValue value="cOversamples" />
+                </value>
+                <value member="fSampleRate">
+                  <simpleValue value="cSamplerate" />
+                </value>
+                <value member="fMinInputCurrent">
+                  <simpleValue value="0.0" />
+                </value>
+                <value member="nPeriods">
+                  <simpleValue value="10" />
+                </value>
+              </structValue>
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml">Power value in period									</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cHarmonicsPedInitPars">
+            <type>
+              <derived name="ST_PMA_Harmonics_Period_InitPars" />
+            </type>
+            <initialValue>
+              <structValue>
+                <value member="nBufferLength">
+                  <simpleValue value="cOversamples" />
+                </value>
+                <value member="fSampleRate">
+                  <simpleValue value="cSamplerate" />
+                </value>
+                <value member="nNumHarmonics">
+                  <simpleValue value="cHarmonicBands" />
+                </value>
+                <value member="nPeriods">
+                  <simpleValue value="10" />
+                </value>
+                <value member="bTransformToPercent">
+                  <simpleValue value="TRUE" />
+                </value>
+              </structValue>
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml">Harmonics in period								</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cPowerValuesInitPars">
+            <type>
+              <derived name="ST_PMA_PowerValues_InitPars" />
+            </type>
+            <initialValue>
+              <structValue>
+                <value member="uTimeLagCurrentTransformer">
+                  <structValue>
+                    <value member="aTimeLag">
+                      <arrayValue>
+                        <value>
+                          <simpleValue value="0.0" />
+                        </value>
+                        <value>
+                          <simpleValue value="0.0" />
+                        </value>
+                        <value>
+                          <simpleValue value="0.0" />
+                        </value>
+                      </arrayValue>
+                    </value>
+                  </structValue>
+                </value>
+                <value member="fSampleRate">
+                  <simpleValue value="cSamplerate" />
+                </value>
+                <value member="fBaseFreq">
+                  <simpleValue value="cFreqMode" />
+                </value>
+                <value member="nFFT_Length">
+                  <simpleValue value="cFFTLength" />
+                </value>
+                <value member="nWindowLength">
+                  <simpleValue value="cWindowLength" />
+                </value>
+                <value member="nNumBands">
+                  <simpleValue value="20" />
+                </value>
+                <value member="fBandwidth">
+                  <simpleValue value="20.0" />
+                </value>
+                <value member="fMinInputCurrent">
+                  <simpleValue value="0.0" />
+                </value>
+                <value member="eWindowType">
+                  <simpleValue value="E_PMA_WindowType.HannWindow" />
+                </value>
+              </structValue>
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml">Power value in freq domain</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cSpectrumInitPars">
+            <type>
+              <derived name="ST_PMA_Spectrum_InitPars" />
+            </type>
+            <initialValue>
+              <structValue>
+                <value member="nFFT_Length">
+                  <simpleValue value="cFFTLength" />
+                </value>
+                <value member="nWindowLength">
+                  <simpleValue value="cWindowLength" />
+                </value>
+                <value member="fSampleRate">
+                  <simpleValue value="cSamplerate" />
+                </value>
+                <value member="bTransformToDecibel">
+                  <simpleValue value="FALSE" />
+                </value>
+                <value member="eWindowType">
+                  <simpleValue value="E_PMA_WindowType.HannWindow" />
+                </value>
+                <value member="eScalingType">
+                  <simpleValue value="E_PMA_ScalingType.RMS" />
+                </value>
+              </structValue>
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> FB_PMA_Spectrum in freq domain</xhtml>
+            </documentation>
+          </variable>
+          <variable name="cHarmonicsInitPars">
+            <type>
+              <derived name="ST_PMA_Harmonics_InitPars" />
+            </type>
+            <initialValue>
+              <structValue>
+                <value member="nFFT_Length">
+                  <simpleValue value="cFFTLength" />
+                </value>
+                <value member="nWindowLength">
+                  <simpleValue value="cWindowLength" />
+                </value>
+                <value member="fSampleRate">
+                  <simpleValue value="cSamplerate" />
+                </value>
+                <value member="nNumBands">
+                  <simpleValue value="cHarmonicBands" />
+                </value>
+                <value member="fBaseFreq">
+                  <simpleValue value="cFreqMode" />
+                </value>
+                <value member="fBandwidth">
+                  <simpleValue value="20.0" />
+                </value>
+                <value member="eWindowType">
+                  <simpleValue value="E_PMA_WindowType.HannWindow" />
+                </value>
+                <value member="bTransformToDecibel">
+                  <simpleValue value="FALSE" />
+                </value>
+                <value member="bTransformToPercent">
+                  <simpleValue value="FALSE" />
+                </value>
+              </structValue>
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> FB_PMA_Harmonics	in freq domain								</xhtml>
+            </documentation>
+          </variable>
+          <variable name="stEL3773_1_In" address="%I*">
+            <type>
+              <derived name="ST_EL3773_InputSamples" />
+            </type>
+          </variable>
+          <variable name="stEL3773_1_Scaled">
+            <type>
+              <derived name="ST_EL3773_InputSamples_Scaled" />
+            </type>
+          </variable>
+          <variable name="signal_UI">
+            <type>
+              <derived name="ST_Signal_HMI" />
+            </type>
+          </variable>
+          <variable name="signal_UI_Zeros">
+            <type>
+              <derived name="ST_Signal_HMI" />
+            </type>
+          </variable>
+          <variable name="fSampleTaskCycleTime">
+            <type>
+              <LREAL />
+            </type>
+            <initialValue>
+              <simpleValue value="1" />
+            </initialValue>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> ms</xhtml>
+            </documentation>
+          </variable>
+          <variable name="fSampleRate">
+            <type>
+              <LREAL />
+            </type>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> Hz  ( sample rate = oversampling factor / cycle time )</xhtml>
+            </documentation>
+          </variable>
+          <variable name="fResolution">
+            <type>
+              <LREAL />
+            </type>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> Hz/Idx		</xhtml>
+            </documentation>
+          </variable>
+          <variable name="sendArray">
+            <type>
+              <BOOL />
+            </type>
+          </variable>
+          <variable name="timeArray">
+            <type>
+              <array>
+                <dimension lower="1" upper="(cOversamples * cScaleHMI)" />
+                <baseType>
+                  <UDINT />
+                </baseType>
+              </array>
+            </type>
+          </variable>
+          <variable name="freqArray">
+            <type>
+              <array>
+                <dimension lower="1" upper="cFFTResult" />
+                <baseType>
+                  <LREAL />
+                </baseType>
+              </array>
+            </type>
+          </variable>
+          <variable name="aHarmonicsPed">
+            <type>
+              <array>
+                <dimension lower="0" upper="5" />
+                <baseType>
+                  <array>
+                    <dimension lower="0" upper="(cHarmonicBands - 1)" />
+                    <baseType>
+                      <LREAL />
+                    </baseType>
+                  </array>
+                </baseType>
+              </array>
+            </type>
+          </variable>
+          <variable name="aSpectrum">
+            <type>
+              <array>
+                <dimension lower="0" upper="5" />
+                <baseType>
+                  <array>
+                    <dimension lower="0" upper="(cFFTLength / 2)" />
+                    <baseType>
+                      <LREAL />
+                    </baseType>
+                  </array>
+                </baseType>
+              </array>
+            </type>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> dims: [UL1..UL3 + IL1..IL3][FFTLength/2 + 1]</xhtml>
+            </documentation>
+          </variable>
+          <variable name="aHarmonics">
+            <type>
+              <array>
+                <dimension lower="0" upper="5" />
+                <baseType>
+                  <array>
+                    <dimension lower="0" upper="(cHarmonicBands - 1)" />
+                    <baseType>
+                      <LREAL />
+                    </baseType>
+                  </array>
+                </baseType>
+              </array>
+            </type>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml"> dims: [UL1..UL3 + IL1..IL3][NumBands]</xhtml>
+            </documentation>
+          </variable>
+          <variable name="nCurrentDate">
+            <type>
+              <WORD />
+            </type>
+          </variable>
+          <variable name="sCurrentTime">
+            <type>
+              <string />
+            </type>
+          </variable>
+          <variable name="nCurrentHour">
+            <type>
+              <WORD />
+            </type>
+          </variable>
+          <variable name="nCurrentSec">
+            <type>
+              <WORD />
+            </type>
+          </variable>
+          <variable name="wFreq" address="%Q*">
+            <type>
+              <WORD />
+            </type>
+          </variable>
+          <variable name="alarmCurrent">
+            <type>
+              <array>
+                <dimension lower="1" upper="2" />
+                <baseType>
+                  <array>
+                    <dimension lower="1" upper="3" />
+                    <baseType>
+                      <LREAL />
+                    </baseType>
+                  </array>
+                </baseType>
+              </array>
+            </type>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml">1 : alram, 2 : warning</xhtml>
+            </documentation>
+          </variable>
+          <variable name="alarmVoltage">
+            <type>
+              <array>
+                <dimension lower="1" upper="2" />
+                <baseType>
+                  <array>
+                    <dimension lower="1" upper="3" />
+                    <baseType>
+                      <LREAL />
+                    </baseType>
+                  </array>
+                </baseType>
+              </array>
+            </type>
+          </variable>
+          <addData>
+            <data name="http://www.3s-software.com/plcopenxml/buildproperties" handleUnknown="implementation">
+              <BuildProperties>
+                <LinkAlways>true</LinkAlways>
+              </BuildProperties>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/interfaceasplaintext" handleUnknown="implementation">
+              <InterfaceAsPlainText>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR_GLOBAL CONSTANT
+	cOversamples				: UDINT 					:= 10;					// number of oversamples
+	cSamplerate					: UDINT 					:= 1000 * cOversamples;	// samplerate
+	cFFTLength					: UDINT 					:= 4096;				// length of fft
+	cWindowLength				: UDINT 					:= 3200;				// internal buffer size with 50% overlapping
+	cBufferLength				: UDINT 					:= cWindowLength/2;		// buffer size
+	cHarmonicBands				: UDINT 					:= 20;					// number of harmonics
+	cFreqMode					: LREAL 					:= 50.0;				// base frequency	
+	cFFTResult					: UDINT						:= cFFTLength/2 +1;
+	cScaleHMI					: UDINT						:= 250;
+	//FB_Scaling signal from IO s
+	cScalingEL3773Pars			: ST_PMA_Scaling_EL3773_InitPars 	 	
+									:=( nOversamples 		:= cOversamples, 
+										fOffsetVoltage 		:= 0, 
+										fGainVoltage 		:= 1, 
+										fOffsetCurrent 		:= 0, 
+										fGainCurrent 		:= 1, 
+										fFactorCurrentTransformer := 100); //In/Out value of CT
+	
+	//FB_Source for period
+	cSource_PeriodInitPars		: ST_PMA_Source_InitPars 		 		
+									:=( nBufferLength 		:= cOversamples);	
+	
+	//FB_Source freq domain								
+	cSourceInitPars				: ST_PMA_Source_InitPars 				
+									:=( nBufferLength 		:= cBufferLength);
+		
+	//FB_Frequence - period							
+	cFrequencyInitPars			: ST_PMA_Frequency_Period_InitPars 		
+									:=( nBufferLength 		:= cOversamples, 
+										fSampleRate 		:= cSamplerate, 
+										fMinFreq 			:= 10, 
+										fMaxFreq 			:= 70, 
+										nPeriods 			:= 10, 
+										nFilterOrder 		:= 2, 
+										fCutoff 			:= 70, 
+										eInputSelect 		:= E_PMA_InputSelect.Current, 
+										fMinInput 			:= 0);
+	
+	//Basic value in time domain									
+	cBasicValuesInitPars		: ST_PMA_BasicValues_Period_InitPars 	
+									:=( nBufferLength 		:= cOversamples, 
+										fSampleRate 		:= cSamplerate, 
+										fMinInputCurrent 	:= 0.0,
+										nPeriods         	:= 20 );
+	
+	//Power value in period									
+	cPowerValuesPedInitPars		: ST_PMA_PowerValues_Period_InitPars 	
+									:=( nBufferLength 		:= cOversamples, 
+										fSampleRate 		:= cSamplerate, 
+										fMinInputCurrent 	:= 0.0,
+										nPeriods			:= 10);
+		
+	//Harmonics in period								
+	cHarmonicsPedInitPars		: ST_PMA_Harmonics_Period_InitPars		
+									:=( nBufferLength 		:= cOversamples, 
+										fSampleRate 		:= cSamplerate, 
+										nNumHarmonics 		:= cHarmonicBands, 
+										nPeriods 			:= 10, 
+										bTransformToPercent := TRUE);
+											
+	//Power value in freq domain
+	cPowerValuesInitPars		: ST_PMA_PowerValues_InitPars
+									:=( uTimeLagCurrentTransformer := (aTimeLag := [0.0, 0.0, 0.0]),
+										fSampleRate 		:= cSamplerate,			// in Hz 
+										fBaseFreq 			:= cFreqMode,			// in Hz
+										nFFT_Length 		:= cFFTLength,
+										nWindowLength 		:= cWindowLength,
+										nNumBands 			:= 20,
+										fBandwidth 			:= 20.0,
+										fMinInputCurrent	:= 0.0,
+										eWindowType 		:= E_PMA_WindowType.HannWindow);
+										
+	// FB_PMA_Spectrum in freq domain
+	cSpectrumInitPars			: ST_PMA_Spectrum_InitPars
+									:=(	nFFT_Length 		:= cFFTLength,
+										nWindowLength 		:= cWindowLength, 
+										fSampleRate 		:= cSamplerate,			// in Hz
+										bTransformToDecibel := FALSE,
+										eWindowType 		:= E_PMA_WindowType.HannWindow,
+										eScalingType 		:= E_PMA_ScalingType.RMS);	
+										
+	// FB_PMA_Harmonics	in freq domain								
+	cHarmonicsInitPars			: ST_PMA_Harmonics_InitPars
+									:=(	nFFT_Length 		:= cFFTLength,
+										nWindowLength 		:= cWindowLength,
+										fSampleRate 		:= cSamplerate,			// in Hz
+										nNumBands 			:= cHarmonicBands,
+										fBaseFreq 			:= cFreqMode,			// in Hz
+										fBandwidth 			:= 20.0,
+										eWindowType 		:= E_PMA_WindowType.HannWindow,	
+										bTransformToDecibel := FALSE,
+										bTransformToPercent := FALSE);	
+END_VAR
+
+VAR_GLOBAL
+	stEL3773_1_In 			AT%I* 	: ST_EL3773_InputSamples;
+	stEL3773_1_Scaled				: ST_EL3773_InputSamples_Scaled;	
+	signal_UI						: ST_Signal_HMI;
+	signal_UI_Zeros					: ST_Signal_HMI;
+	
+
+	fSampleTaskCycleTime			: LREAL := 1; 	// ms
+	fSampleRate						: LREAL; 		// Hz  ( sample rate = oversampling factor / cycle time )
+	fResolution						: LREAL; 		// Hz/Idx		
+	sendArray						: BOOL;
+	timeArray						: ARRAY[1..cOversamples*cScaleHMI] OF UDINT;
+	freqArray						: ARRAY[1..cFFTResult] OF LREAL;
+	aHarmonicsPed 					: ARRAY[0..5] OF ARRAY [0..cHarmonicBands-1] OF LREAL; 
+	
+	aSpectrum						: ARRAY[0..5] OF ARRAY [0..cFFTLength/2] OF LREAL;		// dims: [UL1..UL3 + IL1..IL3][FFTLength/2 + 1]
+	aHarmonics						: ARRAY[0..5] OF ARRAY [0..cHarmonicBands-1] OF LREAL;	// dims: [UL1..UL3 + IL1..IL3][NumBands]
+
+	nCurrentDate					: WORD;
+	sCurrentTime					: STRING;
+	nCurrentHour					: WORD;
+	nCurrentSec						: WORD;		
+	wFreq		AT %Q*	: WORD;
+END_VAR
+
+VAR_GLOBAL PERSISTENT
+	alarmCurrent					: ARRAY [1..2] OF ARRAY [1..3] OF LREAL; //1 : alram, 2 : warning
+	alarmVoltage					: ARRAY [1..2] OF ARRAY [1..3] OF LREAL;	
+	
+END_VAR</xhtml>
+              </InterfaceAsPlainText>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+              <ObjectId>3d3d8d26-d796-4716-8d9f-39d63b484f11</ObjectId>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/mixedattrsvarlist" handleUnknown="implementation">
+              <MixedAttrsVarList>
+                <globalVars name="GVL" constant="true">
+                  <variable name="cOversamples">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="10" />
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> number of oversamples</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cSamplerate">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="(1000 * cOversamples)" />
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> samplerate</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cFFTLength">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="4096" />
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> length of fft</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cWindowLength">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="3200" />
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> internal buffer size with 50% overlapping</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cBufferLength">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="(cWindowLength / 2)" />
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> buffer size</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cHarmonicBands">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="20" />
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> number of harmonics</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cFreqMode">
+                    <type>
+                      <LREAL />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="50.0" />
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> base frequency	</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cFFTResult">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="((cFFTLength / 2) + 1)" />
+                    </initialValue>
+                  </variable>
+                  <variable name="cScaleHMI">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="250" />
+                    </initialValue>
+                  </variable>
+                  <variable name="cScalingEL3773Pars">
+                    <type>
+                      <derived name="ST_PMA_Scaling_EL3773_InitPars" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nOversamples">
+                          <simpleValue value="cOversamples" />
+                        </value>
+                        <value member="fOffsetVoltage">
+                          <simpleValue value="0" />
+                        </value>
+                        <value member="fGainVoltage">
+                          <simpleValue value="1" />
+                        </value>
+                        <value member="fOffsetCurrent">
+                          <simpleValue value="0" />
+                        </value>
+                        <value member="fGainCurrent">
+                          <simpleValue value="1" />
+                        </value>
+                        <value member="fFactorCurrentTransformer">
+                          <simpleValue value="100" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">FB_Scaling signal from IO s</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cSource_PeriodInitPars">
+                    <type>
+                      <derived name="ST_PMA_Source_InitPars" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nBufferLength">
+                          <simpleValue value="cOversamples" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">In/Out value of CT
+FB_Source for period</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cSourceInitPars">
+                    <type>
+                      <derived name="ST_PMA_Source_InitPars" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nBufferLength">
+                          <simpleValue value="cBufferLength" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">FB_Source freq domain								</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cFrequencyInitPars">
+                    <type>
+                      <derived name="ST_PMA_Frequency_Period_InitPars" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nBufferLength">
+                          <simpleValue value="cOversamples" />
+                        </value>
+                        <value member="fSampleRate">
+                          <simpleValue value="cSamplerate" />
+                        </value>
+                        <value member="fMinFreq">
+                          <simpleValue value="10" />
+                        </value>
+                        <value member="fMaxFreq">
+                          <simpleValue value="70" />
+                        </value>
+                        <value member="nPeriods">
+                          <simpleValue value="10" />
+                        </value>
+                        <value member="nFilterOrder">
+                          <simpleValue value="2" />
+                        </value>
+                        <value member="fCutoff">
+                          <simpleValue value="70" />
+                        </value>
+                        <value member="eInputSelect">
+                          <simpleValue value="E_PMA_InputSelect.Current" />
+                        </value>
+                        <value member="fMinInput">
+                          <simpleValue value="0" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">FB_Frequence - period							</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cBasicValuesInitPars">
+                    <type>
+                      <derived name="ST_PMA_BasicValues_Period_InitPars" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nBufferLength">
+                          <simpleValue value="cOversamples" />
+                        </value>
+                        <value member="fSampleRate">
+                          <simpleValue value="cSamplerate" />
+                        </value>
+                        <value member="fMinInputCurrent">
+                          <simpleValue value="0.0" />
+                        </value>
+                        <value member="nPeriods">
+                          <simpleValue value="20" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">Basic value in time domain									</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cPowerValuesPedInitPars">
+                    <type>
+                      <derived name="ST_PMA_PowerValues_Period_InitPars" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nBufferLength">
+                          <simpleValue value="cOversamples" />
+                        </value>
+                        <value member="fSampleRate">
+                          <simpleValue value="cSamplerate" />
+                        </value>
+                        <value member="fMinInputCurrent">
+                          <simpleValue value="0.0" />
+                        </value>
+                        <value member="nPeriods">
+                          <simpleValue value="10" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">Power value in period									</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cHarmonicsPedInitPars">
+                    <type>
+                      <derived name="ST_PMA_Harmonics_Period_InitPars" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nBufferLength">
+                          <simpleValue value="cOversamples" />
+                        </value>
+                        <value member="fSampleRate">
+                          <simpleValue value="cSamplerate" />
+                        </value>
+                        <value member="nNumHarmonics">
+                          <simpleValue value="cHarmonicBands" />
+                        </value>
+                        <value member="nPeriods">
+                          <simpleValue value="10" />
+                        </value>
+                        <value member="bTransformToPercent">
+                          <simpleValue value="TRUE" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">Harmonics in period								</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cPowerValuesInitPars">
+                    <type>
+                      <derived name="ST_PMA_PowerValues_InitPars" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="uTimeLagCurrentTransformer">
+                          <structValue>
+                            <value member="aTimeLag">
+                              <arrayValue>
+                                <value>
+                                  <simpleValue value="0.0" />
+                                </value>
+                                <value>
+                                  <simpleValue value="0.0" />
+                                </value>
+                                <value>
+                                  <simpleValue value="0.0" />
+                                </value>
+                              </arrayValue>
+                            </value>
+                          </structValue>
+                        </value>
+                        <value member="fSampleRate">
+                          <simpleValue value="cSamplerate" />
+                        </value>
+                        <value member="fBaseFreq">
+                          <simpleValue value="cFreqMode" />
+                        </value>
+                        <value member="nFFT_Length">
+                          <simpleValue value="cFFTLength" />
+                        </value>
+                        <value member="nWindowLength">
+                          <simpleValue value="cWindowLength" />
+                        </value>
+                        <value member="nNumBands">
+                          <simpleValue value="20" />
+                        </value>
+                        <value member="fBandwidth">
+                          <simpleValue value="20.0" />
+                        </value>
+                        <value member="fMinInputCurrent">
+                          <simpleValue value="0.0" />
+                        </value>
+                        <value member="eWindowType">
+                          <simpleValue value="E_PMA_WindowType.HannWindow" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">Power value in freq domain</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cSpectrumInitPars">
+                    <type>
+                      <derived name="ST_PMA_Spectrum_InitPars" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nFFT_Length">
+                          <simpleValue value="cFFTLength" />
+                        </value>
+                        <value member="nWindowLength">
+                          <simpleValue value="cWindowLength" />
+                        </value>
+                        <value member="fSampleRate">
+                          <simpleValue value="cSamplerate" />
+                        </value>
+                        <value member="bTransformToDecibel">
+                          <simpleValue value="FALSE" />
+                        </value>
+                        <value member="eWindowType">
+                          <simpleValue value="E_PMA_WindowType.HannWindow" />
+                        </value>
+                        <value member="eScalingType">
+                          <simpleValue value="E_PMA_ScalingType.RMS" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> FB_PMA_Spectrum in freq domain</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="cHarmonicsInitPars">
+                    <type>
+                      <derived name="ST_PMA_Harmonics_InitPars" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nFFT_Length">
+                          <simpleValue value="cFFTLength" />
+                        </value>
+                        <value member="nWindowLength">
+                          <simpleValue value="cWindowLength" />
+                        </value>
+                        <value member="fSampleRate">
+                          <simpleValue value="cSamplerate" />
+                        </value>
+                        <value member="nNumBands">
+                          <simpleValue value="cHarmonicBands" />
+                        </value>
+                        <value member="fBaseFreq">
+                          <simpleValue value="cFreqMode" />
+                        </value>
+                        <value member="fBandwidth">
+                          <simpleValue value="20.0" />
+                        </value>
+                        <value member="eWindowType">
+                          <simpleValue value="E_PMA_WindowType.HannWindow" />
+                        </value>
+                        <value member="bTransformToDecibel">
+                          <simpleValue value="FALSE" />
+                        </value>
+                        <value member="bTransformToPercent">
+                          <simpleValue value="FALSE" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> FB_PMA_Harmonics	in freq domain								</xhtml>
+                    </documentation>
+                  </variable>
+                </globalVars>
+                <globalVars name="GVL">
+                  <variable name="stEL3773_1_In" address="%I*">
+                    <type>
+                      <derived name="ST_EL3773_InputSamples" />
+                    </type>
+                  </variable>
+                  <variable name="stEL3773_1_Scaled">
+                    <type>
+                      <derived name="ST_EL3773_InputSamples_Scaled" />
+                    </type>
+                  </variable>
+                  <variable name="signal_UI">
+                    <type>
+                      <derived name="ST_Signal_HMI" />
+                    </type>
+                  </variable>
+                  <variable name="signal_UI_Zeros">
+                    <type>
+                      <derived name="ST_Signal_HMI" />
+                    </type>
+                  </variable>
+                  <variable name="fSampleTaskCycleTime">
+                    <type>
+                      <LREAL />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="1" />
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> ms</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="fSampleRate">
+                    <type>
+                      <LREAL />
+                    </type>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> Hz  ( sample rate = oversampling factor / cycle time )</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="fResolution">
+                    <type>
+                      <LREAL />
+                    </type>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> Hz/Idx		</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="sendArray">
+                    <type>
+                      <BOOL />
+                    </type>
+                  </variable>
+                  <variable name="timeArray">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="(cOversamples * cScaleHMI)" />
+                        <baseType>
+                          <UDINT />
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                  <variable name="freqArray">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cFFTResult" />
+                        <baseType>
+                          <LREAL />
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                  <variable name="aHarmonicsPed">
+                    <type>
+                      <array>
+                        <dimension lower="0" upper="5" />
+                        <baseType>
+                          <array>
+                            <dimension lower="0" upper="(cHarmonicBands - 1)" />
+                            <baseType>
+                              <LREAL />
+                            </baseType>
+                          </array>
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                  <variable name="aSpectrum">
+                    <type>
+                      <array>
+                        <dimension lower="0" upper="5" />
+                        <baseType>
+                          <array>
+                            <dimension lower="0" upper="(cFFTLength / 2)" />
+                            <baseType>
+                              <LREAL />
+                            </baseType>
+                          </array>
+                        </baseType>
+                      </array>
+                    </type>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> dims: [UL1..UL3 + IL1..IL3][FFTLength/2 + 1]</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="aHarmonics">
+                    <type>
+                      <array>
+                        <dimension lower="0" upper="5" />
+                        <baseType>
+                          <array>
+                            <dimension lower="0" upper="(cHarmonicBands - 1)" />
+                            <baseType>
+                              <LREAL />
+                            </baseType>
+                          </array>
+                        </baseType>
+                      </array>
+                    </type>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> dims: [UL1..UL3 + IL1..IL3][NumBands]</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="nCurrentDate">
+                    <type>
+                      <WORD />
+                    </type>
+                  </variable>
+                  <variable name="sCurrentTime">
+                    <type>
+                      <string />
+                    </type>
+                  </variable>
+                  <variable name="nCurrentHour">
+                    <type>
+                      <WORD />
+                    </type>
+                  </variable>
+                  <variable name="nCurrentSec">
+                    <type>
+                      <WORD />
+                    </type>
+                  </variable>
+                  <variable name="wFreq" address="%Q*">
+                    <type>
+                      <WORD />
+                    </type>
+                  </variable>
+                </globalVars>
+                <globalVars name="GVL" persistent="true">
+                  <variable name="alarmCurrent">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="2" />
+                        <baseType>
+                          <array>
+                            <dimension lower="1" upper="3" />
+                            <baseType>
+                              <LREAL />
+                            </baseType>
+                          </array>
+                        </baseType>
+                      </array>
+                    </type>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">1 : alram, 2 : warning</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="alarmVoltage">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="2" />
+                        <baseType>
+                          <array>
+                            <dimension lower="1" upper="3" />
+                            <baseType>
+                              <LREAL />
+                            </baseType>
+                          </array>
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                </globalVars>
+              </MixedAttrsVarList>
+            </data>
+          </addData>
+        </globalVars>
+        <globalVars name="GVL_ADS">
+          <variable name="aFFTI1">
+            <type>
+              <array>
+                <dimension lower="1" upper="cFFTResult" />
+                <baseType>
+                  <LREAL />
+                </baseType>
+              </array>
+            </type>
+          </variable>
+          <variable name="aFFTI2">
+            <type>
+              <array>
+                <dimension lower="1" upper="cFFTResult" />
+                <baseType>
+                  <LREAL />
+                </baseType>
+              </array>
+            </type>
+          </variable>
+          <variable name="aFFTI3">
+            <type>
+              <array>
+                <dimension lower="1" upper="cFFTResult" />
+                <baseType>
+                  <LREAL />
+                </baseType>
+              </array>
+            </type>
+          </variable>
+          <variable name="RMSI1">
+            <type>
+              <LREAL />
+            </type>
+          </variable>
+          <variable name="RMSI2">
+            <type>
+              <LREAL />
+            </type>
+          </variable>
+          <variable name="RMSI3">
+            <type>
+              <LREAL />
+            </type>
+          </variable>
+          <variable name="Frequency">
+            <type>
+              <REAL />
+            </type>
+          </variable>
+          <variable name="aFFTU1">
+            <type>
+              <array>
+                <dimension lower="1" upper="cFFTResult" />
+                <baseType>
+                  <LREAL />
+                </baseType>
+              </array>
+            </type>
+          </variable>
+          <variable name="aFFTU2">
+            <type>
+              <array>
+                <dimension lower="1" upper="cFFTResult" />
+                <baseType>
+                  <LREAL />
+                </baseType>
+              </array>
+            </type>
+          </variable>
+          <variable name="aFFTU3">
+            <type>
+              <array>
+                <dimension lower="1" upper="cFFTResult" />
+                <baseType>
+                  <LREAL />
+                </baseType>
+              </array>
+            </type>
+          </variable>
+          <variable name="RMSU1">
+            <type>
+              <LREAL />
+            </type>
+          </variable>
+          <variable name="RMSU2">
+            <type>
+              <LREAL />
+            </type>
+          </variable>
+          <variable name="RMSU3">
+            <type>
+              <LREAL />
+            </type>
+          </variable>
+          <variable name="bAddData">
+            <type>
+              <BOOL />
+            </type>
+            <documentation>
+              <xhtml xmlns="http://www.w3.org/1999/xhtml">bAdd</xhtml>
+            </documentation>
+          </variable>
+          <variable name="bCheckADS">
+            <type>
+              <BOOL />
+            </type>
+          </variable>
+          <variable name="bError">
+            <type>
+              <BOOL />
+            </type>
+          </variable>
+          <addData>
+            <data name="http://www.3s-software.com/plcopenxml/interfaceasplaintext" handleUnknown="implementation">
+              <InterfaceAsPlainText>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR_GLOBAL
+	aFFTI1 					: ARRAY[1..cFFTResult] OF LREAL;
+	aFFTI2					: ARRAY[1..cFFTResult] OF LREAL;
+	aFFTI3					: ARRAY[1..cFFTResult] OF LREAL;
+	RMSI1					: LREAL;
+	RMSI2					: LREAL;
+	RMSI3					: LREAL;
+	Frequency				: REAL;
+	
+	aFFTU1 					: ARRAY[1..cFFTResult] OF LREAL;
+	aFFTU2					: ARRAY[1..cFFTResult] OF LREAL;
+	aFFTU3					: ARRAY[1..cFFTResult] OF LREAL;
+	RMSU1					: LREAL;
+	RMSU2					: LREAL;
+	RMSU3					: LREAL;	
+	//bAdd
+	bAddData				: BOOL;
+	bCheckADS				: BOOL;
+	bError					: BOOL;
+END_VAR</xhtml>
+              </InterfaceAsPlainText>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+              <ObjectId>660a65a7-771a-4a5f-9571-510211e81f66</ObjectId>
+            </data>
+          </addData>
+        </globalVars>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/datatype" handleUnknown="implementation">
+            <dataType name="E_AnalysisIDs">
+              <baseType>
+                <enum>
+                  <values>
+                    <value name="Source_Period" value="1" />
+                    <value name="Frequency_Period" />
+                    <value name="BasicValues_Period" />
+                    <value name="PowerValues_Period" />
+                    <value name="Harmonics_Period" />
+                    <value name="Source" />
+                    <value name="PowerValues" />
+                    <value name="Spectrum" />
+                    <value name="Harmonics" />
+                  </values>
+                  <baseType>
+                    <UDINT />
+                  </baseType>
+                </enum>
+              </baseType>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/enumvaluedocumentation" handleUnknown="implementation">
+                  <EnumValueDocumentation>
+                    <EnumValue>
+                      <Name>Source_Period</Name>
+                      <Documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Algorithms based on signal period</xhtml>
+                      </Documentation>
+                    </EnumValue>
+                    <EnumValue>
+                      <Name>Source</Name>
+                      <Documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Algorithms based on frequency domain</xhtml>
+                      </Documentation>
+                    </EnumValue>
+                  </EnumValueDocumentation>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+                  <Attributes>
+                    <Attribute Name="qualified_only" Value="" />
+                    <Attribute Name="strict" Value="" />
+                  </Attributes>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/interfaceasplaintext" handleUnknown="implementation">
+                  <InterfaceAsPlainText>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_AnalysisIDs :
+(
+// Algorithms based on signal period
+	Source_Period :=1,
+	Frequency_Period,
+	BasicValues_Period,
+	PowerValues_Period,
+	Harmonics_Period,
+// Algorithms based on frequency domain
+	Source,
+	PowerValues,
+	Spectrum,
+	Harmonics	
+) UDINT;
+END_TYPE</xhtml>
+                  </InterfaceAsPlainText>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>cd18dd73-84e3-4dc8-b17e-17c7d56229f2</ObjectId>
+                </data>
+              </addData>
+            </dataType>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/datatype" handleUnknown="implementation">
+            <dataType name="ST_EL3773_InputSamples">
+              <baseType>
+                <struct>
+                  <variable name="aUL1">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cOversamples" />
+                        <baseType>
+                          <INT />
+                        </baseType>
+                      </array>
+                    </type>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> Inputs from EL3773</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="aUL2">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cOversamples" />
+                        <baseType>
+                          <INT />
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                  <variable name="aUL3">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cOversamples" />
+                        <baseType>
+                          <INT />
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                  <variable name="aIL1">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cOversamples" />
+                        <baseType>
+                          <INT />
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                  <variable name="aIL2">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cOversamples" />
+                        <baseType>
+                          <INT />
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                  <variable name="aIL3">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cOversamples" />
+                        <baseType>
+                          <INT />
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                </struct>
+              </baseType>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/interfaceasplaintext" handleUnknown="implementation">
+                  <InterfaceAsPlainText>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">TYPE ST_EL3773_InputSamples :
+STRUCT
+// Inputs from EL3773
+	aUL1 : ARRAY[1..cOversamples] OF INT;
+	aUL2 : ARRAY[1..cOversamples] OF INT;
+	aUL3 : ARRAY[1..cOversamples] OF INT;
+	aIL1 : ARRAY[1..cOversamples] OF INT;
+	aIL2 : ARRAY[1..cOversamples] OF INT;
+	aIL3 : ARRAY[1..cOversamples] OF INT;
+END_STRUCT
+END_TYPE</xhtml>
+                  </InterfaceAsPlainText>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>bf92805e-6e11-4fa9-9c91-a79487cfbcc4</ObjectId>
+                </data>
+              </addData>
+            </dataType>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/datatype" handleUnknown="implementation">
+            <dataType name="ST_EL3773_InputSamples_Scaled">
+              <baseType>
+                <struct>
+                  <variable name="aUL1">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cOversamples" />
+                        <baseType>
+                          <LREAL />
+                        </baseType>
+                      </array>
+                    </type>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml"> Inputs from EL3773</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="aUL2">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cOversamples" />
+                        <baseType>
+                          <LREAL />
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                  <variable name="aUL3">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cOversamples" />
+                        <baseType>
+                          <LREAL />
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                  <variable name="aIL1">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cOversamples" />
+                        <baseType>
+                          <LREAL />
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                  <variable name="aIL2">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cOversamples" />
+                        <baseType>
+                          <LREAL />
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                  <variable name="aIL3">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="cOversamples" />
+                        <baseType>
+                          <LREAL />
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                </struct>
+              </baseType>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/interfaceasplaintext" handleUnknown="implementation">
+                  <InterfaceAsPlainText>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">TYPE ST_EL3773_InputSamples_Scaled :
+STRUCT
+// Inputs from EL3773
+	aUL1 : ARRAY[1..cOversamples] OF LREAL;
+	aUL2 : ARRAY[1..cOversamples] OF LREAL;
+	aUL3 : ARRAY[1..cOversamples] OF LREAL;
+	aIL1 : ARRAY[1..cOversamples] OF LREAL;
+	aIL2 : ARRAY[1..cOversamples] OF LREAL;
+	aIL3 : ARRAY[1..cOversamples] OF LREAL;
+END_STRUCT
+END_TYPE</xhtml>
+                  </InterfaceAsPlainText>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>4c70ae45-8a2a-4da1-b1ba-ed18302a4175</ObjectId>
+                </data>
+              </addData>
+            </dataType>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/datatype" handleUnknown="implementation">
+            <dataType name="ST_Signal_HMI">
+              <baseType>
+                <struct>
+                  <variable name="aIL">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="3" />
+                        <baseType>
+                          <array>
+                            <dimension lower="1" upper="(cOversamples * cScaleHMI)" />
+                            <baseType>
+                              <LREAL />
+                            </baseType>
+                          </array>
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                  <variable name="aUL">
+                    <type>
+                      <array>
+                        <dimension lower="1" upper="3" />
+                        <baseType>
+                          <array>
+                            <dimension lower="1" upper="(cOversamples * cScaleHMI)" />
+                            <baseType>
+                              <LREAL />
+                            </baseType>
+                          </array>
+                        </baseType>
+                      </array>
+                    </type>
+                  </variable>
+                </struct>
+              </baseType>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/interfaceasplaintext" handleUnknown="implementation">
+                  <InterfaceAsPlainText>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">TYPE ST_Signal_HMI :
+STRUCT
+	aIL	 : ARRAY[1..3] OF ARRAY[1..cOversamples*cScaleHMI] OF LREAL;
+	aUL	 : ARRAY[1..3] OF ARRAY[1..cOversamples*cScaleHMI] OF LREAL;
+END_STRUCT
+END_TYPE</xhtml>
+                  </InterfaceAsPlainText>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>47927bc7-d342-450a-8839-bc5d8a72f9e3</ObjectId>
+                </data>
+              </addData>
+            </dataType>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+            <pou name="FB_SystemTime" pouType="functionBlock">
+              <interface>
+                <localVars>
+                  <variable name="GetLocalSystemTime">
+                    <type>
+                      <derived name="FB_LocalSystemTime" />
+                    </type>
+                  </variable>
+                  <variable name="wDateW">
+                    <type>
+                      <WORD />
+                    </type>
+                  </variable>
+                </localVars>
+              </interface>
+              <body>
+                <ST>
+                  <xhtml xmlns="http://www.w3.org/1999/xhtml">GetLocalSystemTime(bEnable := TRUE);</xhtml>
+                </ST>
+              </body>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="dtDateTimeFull" ObjectId="d55bf6a2-5378-4d0d-bd4a-5f9d6788fe6c">
+                    <interface>
+                      <returnType>
+                        <DT />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">dtDateTimeFull 	:= SYSTEMTIME_TO_DT(GetLocalSystemTime.systemTime);</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY dtDateTimeFull : DT</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="sDate" ObjectId="1c599e7c-ea74-4cd5-978a-1ec2ddb7ed4c">
+                    <interface>
+                      <returnType>
+                        <string />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">sDate	:= MID(sDateTimeFull,10,1);</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY sDate : STRING</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="sDateTime" ObjectId="03f9a243-6aea-4a60-955e-ac73c22ea7e8">
+                    <interface>
+                      <returnType>
+                        <string />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">sDateTime := MID(sDateTimeFull,19,1);</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY sDateTime : STRING</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="sDateTimeFull" ObjectId="bd750e46-94af-4a5c-9fa8-045960809265">
+                    <interface>
+                      <returnType>
+                        <string />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">sDateTimeFull 	:= SYSTEMTIME_TO_STRING(GetLocalSystemTime.systemTime);</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY sDateTimeFull : STRING</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="sDayOfWeek" ObjectId="fc363c62-735b-4c86-a93f-1f2138738875">
+                    <interface>
+                      <returnType>
+                        <string />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">wDateW	:=  GetLocalSystemTime.systemTime.wDayOfWeek;
+IF wDateW = 0 THEN
+	sDayOfWeek := 'Sunday';
+ELSIF wDateW = 1 THEN
+	sDayOfWeek := 'Monday';
+ELSIF wDateW = 2 THEN
+	sDayOfWeek := 'Tuesday';
+ELSIF wDateW = 3 THEN
+	sDayOfWeek := 'Wednesday';
+ELSIF wDateW = 4 THEN
+	sDayOfWeek := 'Thursday';
+ELSIF wDateW = 5 THEN
+	sDayOfWeek := 'Friday';
+ELSIF wDateW = 6 THEN
+	sDayOfWeek := 'Saturday';
+END_IF</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY sDayOfWeek : STRING</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="sTime" ObjectId="4fe46746-6e68-4dd1-930f-748eaea121ea">
+                    <interface>
+                      <returnType>
+                        <string />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">sTime := MID(sDateTimeFull,8,12);</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY sTime : STRING</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="wDay" ObjectId="286f771c-0932-4030-bf78-bcb551a2b48e">
+                    <interface>
+                      <returnType>
+                        <WORD />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">wDay :=  GetLocalSystemTime.systemTime.wDay;</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY wDay : Word</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="wHour" ObjectId="a4f3c154-2011-43b4-a917-80acff9d0ab3">
+                    <interface>
+                      <returnType>
+                        <WORD />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">wHour	:=	GetLocalSystemTime.systemTime.wHour;</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY wHour : WORD</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="wMilliSeconds" ObjectId="179e4f99-e501-41dd-b893-b4b386b545c4">
+                    <interface>
+                      <returnType>
+                        <WORD />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">wMilliseconds	:=	GetLocalSystemTime.systemTime.wMilliseconds;</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY wMilliSeconds : WORD</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="wMinute" ObjectId="7628e342-7dc7-45cb-abae-e59d54e08b33">
+                    <interface>
+                      <returnType>
+                        <WORD />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">wMinute	:=	GetLocalSystemTime.systemTime.wMinute;</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY wMinute : WORD</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="wMonth" ObjectId="3319d4ec-f4d3-40ca-b2e3-cc7bdb570352">
+                    <interface>
+                      <returnType>
+                        <WORD />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">wMonth	:=  GetLocalSystemTime.systemTime.wMonth;</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY wMonth : Word</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="wSecond" ObjectId="7fc37835-33d7-4beb-9c8c-f2a2158b0cba">
+                    <interface>
+                      <returnType>
+                        <WORD />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">wSecond	:=	GetLocalSystemTime.systemTime.wSecond;</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY wSecond : WORD</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/property" handleUnknown="implementation">
+                  <Property name="wYear" ObjectId="0228e2b4-a364-46e1-8420-7b6362967808">
+                    <interface>
+                      <returnType>
+                        <WORD />
+                      </returnType>
+                    </interface>
+                    <GetAccessor>
+                      <interface />
+                      <body>
+                        <ST>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">wYear :=  GetLocalSystemTime.systemTime.wYear;</xhtml>
+                        </ST>
+                      </body>
+                      <InterfaceAsPlainText>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">VAR
+END_VAR
+</xhtml>
+                      </InterfaceAsPlainText>
+                      <addData />
+                    </GetAccessor>
+                    <InterfaceAsPlainText>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">PROPERTY wYear : Word</xhtml>
+                    </InterfaceAsPlainText>
+                    <addData />
+                  </Property>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/interfaceasplaintext" handleUnknown="implementation">
+                  <InterfaceAsPlainText>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">FUNCTION_BLOCK FB_SystemTime
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	GetLocalSystemTime 	: FB_LocalSystemTime;
+	wDateW				: WORD;
+END_VAR
+</xhtml>
+                  </InterfaceAsPlainText>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>31552c93-32b7-4f00-a134-e901f8c7c218</ObjectId>
+                </data>
+              </addData>
+            </pou>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+            <pou name="MAIN" pouType="program">
+              <interface>
+                <localVars>
+                  <variable name="fbScaling">
+                    <type>
+                      <derived name="FB_PMA_Scaling_EL3773" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="stInitPars">
+                          <simpleValue value="cScalingEL3773Pars" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                    <documentation>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">function block</xhtml>
+                    </documentation>
+                  </variable>
+                  <variable name="fbSource_Period">
+                    <type>
+                      <derived name="FB_PMA_Source_3Ph" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nOwnID">
+                          <simpleValue value="E_AnalysisIDs.Source_Period" />
+                        </value>
+                        <value member="aDestIDs">
+                          <arrayValue>
+                            <value>
+                              <simpleValue value="E_AnalysisIDs.Frequency_Period" />
+                            </value>
+                            <value>
+                              <simpleValue value="E_AnalysisIDs.BasicValues_Period" />
+                            </value>
+                            <value>
+                              <simpleValue value="E_AnalysisIDs.PowerValues_Period" />
+                            </value>
+                            <value>
+                              <simpleValue value="E_AnalysisIDs.Harmonics_Period" />
+                            </value>
+                          </arrayValue>
+                        </value>
+                        <value member="stInitPars">
+                          <simpleValue value="cSource_PeriodInitPars" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                  </variable>
+                  <variable name="fbSource">
+                    <type>
+                      <derived name="FB_PMA_Source_3Ph" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nOwnID">
+                          <simpleValue value="E_AnalysisIDs.Source" />
+                        </value>
+                        <value member="aDestIDs">
+                          <arrayValue>
+                            <value>
+                              <simpleValue value="E_AnalysisIDs.PowerValues" />
+                            </value>
+                            <value>
+                              <simpleValue value="E_AnalysisIDs.Spectrum" />
+                            </value>
+                            <value>
+                              <simpleValue value="E_AnalysisIDs.Harmonics" />
+                            </value>
+                          </arrayValue>
+                        </value>
+                        <value member="stInitPars">
+                          <simpleValue value="cSourceInitPars" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                  </variable>
+                  <variable name="fbFrequency">
+                    <type>
+                      <derived name="FB_PMA_Frequency_Period_3Ph" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nOwnID">
+                          <simpleValue value="E_AnalysisIDs.Frequency_Period" />
+                        </value>
+                        <value member="stInitPars">
+                          <simpleValue value="cFrequencyInitPars" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                  </variable>
+                  <variable name="fbBasicValues">
+                    <type>
+                      <derived name="FB_PMA_BasicValues_Period_3Ph" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nOwnID">
+                          <simpleValue value="E_AnalysisIDs.BasicValues_Period" />
+                        </value>
+                        <value member="stInitPars">
+                          <simpleValue value="cBasicValuesInitPars" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                  </variable>
+                  <variable name="fbPowerValues">
+                    <type>
+                      <derived name="FB_PMA_PowerValues_Period_3Ph" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nOwnID">
+                          <simpleValue value="E_AnalysisIDs.PowerValues_Period" />
+                        </value>
+                        <value member="stInitPars">
+                          <simpleValue value="cPowerValuesPedInitPars" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                  </variable>
+                  <variable name="fbHarmonics">
+                    <type>
+                      <derived name="FB_PMA_Harmonics_Period_3Ph" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nOwnID">
+                          <simpleValue value="E_AnalysisIDs.Harmonics_Period" />
+                        </value>
+                        <value member="stInitPars">
+                          <simpleValue value="cHarmonicsPedInitPars" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                  </variable>
+                  <variable name="bResetStatistics">
+                    <type>
+                      <BOOL />
+                    </type>
+                  </variable>
+                </localVars>
+              </interface>
+              <actions>
+                <action name="Scale">
+                  <body>
+                    <ST>
+                      <xhtml xmlns="http://www.w3.org/1999/xhtml">
+fbScaling.Call_3Ph(	pInputBuffer_UL1	:= ADR(stEL3773_1_In.aUL1),
+					pInputBuffer_UL2	:= ADR(stEL3773_1_In.aUL2),
+					pInputBuffer_UL3	:= ADR(stEL3773_1_In.aUL3),
+					pInputBuffer_IL1	:= ADR(stEL3773_1_In.aIL1),
+					pInputBuffer_IL2	:= ADR(stEL3773_1_In.aIL2),
+					pInputBuffer_IL3	:= ADR(stEL3773_1_In.aIL3),
+					nInputBufferSize	:= SIZEOF(stEL3773_1_In.aUL1), 
+					pOutputBuffer_UL1	:= ADR(stEL3773_1_Scaled.aUL1),
+					pOutputBuffer_UL2	:= ADR(stEL3773_1_Scaled.aUL2),
+					pOutputBuffer_UL3	:= ADR(stEL3773_1_Scaled.aUL3),					
+					pOutputBuffer_IL1	:= ADR(stEL3773_1_Scaled.aIL1),
+					pOutputBuffer_IL2	:= ADR(stEL3773_1_Scaled.aIL2),
+					pOutputBuffer_IL3	:= ADR(stEL3773_1_Scaled.aIL3),
+					nOutputBufferSize	:= SIZEOF(stEL3773_1_Scaled.aUL1));						
+				</xhtml>
+                    </ST>
+                  </body>
+                  <addData>
+                    <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                      <ObjectId>58cc3a1c-e80b-47ea-8ed5-8d1731d06f8b</ObjectId>
+                    </data>
+                  </addData>
+                </action>
+              </actions>
+              <body>
+                <ST>
+                  <xhtml xmlns="http://www.w3.org/1999/xhtml">Scale();
+fbSource_Period.Call(	pBuffer_UL1 		:= ADR(stEL3773_1_Scaled.aUL1),
+						pBuffer_UL2 		:= ADR(stEL3773_1_Scaled.aUL2),
+						pBuffer_UL3 		:= ADR(stEL3773_1_Scaled.aUL3),
+						pBuffer_IL1 		:= ADR(stEL3773_1_Scaled.aIL1),
+						pBuffer_IL2 		:= ADR(stEL3773_1_Scaled.aIL2),
+						pBuffer_IL3 		:= ADR(stEL3773_1_Scaled.aIL3),
+						nDataInSizePerCh	:= SIZEOF(stEL3773_1_Scaled.aUL1),
+						nOptionPars			:= 0);
+						
+fbSource.Call(			pBuffer_UL1			:= ADR(stEL3773_1_Scaled.aUL1),
+						 pBuffer_UL2		:= ADR(stEL3773_1_Scaled.aUL2),
+						 pBuffer_UL3		:= ADR(stEL3773_1_Scaled.aUL3),
+						 pBuffer_IL1		:= ADR(stEL3773_1_Scaled.aIL1),
+						 pBuffer_IL2		:= ADR(stEL3773_1_Scaled.aIL2),
+						 pBuffer_IL3		:= ADR(stEL3773_1_Scaled.aIL3),
+						 nDataInSizePerCh	:= SIZEOF(stEL3773_1_Scaled.aUL1),
+						 nOptionPars		:= 0);			
+						 
+fbFrequency.Call(	bResetStatistics		:= bResetStatistics);
+
+fbBasicValues.Call(	fFreq					:= fbFrequency.aFreq[0], 
+					bResetStatistics		:= bResetStatistics);
+					
+fbPowerValues.Call(	fFreq					:= fbFrequency.aFreq[0], 
+					bResetEnergyCalc 		:= FALSE, 
+					bResetStatistics		:= bResetStatistics);
+					
+fbHarmonics.Call(	fFreq					:= fbFrequency.aFreq[0],
+					pHarmonicsRMS_UL1 		:= ADR(aHarmonicsPed[0]),
+					pHarmonicsRMS_UL2 		:= ADR(aHarmonicsPed[1]),
+					pHarmonicsRMS_UL3 		:= ADR(aHarmonicsPed[2]),
+					pHarmonicsRMS_IL1 		:= ADR(aHarmonicsPed[3]),
+					pHarmonicsRMS_IL2 		:= ADR(aHarmonicsPed[4]),
+					pHarmonicsRMS_IL3 		:= ADR(aHarmonicsPed[5]),
+					nHarmonicsRMSSize 		:= SIZEOF(aHarmonicsPed[0]),
+					bResetStatistics		:= bResetStatistics);
+						
+
+			</xhtml>
+                </ST>
+              </body>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/interfaceasplaintext" handleUnknown="implementation">
+                  <InterfaceAsPlainText>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">PROGRAM MAIN
+VAR
+	
+	//function block
+	fbScaling					: FB_PMA_Scaling_EL3773			
+									:=( stInitPars	:= cScalingEL3773Pars);
+
+	fbSource_Period				: FB_PMA_Source_3Ph 			
+									:=( nOwnID		:= E_AnalysisIDs.Source_Period, 
+										aDestIDs	:= [E_AnalysisIDs.Frequency_Period, 
+														E_AnalysisIDs.BasicValues_Period, 
+														E_AnalysisIDs.PowerValues_Period, 
+														E_AnalysisIDs.Harmonics_Period],
+										stInitPars	:= cSource_PeriodInitPars);
+										
+	fbSource					: FB_PMA_Source_3Ph				
+									:=( nOwnID		:= E_AnalysisIDs.Source, 
+										aDestIDs	:= [E_AnalysisIDs.PowerValues, 
+														E_AnalysisIDs.Spectrum, 
+														E_AnalysisIDs.Harmonics], 
+										stInitPars	:= cSourceInitPars);
+										
+	fbFrequency					: FB_PMA_Frequency_Period_3Ph 	
+									:=( nOwnID		:= E_AnalysisIDs.Frequency_Period,
+										stInitPars	:= cFrequencyInitPars);
+										
+	fbBasicValues				: FB_PMA_BasicValues_Period_3Ph 
+									:=( nOwnID		:= E_AnalysisIDs.BasicValues_Period, 
+										stInitPars	:= cBasicValuesInitPars);
+										
+	fbPowerValues				: FB_PMA_PowerValues_Period_3Ph 		
+									:=( nOwnID		:= E_AnalysisIDs.PowerValues_Period, 
+										stInitPars	:= cPowerValuesPedInitPars);
+										
+	fbHarmonics					: FB_PMA_Harmonics_Period_3Ph 
+									:=( nOwnID		:= E_AnalysisIDs.Harmonics_Period, 
+										stInitPars	:= cHarmonicsPedInitPars);
+	
+	bResetStatistics			: BOOL;	
+	
+END_VAR
+</xhtml>
+                  </InterfaceAsPlainText>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>99a8caad-54a0-43ac-b1ce-7242ba00a1f9</ObjectId>
+                </data>
+              </addData>
+            </pou>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+            <pou name="MAIN_PM" pouType="program">
+              <interface>
+                <localVars>
+                  <variable name="fbPowerValues">
+                    <type>
+                      <derived name="FB_PMA_PowerValues_3Ph" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nOwnID">
+                          <simpleValue value="E_AnalysisIDs.PowerValues" />
+                        </value>
+                        <value member="stInitPars">
+                          <simpleValue value="cPowerValuesInitPars" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                  </variable>
+                  <variable name="fbSpectrum">
+                    <type>
+                      <derived name="FB_PMA_Spectrum_3Ph" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nOwnID">
+                          <simpleValue value="E_AnalysisIDs.Spectrum" />
+                        </value>
+                        <value member="stInitPars">
+                          <simpleValue value="cSpectrumInitPars" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                  </variable>
+                  <variable name="fbHarmonics">
+                    <type>
+                      <derived name="FB_PMA_Harmonics_3Ph" />
+                    </type>
+                    <initialValue>
+                      <structValue>
+                        <value member="nOwnID">
+                          <simpleValue value="E_AnalysisIDs.Harmonics" />
+                        </value>
+                        <value member="stInitPars">
+                          <simpleValue value="cHarmonicsInitPars" />
+                        </value>
+                      </structValue>
+                    </initialValue>
+                  </variable>
+                  <variable name="bResetStatistics">
+                    <type>
+                      <BOOL />
+                    </type>
+                  </variable>
+                  <variable name="bResetEnergyCalculation">
+                    <type>
+                      <BOOL />
+                    </type>
+                  </variable>
+                </localVars>
+              </interface>
+              <body>
+                <ST>
+                  <xhtml xmlns="http://www.w3.org/1999/xhtml">PRG_Calculate();
+PRG_Database();
+fbPowerValues.Call(	bResetEnergyCalc 		:= bResetEnergyCalculation,
+					bResetStatistics 		:= bResetStatistics);
+							
+fbSpectrum.Call( pMagnitudeSpectrum_UL1 	:= ADR(aSpectrum[0]),
+				pMagnitudeSpectrum_UL2 		:= ADR(aSpectrum[1]), 
+				pMagnitudeSpectrum_UL3 		:= ADR(aSpectrum[2]), 
+				pMagnitudeSpectrum_IL1 		:= ADR(aSpectrum[3]), 
+				pMagnitudeSpectrum_IL2 		:= ADR(aSpectrum[4]), 
+				pMagnitudeSpectrum_IL3 		:= ADR(aSpectrum[5]), 
+				nMagnitudeSpectrumSize 		:= SIZEOF(aSpectrum[0]));
+
+fbHarmonics.Call(	bResetStatistics 		:= bResetStatistics,
+					pHarmonicsRMS_UL1 		:= ADR(aHarmonics[0]),					
+					pHarmonicsRMS_UL2 		:= ADR(aHarmonics[1]),				
+					pHarmonicsRMS_UL3 		:= ADR(aHarmonics[2]),
+					pHarmonicsRMS_IL1 		:= ADR(aHarmonics[3]),				
+					pHarmonicsRMS_IL2 		:= ADR(aHarmonics[4]),
+					pHarmonicsRMS_IL3 		:= ADR(aHarmonics[5]),
+					nHarmonicsRMSSize 		:= SIZEOF(aHarmonics[0]));
+							</xhtml>
+                </ST>
+              </body>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/interfaceasplaintext" handleUnknown="implementation">
+                  <InterfaceAsPlainText>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">PROGRAM MAIN_PM
+VAR
+	fbPowerValues				: FB_PMA_PowerValues_3Ph 	
+									:=( nOwnID		:= E_AnalysisIDs.PowerValues, 
+										stInitPars	:= cPowerValuesInitPars);
+										
+	fbSpectrum					: FB_PMA_Spectrum_3Ph		
+									:=( nOwnID		:= E_AnalysisIDs.Spectrum, 
+										stInitPars	:= cSpectrumInitPars);
+										
+	fbHarmonics					: FB_PMA_Harmonics_3Ph	 	
+									:=( nOwnID		:= E_AnalysisIDs.Harmonics,
+										stInitPars	:= cHarmonicsInitPars);
+
+	bResetStatistics			: BOOL;	
+	bResetEnergyCalculation		: BOOL;	
+END_VAR
+</xhtml>
+                  </InterfaceAsPlainText>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>f164508e-6894-4e09-b742-a49d92ba238f</ObjectId>
+                </data>
+              </addData>
+            </pou>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+            <pou name="PRG_Calculate" pouType="program">
+              <interface>
+                <localVars>
+                  <variable name="state">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="1" />
+                    </initialValue>
+                  </variable>
+                  <variable name="m">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="1" />
+                    </initialValue>
+                  </variable>
+                  <variable name="n">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="1" />
+                    </initialValue>
+                  </variable>
+                  <variable name="i">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="1" />
+                    </initialValue>
+                  </variable>
+                  <variable name="j">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="1" />
+                    </initialValue>
+                  </variable>
+                  <variable name="k">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="1" />
+                    </initialValue>
+                  </variable>
+                  <variable name="t">
+                    <type>
+                      <UDINT />
+                    </type>
+                    <initialValue>
+                      <simpleValue value="1" />
+                    </initialValue>
+                  </variable>
+                </localVars>
+              </interface>
+              <body>
+                <ST>
+                  <xhtml xmlns="http://www.w3.org/1999/xhtml">//========== Frequency calculate ========//
+fSampleRate							  := cOversamples * (1000.0 / fSampleTaskCycleTime);
+fResolution 						  := fSampleRate / cFFTLength;	
+
+//========== Create array for HMI ========//
+IF timeArray[cScaleHMI*cOversamples] &lt;&gt; cScaleHMI*cOversamples THEN
+	FOR n := 1 TO cScaleHMI*cOversamples DO timeArray[n] := n;	END_FOR
+	FOR t := 1 TO cFFTResult 			 DO freqArray[t] := (t-1)*fResolution;	END_FOR
+END_IF
+
+IF m &lt; cScaleHMI THEN
+	FOR j := 1 TO cOversamples DO //fill first data to HMI array
+		signal_UI.aIL[1][(m-1)*10+j]  := stEL3773_1_Scaled.aIL1[j];
+		signal_UI.aIL[2][(m-1)*10+j]  := stEL3773_1_Scaled.aIL2[j];
+		signal_UI.aIL[3][(m-1)*10+j]  := stEL3773_1_Scaled.aIL3[j];
+		signal_UI.aUL[1][(m-1)*10+j]  := stEL3773_1_Scaled.aUL1[j];
+		signal_UI.aUL[2][(m-1)*10+j]  := stEL3773_1_Scaled.aUL2[j];
+		signal_UI.aUL[3][(m-1)*10+j]  := stEL3773_1_Scaled.aUL3[j];		
+	END_FOR
+	m := m + 1;
+ELSE
+	m := cScaleHMI;
+	FOR i := 1 TO cScaleHMI-1 DO
+		FOR j := 1 TO cOversamples DO //move data to 1st slot empty
+			signal_UI.aIL[1][(i-1)*10+j]	:= signal_UI.aIL[1][(i)*10+j];
+			signal_UI.aIL[2][(i-1)*10+j]	:= signal_UI.aIL[2][(i)*10+j];
+			signal_UI.aIL[3][(i-1)*10+j]	:= signal_UI.aIL[3][(i)*10+j];	
+			signal_UI.aUL[1][(i-1)*10+j]	:= signal_UI.aUL[1][(i)*10+j];
+			signal_UI.aUL[2][(i-1)*10+j]	:= signal_UI.aUL[2][(i)*10+j];
+			signal_UI.aUL[3][(i-1)*10+j]	:= signal_UI.aUL[3][(i)*10+j];				
+		END_FOR
+	END_FOR
+	FOR k := 1 TO cOversamples DO //newest data in the 1st slot
+		signal_UI.aIL[1][(m-1)*10+k]  := stEL3773_1_Scaled.aIL1[k];
+		signal_UI.aIL[2][(m-1)*10+k]  := stEL3773_1_Scaled.aIL2[k];
+		signal_UI.aIL[3][(m-1)*10+k]  := stEL3773_1_Scaled.aIL3[k];
+		signal_UI.aUL[1][(m-1)*10+k]  := stEL3773_1_Scaled.aUL1[k];
+		signal_UI.aUL[2][(m-1)*10+k]  := stEL3773_1_Scaled.aUL2[k];
+		signal_UI.aUL[3][(m-1)*10+k]  := stEL3773_1_Scaled.aUL3[k];		
+	END_FOR	
+END_IF	</xhtml>
+                </ST>
+              </body>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/interfaceasplaintext" handleUnknown="implementation">
+                  <InterfaceAsPlainText>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">PROGRAM PRG_Calculate
+VAR
+		state, m, n, i, j, k, t		: UDINT := 1;
+END_VAR
+</xhtml>
+                  </InterfaceAsPlainText>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>58eb7224-ffa4-4379-91dc-0607d1bc1b53</ObjectId>
+                </data>
+              </addData>
+            </pou>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+            <pou name="PRG_Database" pouType="program">
+              <interface>
+                <localVars>
+                  <variable name="fbSystemTime">
+                    <type>
+                      <derived name="FB_SystemTime" />
+                    </type>
+                  </variable>
+                  <variable name="bSaveData">
+                    <type>
+                      <BOOL />
+                    </type>
+                  </variable>
+                  <variable name="bLoadData">
+                    <type>
+                      <BOOL />
+                    </type>
+                  </variable>
+                  <variable name="nStateSave">
+                    <type>
+                      <INT />
+                    </type>
+                  </variable>
+                  <variable name="nStateLoad">
+                    <type>
+                      <INT />
+                    </type>
+                  </variable>
+                  <variable name="tTimer1">
+                    <type>
+                      <derived name="TON" />
+                    </type>
+                  </variable>
+                  <variable name="tTimer2">
+                    <type>
+                      <derived name="TON" />
+                    </type>
+                  </variable>
+                  <variable name="bTest">
+                    <type>
+                      <BOOL />
+                    </type>
+                  </variable>
+                  <variable name="nStateADS">
+                    <type>
+                      <INT />
+                    </type>
+                  </variable>
+                </localVars>
+              </interface>
+              <body>
+                <ST>
+                  <xhtml xmlns="http://www.w3.org/1999/xhtml">fbSystemTime();
+sCurrentTime	:= fbSystemTime.sTime;
+nCurrentSec		:= fbSystemTime.wSecond;
+CASE nStateSave OF
+	0:
+		tTimer1(IN := FALSE);
+		IF nCurrentSec = 70 OR sCurrentTime = '06:00:00' OR sCurrentTime = '14:00:00' OR sCurrentTime = '22:00:00' THEN
+			nStateSave			:= 1;
+		END_IF
+	1:
+		aFFTU1						:= aSpectrum[0];
+		aFFTU2						:= aSpectrum[1];
+		aFFTU3						:= aSpectrum[2];
+		
+		aFFTI1						:= aSpectrum[3];
+		aFFTI2						:= aSpectrum[4];
+		aFFTI3						:= aSpectrum[5];
+		
+		RMSI1						:= MAIN.fbBasicValues.aRMS_I[0]/2.44;
+		RMSI2						:= MAIN.fbBasicValues.aRMS_I[1]/2.44;
+		RMSI3						:= MAIN.fbBasicValues.aRMS_I[2]/2.44;
+		
+		RMSU1						:= MAIN.fbBasicValues.aRMS_U[0];
+		RMSU2						:= MAIN.fbBasicValues.aRMS_U[1];
+		RMSU3						:= MAIN.fbBasicValues.aRMS_U[2];		
+		
+		Frequency					:= LREAL_TO_REAL(MAIN.fbFrequency.aFreq[0]);
+		
+		bAddData					:= TRUE;
+		nStateSave					:= 2;
+	2:
+		IF NOT bAddData THEN
+			tTimer1(IN := TRUE,PT := T#2S);
+			IF tTimer1.Q THEN
+				nStateSave			:= 0;		
+			END_IF	
+		END_IF
+			
+		
+END_CASE
+
+CASE nStateADS OF
+	0:
+		IF bCheckADS THEN
+			nStateADS := 1;
+		ELSE
+			tTimer2(IN := TRUE,PT := T#5S);
+			IF tTimer2.Q THEN
+				nStateADS := 2;
+			END_IF
+		END_IF
+		
+	1:
+		bCheckADS := FALSE;
+		bError	:= FALSE;
+		tTimer2(IN := FALSE);
+		nStateADS := 0;
+	2:
+		bError := TRUE;
+		tTimer2(IN := FALSE);
+		IF bCheckADS THEN
+			nStateADS := 0;
+		END_IF
+END_CASE</xhtml>
+                </ST>
+              </body>
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/interfaceasplaintext" handleUnknown="implementation">
+                  <InterfaceAsPlainText>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">PROGRAM PRG_Database
+VAR
+	fbSystemTime			: FB_SystemTime;
+	bSaveData				: BOOL;
+	bLoadData				: BOOL;
+	nStateSave, nStateLoad	: INT;
+	tTimer1, tTimer2		: TON;
+	bTest					: BOOL;
+	nStateADS				: INT;
+END_VAR
+</xhtml>
+                  </InterfaceAsPlainText>
+                </data>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>15ffa7de-2a8f-4618-b011-b02082bc35fe</ObjectId>
+                </data>
+              </addData>
+            </pou>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/libraries" handleUnknown="implementation">
+            <Libraries>
+              <Library Name="#Tc2_Standard" Namespace="Tc2_Standard" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" DefaultResolution="Tc2_Standard, * (Beckhoff Automation GmbH)" />
+              <Library Name="#Tc2_System" Namespace="Tc2_System" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" DefaultResolution="Tc2_System, * (Beckhoff Automation GmbH)">
+                <Parameters>
+                  <Parameter Name="PARAM.TABLE_UPPER_BOUND" Value="15" />
+                  <Parameter Name="PARAM.STRING_LENGTH_EXP" Value="255" />
+                  <Parameter Name="PARAM.STRING_LENGTH_ADDRESS" Value="20" />
+                  <Parameter Name="PARAM.STRING_LENGTH_COMMENT" Value="255" />
+                  <Parameter Name="PARAM.STRING_LENGTH_OUTSTRING" Value="255" />
+                  <Parameter Name="PARAM.TABLE_SHOW_VALID_ITEMS" Value="FALSE" />
+                </Parameters>
+              </Library>
+              <Library Name="#Tc2_Utilities" Namespace="Tc2_Utilities" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" DefaultResolution="Tc2_Utilities, * (Beckhoff Automation GmbH)">
+                <Parameters>
+                  <Parameter Name="PARAMETERLIST.NMAXLICENSES" Value="50" />
+                  <Parameter Name="PARAMETERLIST.NMAXLICENSEDEVICES" Value="16" />
+                  <Parameter Name="PARAMETERLIST.NMAXCPUCOUNT" Value="64" />
+                  <Parameter Name="PARAMETERLIST.CMAXCHARACTERS" Value="16#FFFFFFF0" />
+                  <Parameter Name="PARAMETERLIST.NMAXFILESONDONGLE" Value="20" />
+                  <Parameter Name="PARAMETERLIST.CMAXCSVFIELDVALUESIZE" Value="255" />
+                </Parameters>
+              </Library>
+              <Library Name="#Tc3_Module" Namespace="Tc3_Module" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" DefaultResolution="Tc3_Module, * (Beckhoff Automation GmbH)" />
+              <Library Name="#Tc3_MultiArray" Namespace="Tc3_MultiArray" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" DefaultResolution="Tc3_MultiArray, * (Beckhoff Automation GmbH)" />
+              <Library Name="#Tc3_PowerMonitoring" Namespace="Tc3_PowerMonitoring" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" DefaultResolution="Tc3_PowerMonitoring, * (Beckhoff Automation GmbH)" />
+              <addData>
+                <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                  <ObjectId>9325446a-a775-470e-8166-864c95e6e12e</ObjectId>
+                </data>
+              </addData>
+            </Libraries>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>c2ed878d-638f-45b2-a5dd-f258da489ec9</ObjectId>
+          </data>
+        </addData>
+      </resource>
+    </data>
+    <data name="http://www.3s-software.com/plcopenxml/projectstructure" handleUnknown="discard">
+      <ProjectStructure>
+        <Object Name="PM" ObjectId="c2ed878d-638f-45b2-a5dd-f258da489ec9">
+          <Object Name="Library Manager" ObjectId="9325446a-a775-470e-8166-864c95e6e12e" />
+          <Folder Name="DUTs">
+            <Object Name="E_AnalysisIDs" ObjectId="cd18dd73-84e3-4dc8-b17e-17c7d56229f2" />
+            <Object Name="ST_EL3773_InputSamples" ObjectId="bf92805e-6e11-4fa9-9c91-a79487cfbcc4" />
+            <Object Name="ST_EL3773_InputSamples_Scaled" ObjectId="4c70ae45-8a2a-4da1-b1ba-ed18302a4175" />
+            <Object Name="ST_Signal_HMI" ObjectId="47927bc7-d342-450a-8839-bc5d8a72f9e3" />
+          </Folder>
+          <Folder Name="FBs">
+            <Object Name="FB_SystemTime" ObjectId="31552c93-32b7-4f00-a134-e901f8c7c218">
+              <Object Name="dtDateTimeFull" ObjectId="d55bf6a2-5378-4d0d-bd4a-5f9d6788fe6c" />
+              <Object Name="sDate" ObjectId="1c599e7c-ea74-4cd5-978a-1ec2ddb7ed4c" />
+              <Object Name="sDateTime" ObjectId="03f9a243-6aea-4a60-955e-ac73c22ea7e8" />
+              <Object Name="sDateTimeFull" ObjectId="bd750e46-94af-4a5c-9fa8-045960809265" />
+              <Object Name="sDayOfWeek" ObjectId="fc363c62-735b-4c86-a93f-1f2138738875" />
+              <Object Name="sTime" ObjectId="4fe46746-6e68-4dd1-930f-748eaea121ea" />
+              <Object Name="wDay" ObjectId="286f771c-0932-4030-bf78-bcb551a2b48e" />
+              <Object Name="wHour" ObjectId="a4f3c154-2011-43b4-a917-80acff9d0ab3" />
+              <Object Name="wMilliSeconds" ObjectId="179e4f99-e501-41dd-b893-b4b386b545c4" />
+              <Object Name="wMinute" ObjectId="7628e342-7dc7-45cb-abae-e59d54e08b33" />
+              <Object Name="wMonth" ObjectId="3319d4ec-f4d3-40ca-b2e3-cc7bdb570352" />
+              <Object Name="wSecond" ObjectId="7fc37835-33d7-4beb-9c8c-f2a2158b0cba" />
+              <Object Name="wYear" ObjectId="0228e2b4-a364-46e1-8420-7b6362967808" />
+            </Object>
+          </Folder>
+          <Folder Name="GVLs">
+            <Object Name="GVL" ObjectId="3d3d8d26-d796-4716-8d9f-39d63b484f11" />
+            <Object Name="GVL_ADS" ObjectId="660a65a7-771a-4a5f-9571-510211e81f66" />
+          </Folder>
+          <Object Name="PlcTask" ObjectId="7b793146-eeb2-4ab5-a2c4-f00364135916" />
+          <Object Name="PlcTaskPM" ObjectId="25b7620b-3fa3-4a0f-b804-3bef393c6589" />
+          <Folder Name="MAIN">
+            <Object Name="MAIN" ObjectId="99a8caad-54a0-43ac-b1ce-7242ba00a1f9">
+              <Object Name="Scale" ObjectId="58cc3a1c-e80b-47ea-8ed5-8d1731d06f8b" />
+            </Object>
+            <Object Name="MAIN_PM" ObjectId="f164508e-6894-4e09-b742-a49d92ba238f" />
+          </Folder>
+          <Folder Name="PRGs">
+            <Object Name="PRG_Calculate" ObjectId="58eb7224-ffa4-4379-91dc-0607d1bc1b53" />
+            <Object Name="PRG_Database" ObjectId="15ffa7de-2a8f-4618-b011-b02082bc35fe" />
+          </Folder>
+          <Object Name="TaskCalc" ObjectId="707d81dc-827d-4a78-8816-329bdcca102b" />
+        </Object>
+      </ProjectStructure>
+    </data>
+  </addData>
+</project>

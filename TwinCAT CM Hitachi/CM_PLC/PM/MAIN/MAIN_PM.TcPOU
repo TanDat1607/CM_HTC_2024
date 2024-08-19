@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN_PM" Id="{f164508e-6894-4e09-b742-a49d92ba238f}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN_PM
+VAR
+	fbPowerValues				: FB_PMA_PowerValues_3Ph 	
+									:=( nOwnID		:= E_AnalysisIDs.PowerValues, 
+										stInitPars	:= cPowerValuesInitPars);
+										
+	fbSpectrum					: FB_PMA_Spectrum_3Ph		
+									:=( nOwnID		:= E_AnalysisIDs.Spectrum, 
+										stInitPars	:= cSpectrumInitPars);
+										
+	fbHarmonics					: FB_PMA_Harmonics_3Ph	 	
+									:=( nOwnID		:= E_AnalysisIDs.Harmonics,
+										stInitPars	:= cHarmonicsInitPars);
+
+	bResetStatistics			: BOOL;	
+	bResetEnergyCalculation		: BOOL;	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[PRG_Calculate();
+PRG_Database();
+fbPowerValues.Call(	bResetEnergyCalc 		:= bResetEnergyCalculation,
+					bResetStatistics 		:= bResetStatistics);
+							
+fbSpectrum.Call( pMagnitudeSpectrum_UL1 	:= ADR(aSpectrum[0]),
+				pMagnitudeSpectrum_UL2 		:= ADR(aSpectrum[1]), 
+				pMagnitudeSpectrum_UL3 		:= ADR(aSpectrum[2]), 
+				pMagnitudeSpectrum_IL1 		:= ADR(aSpectrum[3]), 
+				pMagnitudeSpectrum_IL2 		:= ADR(aSpectrum[4]), 
+				pMagnitudeSpectrum_IL3 		:= ADR(aSpectrum[5]), 
+				nMagnitudeSpectrumSize 		:= SIZEOF(aSpectrum[0]));
+
+fbHarmonics.Call(	bResetStatistics 		:= bResetStatistics,
+					pHarmonicsRMS_UL1 		:= ADR(aHarmonics[0]),					
+					pHarmonicsRMS_UL2 		:= ADR(aHarmonics[1]),				
+					pHarmonicsRMS_UL3 		:= ADR(aHarmonics[2]),
+					pHarmonicsRMS_IL1 		:= ADR(aHarmonics[3]),				
+					pHarmonicsRMS_IL2 		:= ADR(aHarmonics[4]),
+					pHarmonicsRMS_IL3 		:= ADR(aHarmonics[5]),
+					nHarmonicsRMSSize 		:= SIZEOF(aHarmonics[0]));
+							]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN_PM">
+      <LineId Id="48" Count="0" />
+      <LineId Id="66" Count="0" />
+      <LineId Id="12" Count="0" />
+      <LineId Id="5" Count="0" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="15" Count="5" />
+      <LineId Id="14" Count="0" />
+      <LineId Id="22" Count="7" />
+      <LineId Id="21" Count="0" />
+      <LineId Id="30" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

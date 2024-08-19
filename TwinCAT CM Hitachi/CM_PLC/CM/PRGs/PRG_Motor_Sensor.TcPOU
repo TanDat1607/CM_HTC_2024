@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="PRG_Motor_Sensor" Id="{fb82d031-f928-4fe6-805c-8e0d308a101b}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_Motor_Sensor
+VAR CONSTANT
+	Run_Address		: WORD := 8000;
+	Freq_Address	: WORD := 8000;
+END_VAR	
+VAR
+	//Motor
+	Run_Value		: WORD;
+	Freq_Value		: WORD;
+	// Sensor
+	Rev_T		: R_TRIG;
+	state_ss	: INT;
+	pulse		: INT;
+	i			: INT := 1;
+	data		: INT;
+	rpm			: REAL;
+	timer		: TON;
+	FB_Modbus	: FB_ModbusRTU;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Motor();
+Sensor();
+
+MbusRtuVar.aConnect[0].UnitID 		:= 1;
+
+MbusRtuVar.aSymbol[0][0].Address 	:= Run_Address;
+MbusRtuVar.aSymbol[0][0].Quantity 	:= 1;
+MbusRtuVar.aSymbol[0][0].RegType 	:= 4;
+MbusRtuVar.aSymbol[0][0].IsWrite 	:= TRUE;
+MbusRtuVar.aSymbol[0][0].WriteVal 	:= Run_Value;
+
+MbusRtuVar.aSymbol[0][1].Address 	:= Freq_Address;
+MbusRtuVar.aSymbol[0][1].Quantity 	:= 1;
+MbusRtuVar.aSymbol[0][1].RegType 	:= 4;
+MbusRtuVar.aSymbol[0][1].IsWrite 	:= TRUE;
+MbusRtuVar.aSymbol[0][1].WriteVal 	:= Freq_Value;
+
+MbusRtuVar.nHardwareType			:= 2;
+
+FB_Modbus(
+	aConnect		:= MbusRtuVar.aConnect[0], 
+	aSymbol			:= MbusRtuVar.aSymbol[0], 
+	bExecute		:= MbusRtuVar.bExecute, 
+	bStop			:= MbusRtuVar.bStop, 
+	bReset			:= MbusRtuVar.bReset, 
+	tDelayTime		:= MbusRtuVar.tDelayTime, 
+	tCycleTime		:= MbusRtuVar.tCycleTime, 
+	nHardwareType	:= MbusRtuVar.nHardwareType, 
+	aValue			=> MbusRtuVar.aValue[0], 
+	bError			=> MbusRtuVar.bError, 
+	sErrorTxt		=> MbusRtuVar.sErrorTxt, 
+	nErrorId		=> MbusRtuVar.nErrorId);
+	]]></ST>
+    </Implementation>
+    <Action Name="Motor" Id="{00535d9d-e168-4f2f-a21e-71315020fd40}">
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Action>
+    <Action Name="Sensor" Id="{b2578ac5-aa78-464e-b21a-a21f3ef4fc59}">
+      <Implementation>
+        <ST><![CDATA[Rev_T( CLK := bRev);
+IF Rev_T.Q THEN
+	pulse	:= pulse + 1;	
+END_IF
+CASE state_ss OF
+	0:
+		timer( IN := TRUE, PT := T#1S);
+		IF timer.Q THEN
+			data  := pulse;
+			timer( IN := FALSE);
+			state_ss := 1;
+		END_IF
+	1:
+		rpm	:= data*60;
+		pulse	:= 0;
+		state_ss := 0;
+END_CASE
+iActSpeed	:= REAL_TO_INT(rpm);]]></ST>
+      </Implementation>
+    </Action>
+    <LineIds Name="PRG_Motor_Sensor">
+      <LineId Id="35" Count="0" />
+      <LineId Id="85" Count="0" />
+      <LineId Id="116" Count="0" />
+      <LineId Id="115" Count="0" />
+      <LineId Id="134" Count="0" />
+      <LineId Id="119" Count="0" />
+      <LineId Id="130" Count="3" />
+      <LineId Id="135" Count="0" />
+      <LineId Id="121" Count="0" />
+      <LineId Id="136" Count="2" />
+      <LineId Id="129" Count="0" />
+      <LineId Id="139" Count="0" />
+      <LineId Id="117" Count="0" />
+      <LineId Id="101" Count="12" />
+      <LineId Id="88" Count="0" />
+      <LineId Id="114" Count="0" />
+    </LineIds>
+    <LineIds Name="PRG_Motor_Sensor.Motor">
+      <LineId Id="1" Count="0" />
+    </LineIds>
+    <LineIds Name="PRG_Motor_Sensor.Sensor">
+      <LineId Id="3" Count="16" />
+      <LineId Id="1" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

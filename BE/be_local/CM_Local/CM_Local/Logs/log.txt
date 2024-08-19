@@ -1,0 +1,1149 @@
+04/04/2024 15:33:15: Insert Data Point_1
+04/04/2024 15:33:15: INSERT Point_1 Failed
+04/04/2024 15:33:15: INSERT Point_1 Completed
+04/04/2024 15:33:15: Insert Data Point_2
+04/04/2024 15:33:15: Insert Data Point_2
+04/04/2024 15:33:15: INSERT Point_2 Failed
+04/04/2024 15:33:15: INSERT Point_2 Completed
+04/04/2024 15:44:14: Insert Data Point_1
+04/04/2024 15:44:14: INSERT Point_1 Failed
+04/04/2024 15:44:14: INSERT Point_1 Completed
+04/04/2024 15:44:14: Insert Data Point_2
+04/04/2024 15:44:14: Insert Data Point_2
+04/04/2024 15:44:14: INSERT Point_2 Completed
+04/04/2024 15:44:14: INSERT Point_2 Failed
+04/04/2024 15:47:01: Insert Data Point_1
+04/04/2024 15:49:00: INSERT Point_1 Completed
+04/04/2024 15:49:49: Insert Data Point_1
+04/04/2024 15:50:08: INSERT Point_1 Completed
+04/04/2024 15:50:48: Insert Data Point_2
+04/04/2024 15:50:50: INSERT Point_2 Completed
+04/04/2024 15:51:09: Insert Data Point_1
+04/04/2024 15:51:09: Insert Data Point_1
+04/04/2024 15:51:41: INSERT Point_1 Completed
+04/04/2024 15:51:41: INSERT Point_1 Failed
+04/04/2024 15:51:41: Insert Data Point_2
+04/04/2024 15:51:41: Insert Data Point_2
+04/04/2024 15:51:41: INSERT Point_2 Completed
+04/04/2024 15:51:41: INSERT Point_2 Failed
+04/04/2024 15:52:11: Insert Data Point_1
+04/04/2024 15:52:11: Insert Data Point_1
+04/04/2024 15:52:11: INSERT Point_1 Completed
+04/04/2024 15:52:11: INSERT Point_1 Failed
+04/04/2024 15:52:11: Insert Data Point_2
+04/04/2024 15:52:11: Insert Data Point_2
+04/04/2024 15:52:11: INSERT Point_2 Completed
+04/04/2024 15:52:11: INSERT Point_2 Failed
+05/04/2024 11:06:46: ReadData Point_1-DateTime:2024-03-18 15:33
+11/07/2024 11:30:20: Insert Data Current
+11/07/2024 11:30:21: Invalid operation. The connection is closed.
+11/07/2024 11:30:21: INSERT Current Failed
+11/07/2024 11:30:21: Insert Data Voltage
+11/07/2024 11:30:21: Invalid operation. The connection is closed.
+11/07/2024 11:30:21: INSERT Voltage Failed
+11/07/2024 11:30:22: Insert Data Point_1
+11/07/2024 11:30:22: INSERT Point_1 Completed
+11/07/2024 11:30:22: Insert Data Point_2
+11/07/2024 11:30:22: INSERT Point_2 Completed
+11/07/2024 11:34:22: Insert Data Current
+11/07/2024 11:34:23: Invalid operation. The connection is closed.
+11/07/2024 11:34:23: INSERT Current Failed
+11/07/2024 11:34:23: Insert Data Voltage
+11/07/2024 11:34:23: Invalid operation. The connection is closed.
+11/07/2024 11:34:23: INSERT Voltage Failed
+11/07/2024 11:39:10: Insert Data Current
+11/07/2024 11:39:10: INSERT Current Completed
+11/07/2024 11:39:10: Insert Data Voltage
+11/07/2024 11:39:10: INSERT Voltage Completed
+11/07/2024 11:40:38: Insert Data Point_1
+11/07/2024 11:40:39: INSERT Point_1 Completed
+11/07/2024 11:40:39: Insert Data Point_2
+11/07/2024 11:40:39: INSERT Point_2 Completed
+11/07/2024 11:40:40: Insert Data Current
+11/07/2024 11:40:40: INSERT Current Completed
+11/07/2024 11:40:40: Insert Data Voltage
+11/07/2024 11:40:40: INSERT Voltage Completed
+11/07/2024 15:02:11: Insert Data Point_1
+11/07/2024 15:02:11: Insert Data Current
+11/07/2024 15:02:11: Invalid operation. The connection is closed.
+11/07/2024 15:02:11: INSERT Current Failed
+11/07/2024 15:02:11: Insert Data Voltage
+11/07/2024 15:02:11: Invalid operation. The connection is closed.
+11/07/2024 15:02:11: INSERT Voltage Failed
+11/07/2024 15:02:11: INSERT Point_1 Completed
+11/07/2024 15:02:11: Insert Data Point_2
+11/07/2024 15:02:11: INSERT Point_2 Completed
+11/07/2024 15:07:47: Insert Data Point_1
+11/07/2024 15:07:48: INSERT Point_1 Completed
+11/07/2024 15:07:48: Insert Data Point_2
+11/07/2024 15:07:48: INSERT Point_2 Completed
+11/07/2024 15:07:48: Insert Data Current
+11/07/2024 15:07:48: INSERT Current Completed
+11/07/2024 15:07:48: Insert Data Voltage
+11/07/2024 15:07:48: INSERT Voltage Completed
+25/07/2024 16:46:38: Connect DB successed
+26/07/2024 10:29:26: Connect DB successed
+26/07/2024 10:31:17: Connect DB successed
+26/07/2024 10:31:39: Insert Data Current
+26/07/2024 10:31:39: INSERT Current Completed
+26/07/2024 10:31:39: Insert Data Voltage
+26/07/2024 10:31:40: INSERT Voltage Completed
+26/07/2024 10:34:03: Insert Data Point_1
+26/07/2024 10:34:03: The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated.
+26/07/2024 10:34:03: INSERT Point_1 Failed
+26/07/2024 10:34:04: Insert Data Point_2
+26/07/2024 10:34:04: The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated.
+26/07/2024 10:34:04: INSERT Point_2 Failed
+26/07/2024 10:40:07: Connect DB successed
+26/07/2024 10:40:07: Connect DB successed
+26/07/2024 10:40:35: Insert Data Point_1
+26/07/2024 10:40:35: The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated.
+26/07/2024 10:40:35: INSERT Point_1 Failed
+26/07/2024 10:40:35: Insert Point 1 succeeded
+26/07/2024 10:40:35: Insert Data Point_2
+26/07/2024 10:40:36: The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated.
+26/07/2024 10:40:36: INSERT Point_2 Failed
+26/07/2024 10:40:36: Insert Point 2 succeeded
+26/07/2024 10:41:34: Insert Data Current
+26/07/2024 10:41:35: INSERT Current Completed
+26/07/2024 10:41:35: Insert Data Voltage
+26/07/2024 10:41:35: INSERT Voltage Completed
+26/07/2024 10:41:35: Insert Current succeeded
+26/07/2024 10:41:35: Insert Voltage succeeded
+26/07/2024 10:42:54: Connect DB successed
+26/07/2024 10:42:54: Get sync Point 1 succeeded
+26/07/2024 10:45:49: Connect DB successed
+26/07/2024 10:45:49: Connect DB successed
+26/07/2024 10:45:57: Connect DB successed
+26/07/2024 10:45:58: Get sync Point 1 succeeded
+26/07/2024 10:46:22: Connect DB successed
+26/07/2024 10:46:22: Get sync Point 2 succeeded
+26/07/2024 10:52:12: Connect DB successed
+26/07/2024 10:52:12: Connect DB successed
+26/07/2024 10:52:25: Insert Point 1 succeeded
+26/07/2024 10:52:25: Insert Point 2 succeeded
+26/07/2024 12:35:31: Connect DB successed
+26/07/2024 12:35:31: Connect DB successed
+26/07/2024 12:35:49: Insert Point 1 succeeded
+26/07/2024 12:35:49: Insert Point 2 succeeded
+26/07/2024 12:35:52: Insert Point 1 succeeded
+26/07/2024 12:35:52: Insert Point 2 succeeded
+26/07/2024 12:35:58: Insert Current succeeded
+26/07/2024 12:35:58: Insert Voltage succeeded
+26/07/2024 12:36:00: Insert Current succeeded
+26/07/2024 12:36:00: Insert Voltage succeeded
+26/07/2024 12:36:36: Connect DB successed
+26/07/2024 12:36:36: Get sync Point 1 succeeded
+26/07/2024 12:37:00: Connect DB successed
+26/07/2024 14:31:09: Connect DB successed
+26/07/2024 14:31:21: Connect DB successed
+26/07/2024 14:31:29: Connect DB successed
+26/07/2024 14:31:29: Get sync Point 2 succeeded
+26/07/2024 16:04:33: Connect DB successed
+26/07/2024 16:04:33: Connect DB successed
+26/07/2024 16:04:38: Connect DB successed
+26/07/2024 16:04:39: Get sync Point 1 succeeded
+26/07/2024 16:04:46: Connect DB successed
+26/07/2024 16:10:24: Connect DB successed
+26/07/2024 16:10:24: Connect DB successed
+26/07/2024 16:10:30: Connect DB successed
+26/07/2024 16:10:30: System.FormatException: Element 'DateTime' does not match any field or property of class CM_Local.Entity.Current.
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeClass(BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Driver.Core.Operations.CursorBatchDeserializationHelper.DeserializeBatch[TDocument](RawBsonArray batch, IBsonSerializer`1 documentSerializer, MessageEncoderSettings messageEncoderSettings)
+   at MongoDB.Driver.Core.Operations.FindOperation`1.CreateFirstCursorBatch(BsonDocument cursorDocument)
+   at MongoDB.Driver.Core.Operations.FindOperation`1.CreateCursor(IChannelSourceHandle channelSource, IChannelHandle channel, BsonDocument commandResult)
+   at MongoDB.Driver.Core.Operations.FindOperation`1.Execute(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.FindOperation`1.Execute(IReadBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperation[TResult](IReadBinding binding, IReadOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperation[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperation[TResult](IClientSessionHandle session, IReadOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.FindSync[TProjection](IClientSessionHandle session, FilterDefinition`1 filter, FindOptions`2 options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.<>c__DisplayClass52_0`1.<FindSync>b__0(IClientSessionHandle session)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSession[TResult](Func`2 func, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.FindSync[TProjection](FilterDefinition`1 filter, FindOptions`2 options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.ToCursor(CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToList[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at CM_Local.ConnectDB.ConnectMongo.GetSyncCurrent() in C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\ConnectDB\ConnectMongo.cs:line 59
+   at CM_Local.Controllers.pmController.SyncCurrent() in C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Source\C#_Database\be_CM_Local_NET7\CM_Local\CM_Local\Controllers\pmController.cs:line 21
+26/07/2024 16:12:32: Connect DB successed
+26/07/2024 16:12:32: Get sync Current succeeded
+26/07/2024 16:12:32: aaa
+26/07/2024 16:12:54: Connect DB successed
+26/07/2024 16:12:54: Get sync Voltage succeeded
+30/07/2024 16:11:06: Connect DB successed
+30/07/2024 16:11:06: Connect DB successed
+30/07/2024 16:14:35: Insert Current succeeded
+30/07/2024 16:14:35: Insert Voltage succeeded
+30/07/2024 16:14:51: Insert Point 1 succeeded
+30/07/2024 16:14:51: Insert Point 2 succeeded
+30/07/2024 16:14:53: Insert Point 1 succeeded
+30/07/2024 16:14:53: Insert Point 2 succeeded
+30/07/2024 16:25:24: Connect DB successed
+30/07/2024 16:25:24: Connect DB successed
+30/07/2024 16:31:15: Connect DB successed
+30/07/2024 16:31:16: Get sync Point 1 succeeded
+30/07/2024 16:31:16: Call sync Point 1
+30/07/2024 16:40:25: Connect DB successed
+30/07/2024 16:40:25: Get sync Point 1 succeeded
+30/07/2024 16:40:25: Call sync Point 1
+30/07/2024 16:40:25: Connect DB successed
+30/07/2024 16:40:25: Get sync Current succeeded
+30/07/2024 16:40:25: aaa
+30/07/2024 16:40:25: Connect DB successed
+30/07/2024 16:40:25: Get sync Point 2 succeeded
+30/07/2024 16:40:26: Connect DB successed
+30/07/2024 16:40:26: Get sync Voltage succeeded
+30/07/2024 16:40:30: Connect DB successed
+30/07/2024 16:40:30: Get sync Point 1 succeeded
+30/07/2024 16:40:30: Call sync Point 1
+30/07/2024 16:40:30: Connect DB successed
+30/07/2024 16:40:30: Connect DB successed
+30/07/2024 16:40:30: Get sync Current succeeded
+30/07/2024 16:40:30: aaa
+30/07/2024 16:40:30: Connect DB successed
+30/07/2024 16:40:30: Get sync Voltage succeeded
+30/07/2024 16:40:30: Get sync Point 2 succeeded
+30/07/2024 16:40:35: Connect DB successed
+30/07/2024 16:40:35: Connect DB successed
+30/07/2024 16:40:35: Get sync Current succeeded
+30/07/2024 16:40:35: aaa
+30/07/2024 16:40:35: Connect DB successed
+30/07/2024 16:40:35: Get sync Voltage succeeded
+30/07/2024 16:40:35: Call sync Point 1
+30/07/2024 16:40:35: Connect DB successed
+30/07/2024 16:40:35: Get sync Point 2 succeeded
+30/07/2024 16:40:40: Connect DB successed
+30/07/2024 16:40:40: Connect DB successed
+30/07/2024 16:40:40: Get sync Point 1 succeeded
+30/07/2024 16:40:40: Get sync Current succeeded
+30/07/2024 16:40:40: aaa
+30/07/2024 16:40:40: Connect DB successed
+30/07/2024 16:40:40: Get sync Voltage succeeded
+30/07/2024 16:40:40: Get sync Point 2 succeeded
+30/07/2024 16:40:45: Connect DB successed
+30/07/2024 16:40:45: Connect DB successed
+30/07/2024 16:40:45: Get sync Point 1 succeeded
+30/07/2024 16:40:45: Call sync Point 1
+30/07/2024 16:40:45: Get sync Current succeeded
+30/07/2024 16:40:45: aaa
+30/07/2024 16:40:45: Connect DB successed
+30/07/2024 16:40:45: Connect DB successed
+30/07/2024 16:40:45: Get sync Point 2 succeeded
+30/07/2024 16:40:45: Get sync Voltage succeeded
+30/07/2024 16:40:50: Connect DB successed
+30/07/2024 16:40:50: Get sync Point 1 succeeded
+30/07/2024 16:40:50: Call sync Point 1
+30/07/2024 16:40:50: Connect DB successed
+30/07/2024 16:40:50: aaa
+30/07/2024 16:40:50: Get sync Point 2 succeeded
+30/07/2024 16:40:50: Get sync Voltage succeeded
+30/07/2024 16:40:55: Connect DB successed
+30/07/2024 16:40:55: Get sync Point 1 succeeded
+30/07/2024 16:40:55: Call sync Point 1
+30/07/2024 16:40:55: Connect DB successed
+30/07/2024 16:40:55: Get sync Point 2 succeeded
+30/07/2024 16:40:55: Get sync Current succeeded
+30/07/2024 16:40:55: aaa
+30/07/2024 16:40:55: Connect DB successed
+30/07/2024 16:40:55: Get sync Voltage succeeded
+30/07/2024 16:40:55: Insert Point 1 succeeded
+30/07/2024 16:40:55: Insert Point 2 succeeded
+30/07/2024 16:40:57: Insert Point 1 succeeded
+30/07/2024 16:40:57: Insert Point 2 succeeded
+30/07/2024 16:41:00: Connect DB successed
+30/07/2024 16:41:00: Get sync Point 1 succeeded
+30/07/2024 16:41:00: Call sync Point 1
+30/07/2024 16:41:00: Connect DB successed
+30/07/2024 16:41:00: Get sync Point 2 succeeded
+30/07/2024 16:41:00: Get sync Current succeeded
+30/07/2024 16:41:00: aaa
+30/07/2024 16:41:00: Connect DB successed
+30/07/2024 16:41:00: Get sync Voltage succeeded
+30/07/2024 16:41:04: Connect DB successed
+30/07/2024 16:41:04: Get sync Current succeeded
+30/07/2024 16:41:04: aaa
+30/07/2024 16:41:04: Get sync Point 1 succeeded
+30/07/2024 16:41:04: Call sync Point 1
+30/07/2024 16:41:04: Connect DB successed
+30/07/2024 16:41:04: Get sync Point 2 succeeded
+30/07/2024 16:41:04: Get sync Voltage succeeded
+30/07/2024 16:41:08: Connect DB successed
+30/07/2024 16:41:08: Connect DB successed
+30/07/2024 16:41:08: Get sync Point 1 succeeded
+30/07/2024 16:41:08: Call sync Point 1
+30/07/2024 16:41:08: Get sync Current succeeded
+30/07/2024 16:41:08: aaa
+30/07/2024 16:41:08: Connect DB successed
+30/07/2024 16:41:08: Connect DB successed
+30/07/2024 16:41:09: Get sync Voltage succeeded
+30/07/2024 16:41:13: Connect DB successed
+30/07/2024 16:41:13: Connect DB successed
+30/07/2024 16:41:13: Get sync Current succeeded
+30/07/2024 16:41:13: aaa
+30/07/2024 16:41:14: Connect DB successed
+30/07/2024 16:41:14: Get sync Voltage succeeded
+30/07/2024 16:41:14: Get sync Point 1 succeeded
+30/07/2024 16:41:14: Call sync Point 1
+30/07/2024 16:41:14: Connect DB successed
+30/07/2024 16:41:14: Get sync Point 2 succeeded
+30/07/2024 16:41:18: Connect DB successed
+30/07/2024 16:41:18: Get sync Point 1 succeeded
+30/07/2024 16:41:18: Call sync Point 1
+30/07/2024 16:41:18: Get sync Current succeeded
+30/07/2024 16:41:18: Connect DB successed
+30/07/2024 16:41:19: Get sync Point 2 succeeded
+30/07/2024 16:41:19: Connect DB successed
+30/07/2024 16:41:19: Get sync Voltage succeeded
+30/07/2024 16:41:23: Connect DB successed
+30/07/2024 16:41:23: Get sync Point 1 succeeded
+30/07/2024 16:41:23: Call sync Point 1
+30/07/2024 16:41:23: Connect DB successed
+30/07/2024 16:41:23: Get sync Current succeeded
+30/07/2024 16:41:23: aaa
+30/07/2024 16:41:24: Get sync Point 2 succeeded
+30/07/2024 16:41:24: Connect DB successed
+30/07/2024 16:41:24: Get sync Voltage succeeded
+30/07/2024 16:41:28: Connect DB successed
+30/07/2024 16:41:28: Get sync Point 1 succeeded
+30/07/2024 16:41:28: Call sync Point 1
+30/07/2024 16:41:29: Connect DB successed
+30/07/2024 16:41:29: Get sync Current succeeded
+30/07/2024 16:41:29: aaa
+30/07/2024 16:41:29: Connect DB successed
+30/07/2024 16:41:29: Get sync Voltage succeeded
+30/07/2024 16:41:29: Get sync Point 2 succeeded
+30/07/2024 16:41:33: Connect DB successed
+30/07/2024 16:41:33: Get sync Current succeeded
+30/07/2024 16:41:33: aaa
+30/07/2024 16:41:33: Call sync Point 1
+30/07/2024 16:41:34: Connect DB successed
+30/07/2024 16:41:34: Get sync Point 2 succeeded
+30/07/2024 16:41:34: Connect DB successed
+30/07/2024 16:41:34: Get sync Voltage succeeded
+30/07/2024 16:41:38: Connect DB successed
+30/07/2024 16:41:38: Get sync Current succeeded
+30/07/2024 16:41:38: aaa
+30/07/2024 16:41:38: Get sync Point 1 succeeded
+30/07/2024 16:41:39: Call sync Point 1
+30/07/2024 16:41:39: Connect DB successed
+30/07/2024 16:41:39: Connect DB successed
+30/07/2024 16:41:39: Get sync Point 2 succeeded
+30/07/2024 16:41:43: Connect DB successed
+30/07/2024 16:41:43: Get sync Point 1 succeeded
+30/07/2024 16:41:43: Call sync Point 1
+30/07/2024 16:41:43: Connect DB successed
+30/07/2024 16:41:44: Get sync Point 2 succeeded
+30/07/2024 16:41:44: aaa
+30/07/2024 16:41:44: Connect DB successed
+30/07/2024 16:41:44: Get sync Voltage succeeded
+30/07/2024 16:41:48: Connect DB successed
+30/07/2024 16:41:48: Get sync Current succeeded
+30/07/2024 16:41:48: aaa
+30/07/2024 16:41:49: Get sync Point 1 succeeded
+30/07/2024 16:41:49: Call sync Point 1
+30/07/2024 16:41:49: Connect DB successed
+30/07/2024 16:41:49: Connect DB successed
+30/07/2024 16:41:49: Get sync Voltage succeeded
+30/07/2024 16:41:49: Get sync Point 2 succeeded
+30/07/2024 16:41:53: Connect DB successed
+30/07/2024 16:41:53: Connect DB successed
+30/07/2024 16:41:53: Get sync Point 1 succeeded
+30/07/2024 16:41:53: Call sync Point 1
+30/07/2024 16:41:54: aaa
+30/07/2024 16:41:54: Connect DB successed
+30/07/2024 16:41:54: Get sync Point 2 succeeded
+30/07/2024 16:41:54: Get sync Voltage succeeded
+30/07/2024 16:41:58: Connect DB successed
+30/07/2024 16:41:58: Connect DB successed
+30/07/2024 16:41:58: Connect DB successed
+30/07/2024 16:41:59: Get sync Point 2 succeeded
+30/07/2024 16:41:59: Get sync Current succeeded
+30/07/2024 16:41:59: aaa
+30/07/2024 16:41:59: Connect DB successed
+30/07/2024 16:41:59: Get sync Voltage succeeded
+30/07/2024 16:42:03: Connect DB successed
+30/07/2024 16:42:03: Get sync Current succeeded
+30/07/2024 16:42:04: Get sync Point 1 succeeded
+30/07/2024 16:42:04: Call sync Point 1
+30/07/2024 16:42:04: Connect DB successed
+30/07/2024 16:42:04: Connect DB successed
+30/07/2024 16:42:04: Get sync Point 2 succeeded
+30/07/2024 16:42:04: Get sync Voltage succeeded
+30/07/2024 16:42:08: Connect DB successed
+30/07/2024 16:42:09: Get sync Current succeeded
+30/07/2024 16:42:09: aaa
+30/07/2024 16:42:09: Connect DB successed
+30/07/2024 16:42:09: Get sync Voltage succeeded
+30/07/2024 16:42:09: Get sync Point 1 succeeded
+30/07/2024 16:42:09: Call sync Point 1
+30/07/2024 16:42:09: Connect DB successed
+30/07/2024 16:42:09: Get sync Point 2 succeeded
+30/07/2024 16:42:13: Connect DB successed
+30/07/2024 16:42:13: Get sync Current succeeded
+30/07/2024 16:42:14: Get sync Point 1 succeeded
+30/07/2024 16:42:14: Call sync Point 1
+30/07/2024 16:42:14: Connect DB successed
+30/07/2024 16:42:14: Connect DB successed
+30/07/2024 16:42:14: Get sync Point 2 succeeded
+30/07/2024 16:42:14: Get sync Voltage succeeded
+30/07/2024 16:42:18: Connect DB successed
+30/07/2024 16:42:18: Get sync Point 1 succeeded
+30/07/2024 16:42:19: Call sync Point 1
+30/07/2024 16:42:19: aaa
+30/07/2024 16:42:19: Connect DB successed
+30/07/2024 16:42:19: Get sync Voltage succeeded
+30/07/2024 16:42:23: Connect DB successed
+30/07/2024 16:42:23: Get sync Point 1 succeeded
+30/07/2024 16:42:24: Call sync Point 1
+30/07/2024 16:42:24: aaa
+30/07/2024 16:42:24: Connect DB successed
+30/07/2024 16:42:24: Get sync Point 2 succeeded
+30/07/2024 16:42:24: Get sync Voltage succeeded
+30/07/2024 16:42:28: Connect DB successed
+30/07/2024 16:42:29: Get sync Current succeeded
+30/07/2024 16:42:29: aaa
+30/07/2024 16:42:29: Get sync Point 1 succeeded
+30/07/2024 16:42:29: Call sync Point 1
+30/07/2024 16:42:29: Connect DB successed
+30/07/2024 16:42:29: Get sync Point 2 succeeded
+30/07/2024 16:42:33: Connect DB successed
+30/07/2024 16:42:34: Connect DB successed
+30/07/2024 16:42:34: Get sync Current succeeded
+30/07/2024 16:42:34: aaa
+30/07/2024 16:42:34: Get sync Point 1 succeeded
+30/07/2024 16:42:34: Call sync Point 1
+30/07/2024 16:42:34: Connect DB successed
+30/07/2024 16:42:34: Connect DB successed
+30/07/2024 16:42:34: Get sync Voltage succeeded
+30/07/2024 16:42:34: Get sync Point 2 succeeded
+30/07/2024 16:42:38: Connect DB successed
+30/07/2024 16:42:39: Get sync Current succeeded
+30/07/2024 16:42:39: aaa
+30/07/2024 16:42:39: Call sync Point 1
+30/07/2024 16:42:39: Connect DB successed
+30/07/2024 16:42:39: Get sync Point 2 succeeded
+30/07/2024 16:42:39: Get sync Voltage succeeded
+30/07/2024 16:42:44: Connect DB successed
+30/07/2024 16:42:44: Get sync Current succeeded
+30/07/2024 16:42:44: aaa
+30/07/2024 16:42:44: Connect DB successed
+30/07/2024 16:42:44: Get sync Voltage succeeded
+30/07/2024 16:42:44: Get sync Point 1 succeeded
+30/07/2024 16:42:44: Call sync Point 1
+30/07/2024 16:42:44: Connect DB successed
+30/07/2024 16:42:44: Get sync Point 2 succeeded
+30/07/2024 16:42:49: Connect DB successed
+30/07/2024 16:42:49: Get sync Current succeeded
+30/07/2024 16:42:49: aaa
+30/07/2024 16:42:49: Get sync Point 1 succeeded
+30/07/2024 16:42:49: Call sync Point 1
+30/07/2024 16:42:49: Connect DB successed
+30/07/2024 16:42:49: Connect DB successed
+30/07/2024 16:42:49: Get sync Voltage succeeded
+30/07/2024 16:42:49: Get sync Point 2 succeeded
+30/07/2024 16:42:54: Connect DB successed
+30/07/2024 16:42:54: Connect DB successed
+30/07/2024 16:42:54: Get sync Point 1 succeeded
+30/07/2024 16:42:54: Call sync Point 1
+30/07/2024 16:42:54: Connect DB successed
+30/07/2024 16:42:54: Get sync Point 2 succeeded
+30/07/2024 16:42:54: Get sync Current succeeded
+30/07/2024 16:42:54: aaa
+30/07/2024 16:42:54: Connect DB successed
+30/07/2024 16:42:54: Get sync Voltage succeeded
+30/07/2024 16:42:59: Connect DB successed
+30/07/2024 16:42:59: Get sync Current succeeded
+30/07/2024 16:42:59: aaa
+30/07/2024 16:42:59: Connect DB successed
+30/07/2024 16:42:59: Get sync Voltage succeeded
+30/07/2024 16:42:59: Get sync Point 1 succeeded
+30/07/2024 16:42:59: Call sync Point 1
+30/07/2024 16:42:59: Connect DB successed
+30/07/2024 16:42:59: Get sync Point 2 succeeded
+30/07/2024 16:43:04: Connect DB successed
+30/07/2024 16:43:04: Get sync Current succeeded
+30/07/2024 16:43:04: aaa
+30/07/2024 16:43:04: Connect DB successed
+30/07/2024 16:43:04: Get sync Point 1 succeeded
+30/07/2024 16:43:04: Get sync Voltage succeeded
+30/07/2024 16:43:04: Connect DB successed
+30/07/2024 16:43:04: Get sync Point 2 succeeded
+30/07/2024 16:43:09: Connect DB successed
+30/07/2024 16:43:09: Get sync Point 1 succeeded
+30/07/2024 16:43:09: Call sync Point 1
+30/07/2024 16:43:09: Get sync Current succeeded
+30/07/2024 16:43:09: aaa
+30/07/2024 16:43:09: Get sync Point 2 succeeded
+30/07/2024 16:43:09: Connect DB successed
+30/07/2024 16:43:09: Get sync Voltage succeeded
+30/07/2024 16:43:14: Connect DB successed
+30/07/2024 16:43:14: Get sync Point 1 succeeded
+30/07/2024 16:43:14: Call sync Point 1
+30/07/2024 16:43:14: aaa
+30/07/2024 16:43:14: Connect DB successed
+30/07/2024 16:43:14: Get sync Voltage succeeded
+30/07/2024 16:43:19: Connect DB successed
+30/07/2024 16:43:19: Connect DB successed
+30/07/2024 16:43:19: Get sync Current succeeded
+30/07/2024 16:43:19: Get sync Point 1 succeeded
+30/07/2024 16:43:19: Call sync Point 1
+30/07/2024 16:43:19: Connect DB successed
+30/07/2024 16:43:19: Get sync Voltage succeeded
+30/07/2024 16:43:19: Get sync Point 2 succeeded
+30/07/2024 16:43:24: Connect DB successed
+30/07/2024 16:43:24: Get sync Point 1 succeeded
+30/07/2024 16:43:24: Call sync Point 1
+30/07/2024 16:43:24: Get sync Current succeeded
+30/07/2024 16:43:24: aaa
+30/07/2024 16:43:24: Connect DB successed
+30/07/2024 16:43:24: Get sync Point 2 succeeded
+30/07/2024 16:43:24: Connect DB successed
+30/07/2024 16:43:24: Get sync Voltage succeeded
+30/07/2024 16:43:29: Connect DB successed
+30/07/2024 16:43:29: Get sync Point 1 succeeded
+30/07/2024 16:43:29: Call sync Point 1
+30/07/2024 16:43:29: Connect DB successed
+30/07/2024 16:43:29: Connect DB successed
+30/07/2024 16:43:29: aaa
+30/07/2024 16:43:29: Get sync Point 2 succeeded
+30/07/2024 16:43:29: Connect DB successed
+30/07/2024 16:43:29: Get sync Voltage succeeded
+30/07/2024 16:43:34: Connect DB successed
+30/07/2024 16:43:34: Get sync Point 1 succeeded
+30/07/2024 16:43:34: Get sync Current succeeded
+30/07/2024 16:43:34: aaa
+30/07/2024 16:43:34: Connect DB successed
+30/07/2024 16:43:34: Get sync Point 2 succeeded
+30/07/2024 16:43:34: Connect DB successed
+30/07/2024 16:43:34: Get sync Voltage succeeded
+30/07/2024 16:43:39: Connect DB successed
+30/07/2024 16:43:39: Get sync Point 1 succeeded
+30/07/2024 16:43:39: Call sync Point 1
+30/07/2024 16:43:39: Get sync Current succeeded
+30/07/2024 16:43:39: aaa
+30/07/2024 16:43:39: Connect DB successed
+30/07/2024 16:43:39: Get sync Point 2 succeeded
+30/07/2024 16:43:39: Get sync Voltage succeeded
+30/07/2024 16:43:44: Connect DB successed
+30/07/2024 16:43:44: Get sync Point 1 succeeded
+30/07/2024 16:43:44: Call sync Point 1
+30/07/2024 16:43:44: aaa
+30/07/2024 16:43:44: Connect DB successed
+30/07/2024 16:43:44: Get sync Voltage succeeded
+30/07/2024 16:43:44: Get sync Point 2 succeeded
+30/07/2024 16:43:49: Connect DB successed
+30/07/2024 16:43:49: Get sync Point 1 succeeded
+30/07/2024 16:43:49: Call sync Point 1
+30/07/2024 16:43:49: Connect DB successed
+30/07/2024 16:43:49: Get sync Point 2 succeeded
+30/07/2024 16:43:49: Get sync Current succeeded
+30/07/2024 16:43:49: aaa
+30/07/2024 16:43:49: Connect DB successed
+30/07/2024 16:43:49: Get sync Voltage succeeded
+30/07/2024 16:43:54: Connect DB successed
+30/07/2024 16:43:54: Get sync Point 1 succeeded
+30/07/2024 16:43:54: Call sync Point 1
+30/07/2024 16:43:54: aaa
+30/07/2024 16:43:54: Connect DB successed
+30/07/2024 16:43:54: Get sync Point 2 succeeded
+30/07/2024 16:43:54: Connect DB successed
+30/07/2024 16:43:54: Get sync Voltage succeeded
+30/07/2024 16:43:59: Connect DB successed
+30/07/2024 16:43:59: Get sync Current succeeded
+30/07/2024 16:43:59: aaa
+30/07/2024 16:43:59: Connect DB successed
+30/07/2024 16:43:59: Get sync Point 1 succeeded
+30/07/2024 16:43:59: Call sync Point 1
+30/07/2024 16:43:59: Connect DB successed
+30/07/2024 16:43:59: Get sync Point 2 succeeded
+30/07/2024 16:44:04: Connect DB successed
+30/07/2024 16:44:04: Get sync Point 1 succeeded
+30/07/2024 16:44:04: Call sync Point 1
+30/07/2024 16:44:04: Get sync Current succeeded
+30/07/2024 16:44:04: aaa
+30/07/2024 16:44:04: Connect DB successed
+30/07/2024 16:44:04: Connect DB successed
+30/07/2024 16:44:04: Get sync Point 2 succeeded
+30/07/2024 16:44:04: Get sync Voltage succeeded
+30/07/2024 16:44:09: Connect DB successed
+30/07/2024 16:44:09: Connect DB successed
+30/07/2024 16:44:09: Get sync Current succeeded
+30/07/2024 16:44:09: aaa
+30/07/2024 16:44:09: Call sync Point 1
+30/07/2024 16:44:09: Connect DB successed
+30/07/2024 16:44:09: Get sync Voltage succeeded
+30/07/2024 16:44:09: Connect DB successed
+30/07/2024 16:44:09: Get sync Point 2 succeeded
+30/07/2024 16:44:14: Connect DB successed
+30/07/2024 16:44:14: Get sync Point 1 succeeded
+30/07/2024 16:44:14: Call sync Point 1
+30/07/2024 16:44:14: Get sync Current succeeded
+30/07/2024 16:44:14: aaa
+30/07/2024 16:44:14: Get sync Point 2 succeeded
+30/07/2024 16:44:14: Connect DB successed
+30/07/2024 16:44:14: Get sync Voltage succeeded
+30/07/2024 16:44:19: Connect DB successed
+30/07/2024 16:44:19: Connect DB successed
+30/07/2024 16:44:19: Connect DB successed
+30/07/2024 16:44:19: Get sync Voltage succeeded
+30/07/2024 16:44:19: Get sync Point 1 succeeded
+30/07/2024 16:44:19: Call sync Point 1
+30/07/2024 16:44:19: Connect DB successed
+30/07/2024 16:44:19: Get sync Point 2 succeeded
+30/07/2024 16:44:24: Connect DB successed
+30/07/2024 16:44:24: Get sync Point 1 succeeded
+30/07/2024 16:44:24: Get sync Current succeeded
+30/07/2024 16:44:24: aaa
+30/07/2024 16:44:24: Connect DB successed
+30/07/2024 16:44:24: Get sync Point 2 succeeded
+30/07/2024 16:44:24: Get sync Voltage succeeded
+30/07/2024 16:44:29: Connect DB successed
+30/07/2024 16:44:29: Get sync Current succeeded
+30/07/2024 16:44:29: aaa
+30/07/2024 16:44:29: Get sync Point 1 succeeded
+30/07/2024 16:44:29: Call sync Point 1
+30/07/2024 16:44:29: Connect DB successed
+30/07/2024 16:44:29: Connect DB successed
+30/07/2024 16:44:29: Get sync Voltage succeeded
+30/07/2024 16:44:34: Connect DB successed
+30/07/2024 16:44:34: Get sync Point 1 succeeded
+30/07/2024 16:44:34: Call sync Point 1
+30/07/2024 16:44:34: Connect DB successed
+30/07/2024 16:44:34: Connect DB successed
+30/07/2024 16:44:34: Get sync Point 2 succeeded
+30/07/2024 16:44:34: Get sync Voltage succeeded
+30/07/2024 16:44:39: Connect DB successed
+30/07/2024 16:44:39: Get sync Point 1 succeeded
+30/07/2024 16:44:39: Call sync Point 1
+30/07/2024 16:44:39: Connect DB successed
+30/07/2024 16:44:39: Get sync Point 2 succeeded
+30/07/2024 16:44:39: aaa
+30/07/2024 16:44:39: Connect DB successed
+30/07/2024 16:44:39: Get sync Voltage succeeded
+30/07/2024 16:44:44: Connect DB successed
+30/07/2024 16:44:44: Get sync Current succeeded
+30/07/2024 16:44:44: Get sync Point 1 succeeded
+30/07/2024 16:44:44: Call sync Point 1
+30/07/2024 16:44:44: Connect DB successed
+30/07/2024 16:44:44: Get sync Voltage succeeded
+30/07/2024 16:44:44: Get sync Point 2 succeeded
+30/07/2024 16:44:49: Connect DB successed
+30/07/2024 16:44:49: Connect DB successed
+30/07/2024 16:44:49: Get sync Current succeeded
+30/07/2024 16:44:49: aaa
+30/07/2024 16:44:49: Call sync Point 1
+30/07/2024 16:44:49: Connect DB successed
+30/07/2024 16:44:49: Connect DB successed
+30/07/2024 16:44:49: Get sync Point 2 succeeded
+30/07/2024 16:44:54: Connect DB successed
+30/07/2024 16:44:54: Get sync Point 1 succeeded
+30/07/2024 16:44:54: Get sync Current succeeded
+30/07/2024 16:44:54: aaa
+30/07/2024 16:44:54: Connect DB successed
+30/07/2024 16:44:54: Connect DB successed
+30/07/2024 16:44:54: Get sync Point 2 succeeded
+30/07/2024 16:44:59: Connect DB successed
+30/07/2024 16:44:59: Get sync Point 1 succeeded
+30/07/2024 16:44:59: Call sync Point 1
+30/07/2024 16:44:59: Get sync Current succeeded
+30/07/2024 16:44:59: Connect DB successed
+30/07/2024 16:44:59: Get sync Point 2 succeeded
+30/07/2024 16:44:59: Connect DB successed
+30/07/2024 16:44:59: Get sync Voltage succeeded
+30/07/2024 16:45:04: Connect DB successed
+30/07/2024 16:45:04: Get sync Current succeeded
+30/07/2024 16:45:04: aaa
+30/07/2024 16:45:04: Call sync Point 1
+30/07/2024 16:45:04: Connect DB successed
+30/07/2024 16:45:04: Get sync Voltage succeeded
+30/07/2024 16:45:04: Get sync Point 2 succeeded
+30/07/2024 16:45:09: Connect DB successed
+30/07/2024 16:45:09: Get sync Point 1 succeeded
+30/07/2024 16:45:09: Call sync Point 1
+30/07/2024 16:45:09: Get sync Current succeeded
+30/07/2024 16:45:09: aaa
+30/07/2024 16:45:09: Connect DB successed
+30/07/2024 16:45:09: Get sync Point 2 succeeded
+30/07/2024 16:45:09: Get sync Voltage succeeded
+30/07/2024 16:45:14: Connect DB successed
+30/07/2024 16:45:14: Get sync Current succeeded
+30/07/2024 16:45:14: Get sync Point 1 succeeded
+30/07/2024 16:45:14: Call sync Point 1
+30/07/2024 16:45:14: Connect DB successed
+30/07/2024 16:45:14: Get sync Point 2 succeeded
+30/07/2024 16:45:14: Connect DB successed
+30/07/2024 16:45:14: Get sync Voltage succeeded
+30/07/2024 16:45:19: Connect DB successed
+30/07/2024 16:45:19: Get sync Current succeeded
+30/07/2024 16:45:19: aaa
+30/07/2024 16:45:19: Call sync Point 1
+30/07/2024 16:45:19: Connect DB successed
+30/07/2024 16:45:19: Get sync Voltage succeeded
+30/07/2024 16:45:19: Connect DB successed
+30/07/2024 16:45:19: Get sync Point 2 succeeded
+30/07/2024 16:45:24: Connect DB successed
+30/07/2024 16:45:24: Get sync Current succeeded
+30/07/2024 16:45:24: aaa
+30/07/2024 16:45:24: Call sync Point 1
+30/07/2024 16:45:24: Connect DB successed
+30/07/2024 16:45:24: Connect DB successed
+30/07/2024 16:45:24: Get sync Point 2 succeeded
+30/07/2024 16:45:29: Connect DB successed
+30/07/2024 16:45:29: Connect DB successed
+30/07/2024 16:45:29: Get sync Point 1 succeeded
+30/07/2024 16:45:29: Call sync Point 1
+30/07/2024 16:45:29: aaa
+30/07/2024 16:45:29: Connect DB successed
+30/07/2024 16:45:29: Connect DB successed
+30/07/2024 16:45:29: Get sync Point 2 succeeded
+30/07/2024 16:45:29: Get sync Voltage succeeded
+30/07/2024 16:45:34: Connect DB successed
+30/07/2024 16:45:34: Get sync Point 1 succeeded
+30/07/2024 16:45:34: Call sync Point 1
+30/07/2024 16:45:34: aaa
+30/07/2024 16:45:34: Connect DB successed
+30/07/2024 16:45:34: Get sync Point 2 succeeded
+30/07/2024 16:45:34: Get sync Voltage succeeded
+30/07/2024 16:45:39: Connect DB successed
+30/07/2024 16:45:39: Get sync Current succeeded
+30/07/2024 16:45:39: aaa
+30/07/2024 16:45:39: Connect DB successed
+30/07/2024 16:45:39: Get sync Voltage succeeded
+30/07/2024 16:45:39: Get sync Point 1 succeeded
+30/07/2024 16:45:39: Call sync Point 1
+30/07/2024 16:45:39: Connect DB successed
+30/07/2024 16:45:39: Get sync Point 2 succeeded
+30/07/2024 16:45:44: Connect DB successed
+30/07/2024 16:45:44: Get sync Current succeeded
+30/07/2024 16:45:44: aaa
+30/07/2024 16:45:44: Call sync Point 1
+30/07/2024 16:45:44: Connect DB successed
+30/07/2024 16:45:44: Connect DB successed
+30/07/2024 16:45:44: Get sync Voltage succeeded
+30/07/2024 16:45:44: Get sync Point 2 succeeded
+30/07/2024 16:45:49: Connect DB successed
+30/07/2024 16:45:49: Get sync Current succeeded
+30/07/2024 16:45:49: aaa
+30/07/2024 16:45:49: Get sync Point 1 succeeded
+30/07/2024 16:45:49: Call sync Point 1
+30/07/2024 16:45:49: Connect DB successed
+30/07/2024 16:45:49: Get sync Voltage succeeded
+30/07/2024 16:45:49: Connect DB successed
+30/07/2024 16:45:49: Get sync Point 2 succeeded
+30/07/2024 16:45:54: Connect DB successed
+30/07/2024 16:45:54: Connect DB successed
+30/07/2024 16:45:54: Get sync Current succeeded
+30/07/2024 16:45:54: aaa
+30/07/2024 16:45:54: Get sync Point 1 succeeded
+30/07/2024 16:45:54: Call sync Point 1
+30/07/2024 16:45:54: Connect DB successed
+30/07/2024 16:45:54: Get sync Point 2 succeeded
+30/07/2024 16:45:54: Connect DB successed
+30/07/2024 16:45:54: Get sync Voltage succeeded
+30/07/2024 16:45:59: Connect DB successed
+30/07/2024 16:45:59: Get sync Current succeeded
+30/07/2024 16:45:59: aaa
+30/07/2024 16:45:59: Get sync Point 1 succeeded
+30/07/2024 16:45:59: Call sync Point 1
+30/07/2024 16:45:59: Connect DB successed
+30/07/2024 16:45:59: Get sync Point 2 succeeded
+30/07/2024 16:46:04: Connect DB successed
+30/07/2024 16:46:04: Get sync Current succeeded
+30/07/2024 16:46:04: aaa
+30/07/2024 16:46:04: Call sync Point 1
+30/07/2024 16:46:04: Connect DB successed
+30/07/2024 16:46:04: Get sync Voltage succeeded
+30/07/2024 16:46:04: Get sync Point 2 succeeded
+30/07/2024 16:46:09: Connect DB successed
+30/07/2024 16:46:09: Get sync Point 1 succeeded
+30/07/2024 16:46:09: Call sync Point 1
+30/07/2024 16:46:09: aaa
+30/07/2024 16:46:09: Connect DB successed
+30/07/2024 16:46:09: Connect DB successed
+30/07/2024 16:46:09: Get sync Voltage succeeded
+30/07/2024 16:46:09: Get sync Point 2 succeeded
+30/07/2024 16:46:14: Connect DB successed
+30/07/2024 16:46:14: Get sync Current succeeded
+30/07/2024 16:46:14: aaa
+30/07/2024 16:46:14: Call sync Point 1
+30/07/2024 16:46:14: Connect DB successed
+30/07/2024 16:46:14: Get sync Point 2 succeeded
+30/07/2024 16:46:14: Get sync Voltage succeeded
+30/07/2024 16:46:19: Connect DB successed
+30/07/2024 16:46:19: Get sync Current succeeded
+30/07/2024 16:46:19: aaa
+30/07/2024 16:46:19: Get sync Point 1 succeeded
+30/07/2024 16:46:19: Call sync Point 1
+30/07/2024 16:46:19: Connect DB successed
+30/07/2024 16:46:19: Get sync Point 2 succeeded
+30/07/2024 16:46:19: Get sync Voltage succeeded
+30/07/2024 16:46:24: Connect DB successed
+30/07/2024 16:46:24: Get sync Point 1 succeeded
+30/07/2024 16:46:24: Get sync Current succeeded
+30/07/2024 16:46:24: Call sync Point 1
+30/07/2024 16:46:24: aaa
+30/07/2024 16:46:24: Connect DB successed
+30/07/2024 16:46:24: Get sync Voltage succeeded
+30/07/2024 16:46:24: Connect DB successed
+30/07/2024 16:46:24: Get sync Point 2 succeeded
+30/07/2024 16:46:29: Connect DB successed
+30/07/2024 16:46:29: Connect DB successed
+30/07/2024 16:46:29: Get sync Point 1 succeeded
+30/07/2024 16:46:29: Call sync Point 1
+30/07/2024 16:46:29: aaa
+30/07/2024 16:46:29: Connect DB successed
+30/07/2024 16:46:29: Get sync Point 2 succeeded
+30/07/2024 16:46:29: Connect DB successed
+30/07/2024 16:46:29: Get sync Voltage succeeded
+30/07/2024 16:46:34: Connect DB successed
+30/07/2024 16:46:34: Get sync Current succeeded
+30/07/2024 16:46:34: aaa
+30/07/2024 16:46:34: Connect DB successed
+30/07/2024 16:46:34: Get sync Point 1 succeeded
+30/07/2024 16:46:34: Call sync Point 1
+30/07/2024 16:46:34: Get sync Voltage succeeded
+30/07/2024 16:46:34: Get sync Point 2 succeeded
+30/07/2024 16:46:39: Connect DB successed
+30/07/2024 16:46:39: Get sync Point 1 succeeded
+30/07/2024 16:46:39: Call sync Point 1
+30/07/2024 16:46:39: aaa
+30/07/2024 16:46:39: Connect DB successed
+30/07/2024 16:46:39: Get sync Voltage succeeded
+30/07/2024 16:46:39: Connect DB successed
+30/07/2024 16:46:39: Get sync Point 2 succeeded
+30/07/2024 16:46:44: Connect DB successed
+30/07/2024 16:46:44: Get sync Current succeeded
+30/07/2024 16:46:44: aaa
+30/07/2024 16:46:44: Connect DB successed
+30/07/2024 16:46:44: Connect DB successed
+30/07/2024 16:46:44: Get sync Voltage succeeded
+30/07/2024 16:46:44: Get sync Point 2 succeeded
+01/08/2024 11:44:57: Connect DB successed
+01/08/2024 11:44:57: Connect DB successed
+01/08/2024 11:44:59: Connect DB successed
+01/08/2024 11:44:59: Get sync Current succeeded
+01/08/2024 11:44:59: aaa
+01/08/2024 11:44:59: Call sync Point 1
+01/08/2024 11:45:00: Connect DB successed
+01/08/2024 11:45:00: Get sync Voltage succeeded
+01/08/2024 11:45:00: Get sync Point 2 succeeded
+01/08/2024 11:45:01: Connect DB successed
+01/08/2024 11:45:01: Get sync Point 1 succeeded
+01/08/2024 11:45:01: Call sync Point 1
+01/08/2024 11:45:01: Connect DB successed
+01/08/2024 11:45:01: Get sync Point 2 succeeded
+01/08/2024 11:45:01: Connect DB successed
+01/08/2024 11:45:01: Get sync Current succeeded
+01/08/2024 11:45:01: aaa
+01/08/2024 11:45:01: Connect DB successed
+01/08/2024 11:45:01: Get sync Voltage succeeded
+01/08/2024 11:45:06: Connect DB successed
+01/08/2024 11:45:06: Get sync Point 1 succeeded
+01/08/2024 11:45:06: Call sync Point 1
+01/08/2024 11:45:06: Connect DB successed
+01/08/2024 11:45:06: Get sync Point 2 succeeded
+01/08/2024 11:45:06: Connect DB successed
+01/08/2024 11:45:06: Get sync Current succeeded
+01/08/2024 11:45:06: aaa
+01/08/2024 11:45:06: Connect DB successed
+01/08/2024 11:45:06: Get sync Voltage succeeded
+01/08/2024 11:45:11: Connect DB successed
+01/08/2024 11:45:11: Get sync Point 1 succeeded
+01/08/2024 11:45:11: Call sync Point 1
+01/08/2024 11:45:11: Connect DB successed
+01/08/2024 11:45:11: Get sync Point 2 succeeded
+01/08/2024 11:45:11: Connect DB successed
+01/08/2024 11:45:11: Get sync Current succeeded
+01/08/2024 11:45:11: aaa
+01/08/2024 11:45:11: Connect DB successed
+01/08/2024 11:45:11: Get sync Voltage succeeded
+01/08/2024 11:45:16: Connect DB successed
+01/08/2024 11:45:16: Get sync Point 1 succeeded
+01/08/2024 11:45:16: Call sync Point 1
+01/08/2024 11:45:16: Connect DB successed
+01/08/2024 11:45:16: Get sync Point 2 succeeded
+01/08/2024 11:45:16: Connect DB successed
+01/08/2024 11:45:16: Get sync Current succeeded
+01/08/2024 11:45:16: aaa
+01/08/2024 11:45:16: Connect DB successed
+01/08/2024 11:45:16: Get sync Voltage succeeded
+01/08/2024 11:45:21: Connect DB successed
+01/08/2024 11:45:21: Get sync Point 1 succeeded
+01/08/2024 11:45:21: Call sync Point 1
+01/08/2024 11:45:21: Connect DB successed
+01/08/2024 11:45:21: Get sync Point 2 succeeded
+01/08/2024 11:45:21: Connect DB successed
+01/08/2024 11:45:21: Get sync Current succeeded
+01/08/2024 11:45:21: aaa
+01/08/2024 11:45:21: Connect DB successed
+01/08/2024 11:45:21: Get sync Voltage succeeded
+01/08/2024 11:45:26: Connect DB successed
+01/08/2024 11:45:26: Get sync Point 1 succeeded
+01/08/2024 11:45:26: Call sync Point 1
+01/08/2024 11:45:26: Connect DB successed
+01/08/2024 11:45:26: Get sync Point 2 succeeded
+01/08/2024 11:45:26: Connect DB successed
+01/08/2024 11:45:26: Get sync Current succeeded
+01/08/2024 11:45:26: aaa
+01/08/2024 11:45:26: Connect DB successed
+01/08/2024 11:45:26: Get sync Voltage succeeded
+01/08/2024 11:45:31: Connect DB successed
+01/08/2024 11:45:31: Get sync Point 1 succeeded
+01/08/2024 11:45:31: Call sync Point 1
+01/08/2024 11:45:31: Connect DB successed
+01/08/2024 11:45:31: Get sync Point 2 succeeded
+01/08/2024 11:45:31: Connect DB successed
+01/08/2024 11:45:31: Get sync Current succeeded
+01/08/2024 11:45:31: aaa
+01/08/2024 11:45:31: Connect DB successed
+01/08/2024 11:45:31: Get sync Voltage succeeded
+01/08/2024 11:45:33: Insert Point 1 succeeded
+01/08/2024 11:45:33: Insert Point 2 succeeded
+01/08/2024 11:45:36: Connect DB successed
+01/08/2024 11:45:36: Get sync Point 1 succeeded
+01/08/2024 11:45:36: Call sync Point 1
+01/08/2024 11:45:36: Connect DB successed
+01/08/2024 11:45:36: Get sync Current succeeded
+01/08/2024 11:45:36: aaa
+01/08/2024 11:45:36: Connect DB successed
+01/08/2024 11:45:36: Get sync Voltage succeeded
+01/08/2024 11:45:36: Connect DB successed
+01/08/2024 11:45:36: Get sync Point 2 succeeded
+01/08/2024 11:45:41: Connect DB successed
+01/08/2024 11:45:41: Get sync Point 1 succeeded
+01/08/2024 11:45:41: Call sync Point 1
+01/08/2024 11:45:41: Connect DB successed
+01/08/2024 11:45:41: Get sync Point 2 succeeded
+01/08/2024 11:45:41: Connect DB successed
+01/08/2024 11:45:41: Get sync Current succeeded
+01/08/2024 11:45:41: aaa
+01/08/2024 11:45:41: Connect DB successed
+01/08/2024 11:45:41: Get sync Voltage succeeded
+01/08/2024 11:45:46: Connect DB successed
+01/08/2024 11:45:46: Get sync Point 1 succeeded
+01/08/2024 11:45:46: Call sync Point 1
+01/08/2024 11:45:46: Connect DB successed
+01/08/2024 11:45:46: Get sync Point 2 succeeded
+01/08/2024 11:45:46: Connect DB successed
+01/08/2024 11:45:46: Get sync Current succeeded
+01/08/2024 11:45:46: aaa
+01/08/2024 11:45:46: Connect DB successed
+01/08/2024 11:45:46: Get sync Voltage succeeded
+01/08/2024 11:45:51: Connect DB successed
+01/08/2024 11:45:51: Get sync Point 1 succeeded
+01/08/2024 11:45:51: Call sync Point 1
+01/08/2024 11:45:51: Connect DB successed
+01/08/2024 11:45:51: Get sync Point 2 succeeded
+01/08/2024 11:45:51: Connect DB successed
+01/08/2024 11:45:51: Get sync Current succeeded
+01/08/2024 11:45:51: aaa
+01/08/2024 11:45:51: Connect DB successed
+01/08/2024 11:45:51: Get sync Voltage succeeded
+01/08/2024 11:45:56: Connect DB successed
+01/08/2024 11:45:56: Get sync Point 1 succeeded
+01/08/2024 11:45:56: Call sync Point 1
+01/08/2024 11:45:56: Connect DB successed
+01/08/2024 11:45:56: Get sync Point 2 succeeded
+01/08/2024 11:45:56: Connect DB successed
+01/08/2024 11:45:56: Get sync Current succeeded
+01/08/2024 11:45:56: aaa
+01/08/2024 11:45:56: Connect DB successed
+01/08/2024 11:45:56: Get sync Voltage succeeded
+01/08/2024 11:46:01: Connect DB successed
+01/08/2024 11:46:01: Get sync Point 1 succeeded
+01/08/2024 11:46:01: Call sync Point 1
+01/08/2024 11:46:01: Connect DB successed
+01/08/2024 11:46:01: Get sync Point 2 succeeded
+01/08/2024 11:46:01: Connect DB successed
+01/08/2024 11:46:01: Get sync Current succeeded
+01/08/2024 11:46:01: aaa
+01/08/2024 11:46:01: Connect DB successed
+01/08/2024 11:46:01: Get sync Voltage succeeded
+01/08/2024 11:46:06: Connect DB successed
+01/08/2024 11:46:06: Get sync Point 1 succeeded
+01/08/2024 11:46:06: Call sync Point 1
+01/08/2024 11:46:06: Connect DB successed
+01/08/2024 11:46:06: Get sync Point 2 succeeded
+01/08/2024 11:46:06: Connect DB successed
+01/08/2024 11:46:06: Get sync Current succeeded
+01/08/2024 11:46:06: aaa
+01/08/2024 11:46:06: Connect DB successed
+01/08/2024 11:46:06: Get sync Voltage succeeded
+01/08/2024 11:46:11: Connect DB successed
+01/08/2024 11:46:11: Get sync Point 1 succeeded
+01/08/2024 11:46:11: Call sync Point 1
+01/08/2024 11:46:11: Connect DB successed
+01/08/2024 11:46:11: Get sync Point 2 succeeded
+01/08/2024 11:46:11: Connect DB successed
+01/08/2024 11:46:11: Get sync Current succeeded
+01/08/2024 11:46:11: aaa
+01/08/2024 11:46:11: Connect DB successed
+01/08/2024 11:46:11: Get sync Voltage succeeded
+01/08/2024 11:46:16: Connect DB successed
+01/08/2024 11:46:16: Get sync Point 1 succeeded
+01/08/2024 11:46:16: Call sync Point 1
+01/08/2024 11:46:16: Connect DB successed
+01/08/2024 11:46:16: Get sync Point 2 succeeded
+01/08/2024 11:46:16: Connect DB successed
+01/08/2024 11:46:16: Get sync Current succeeded
+01/08/2024 11:46:16: aaa
+01/08/2024 11:46:16: Connect DB successed
+01/08/2024 11:46:16: Get sync Voltage succeeded
+01/08/2024 11:46:21: Connect DB successed
+01/08/2024 11:46:21: Get sync Point 1 succeeded
+01/08/2024 11:46:21: Call sync Point 1
+01/08/2024 11:46:21: Connect DB successed
+01/08/2024 11:46:21: Get sync Point 2 succeeded
+01/08/2024 11:46:21: Connect DB successed
+01/08/2024 11:46:21: Get sync Current succeeded
+01/08/2024 11:46:21: aaa
+01/08/2024 11:46:21: Connect DB successed
+01/08/2024 11:46:21: Get sync Voltage succeeded
+01/08/2024 11:46:26: Connect DB successed
+01/08/2024 11:46:26: Get sync Point 1 succeeded
+01/08/2024 11:46:26: Call sync Point 1
+01/08/2024 11:46:26: Connect DB successed
+01/08/2024 11:46:26: Get sync Point 2 succeeded
+01/08/2024 11:46:26: Connect DB successed
+01/08/2024 11:46:26: Get sync Current succeeded
+01/08/2024 11:46:26: aaa
+01/08/2024 11:46:26: Connect DB successed
+01/08/2024 11:46:26: Get sync Voltage succeeded
+01/08/2024 11:46:31: Connect DB successed
+01/08/2024 11:46:31: Get sync Point 1 succeeded
+01/08/2024 11:46:31: Call sync Point 1
+01/08/2024 11:46:31: Connect DB successed
+01/08/2024 11:46:31: Get sync Point 2 succeeded
+01/08/2024 11:46:31: Connect DB successed
+01/08/2024 11:46:31: Get sync Current succeeded
+01/08/2024 11:46:31: aaa
+01/08/2024 11:46:31: Connect DB successed
+01/08/2024 11:46:31: Get sync Voltage succeeded
+01/08/2024 11:46:36: Connect DB successed
+01/08/2024 11:46:36: Get sync Point 1 succeeded
+01/08/2024 11:46:36: Call sync Point 1
+01/08/2024 11:46:36: Connect DB successed
+01/08/2024 11:46:36: Get sync Point 2 succeeded
+01/08/2024 11:46:36: Connect DB successed
+01/08/2024 11:46:36: Get sync Current succeeded
+01/08/2024 11:46:36: aaa
+01/08/2024 11:46:36: Connect DB successed
+01/08/2024 11:46:36: Get sync Voltage succeeded
+01/08/2024 11:46:41: Connect DB successed
+01/08/2024 11:46:41: Get sync Point 1 succeeded
+01/08/2024 11:46:41: Call sync Point 1
+01/08/2024 11:46:41: Connect DB successed
+01/08/2024 11:46:41: Get sync Point 2 succeeded
+01/08/2024 11:46:41: Connect DB successed
+01/08/2024 11:46:41: Get sync Current succeeded
+01/08/2024 11:46:41: aaa
+01/08/2024 11:46:41: Connect DB successed
+01/08/2024 11:46:41: Get sync Voltage succeeded
+01/08/2024 11:46:46: Connect DB successed
+01/08/2024 11:46:46: Get sync Point 1 succeeded
+01/08/2024 11:46:46: Call sync Point 1
+01/08/2024 11:46:46: Connect DB successed
+01/08/2024 11:46:46: Get sync Point 2 succeeded
+01/08/2024 11:46:46: Connect DB successed
+01/08/2024 11:46:46: Get sync Current succeeded
+01/08/2024 11:46:46: aaa
+01/08/2024 11:46:46: Connect DB successed
+01/08/2024 11:46:46: Get sync Voltage succeeded
+01/08/2024 11:46:51: Connect DB successed
+01/08/2024 11:46:51: Get sync Point 1 succeeded
+01/08/2024 11:46:51: Call sync Point 1
+01/08/2024 11:46:51: Connect DB successed
+01/08/2024 11:46:51: Get sync Point 2 succeeded
+01/08/2024 11:46:51: Connect DB successed
+01/08/2024 11:46:51: Get sync Current succeeded
+01/08/2024 11:46:51: aaa
+01/08/2024 11:46:51: Connect DB successed
+01/08/2024 11:46:51: Get sync Voltage succeeded
+01/08/2024 11:46:56: Connect DB successed
+01/08/2024 11:46:56: Get sync Point 1 succeeded
+01/08/2024 11:46:56: Call sync Point 1
+01/08/2024 11:46:56: Connect DB successed
+01/08/2024 11:46:56: Get sync Point 2 succeeded
+01/08/2024 11:46:56: Connect DB successed
+01/08/2024 11:46:56: Get sync Current succeeded
+01/08/2024 11:46:56: aaa
+01/08/2024 11:46:56: Connect DB successed
+01/08/2024 11:46:56: Get sync Voltage succeeded
+01/08/2024 11:47:01: Connect DB successed
+01/08/2024 11:47:01: Get sync Point 1 succeeded
+01/08/2024 11:47:01: Call sync Point 1
+01/08/2024 11:47:01: Connect DB successed
+01/08/2024 11:47:01: Get sync Point 2 succeeded
+01/08/2024 11:47:01: Connect DB successed
+01/08/2024 11:47:01: Get sync Current succeeded
+01/08/2024 11:47:01: aaa
+01/08/2024 11:47:01: Connect DB successed
+01/08/2024 11:47:01: Get sync Voltage succeeded
+01/08/2024 11:47:06: Connect DB successed
+01/08/2024 11:47:06: Get sync Point 1 succeeded
+01/08/2024 11:47:06: Call sync Point 1
+01/08/2024 11:47:06: Connect DB successed
+01/08/2024 11:47:06: Get sync Point 2 succeeded
+01/08/2024 11:47:06: Connect DB successed
+01/08/2024 11:47:06: Get sync Current succeeded
+01/08/2024 11:47:06: aaa
+01/08/2024 11:47:06: Connect DB successed
+01/08/2024 11:47:06: Get sync Voltage succeeded
+01/08/2024 11:47:11: Connect DB successed
+01/08/2024 11:47:11: Get sync Point 1 succeeded
+01/08/2024 11:47:11: Call sync Point 1
+01/08/2024 11:47:11: Connect DB successed
+01/08/2024 11:47:11: Get sync Point 2 succeeded
+01/08/2024 11:47:11: Connect DB successed
+01/08/2024 11:47:11: Get sync Current succeeded
+01/08/2024 11:47:11: aaa
+01/08/2024 11:47:11: Connect DB successed
+01/08/2024 11:47:11: Get sync Voltage succeeded
+01/08/2024 11:47:16: Connect DB successed
+01/08/2024 11:47:16: Get sync Point 1 succeeded
+01/08/2024 11:47:16: Call sync Point 1
+01/08/2024 11:47:16: Connect DB successed
+01/08/2024 11:47:16: Get sync Point 2 succeeded
+01/08/2024 11:47:16: Connect DB successed
+01/08/2024 11:47:16: Get sync Current succeeded
+01/08/2024 11:47:16: aaa
+01/08/2024 11:47:16: Connect DB successed
+01/08/2024 11:47:16: Get sync Voltage succeeded
+01/08/2024 11:47:21: Connect DB successed
+01/08/2024 11:47:21: Get sync Point 1 succeeded
+01/08/2024 11:47:21: Call sync Point 1
+01/08/2024 11:47:21: Connect DB successed
+01/08/2024 11:47:21: Get sync Point 2 succeeded
+01/08/2024 11:47:21: Connect DB successed
+01/08/2024 11:47:21: Get sync Current succeeded
+01/08/2024 11:47:21: aaa
+01/08/2024 11:47:21: Connect DB successed
+01/08/2024 11:47:21: Get sync Voltage succeeded
+01/08/2024 11:47:26: Connect DB successed
+01/08/2024 11:47:26: Get sync Point 1 succeeded
+01/08/2024 11:47:26: Call sync Point 1
+01/08/2024 11:47:26: Connect DB successed
+01/08/2024 11:47:26: Get sync Point 2 succeeded
+01/08/2024 11:47:26: Connect DB successed
+01/08/2024 11:47:26: Get sync Current succeeded
+01/08/2024 11:47:26: aaa
+01/08/2024 11:47:26: Connect DB successed
+01/08/2024 11:47:26: Get sync Voltage succeeded
+01/08/2024 11:47:31: Connect DB successed
+01/08/2024 11:47:31: Get sync Point 1 succeeded
+01/08/2024 11:47:31: Call sync Point 1
+01/08/2024 11:47:31: Connect DB successed
+01/08/2024 11:47:31: Get sync Point 2 succeeded
+01/08/2024 11:47:31: Connect DB successed
+01/08/2024 11:47:31: Get sync Current succeeded
+01/08/2024 11:47:31: aaa
+01/08/2024 11:47:31: Connect DB successed
+01/08/2024 11:47:31: Get sync Voltage succeeded
+01/08/2024 12:01:18: Connect DB successed
+01/08/2024 12:01:18: Connect DB successed

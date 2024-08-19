@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="PRG_Database" Id="{15ffa7de-2a8f-4618-b011-b02082bc35fe}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_Database
+VAR
+	fbSystemTime			: FB_SystemTime;
+	bSaveData				: BOOL;
+	bLoadData				: BOOL;
+	nStateSave, nStateLoad	: INT;
+	tTimer1, tTimer2		: TON;
+	bTest					: BOOL;
+	nStateADS				: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbSystemTime();
+sCurrentTime	:= fbSystemTime.sTime;
+nCurrentSec		:= fbSystemTime.wSecond;
+CASE nStateSave OF
+	0:
+		tTimer1(IN := FALSE);
+		IF nCurrentSec = 70 OR sCurrentTime = '06:00:00' OR sCurrentTime = '14:00:00' OR sCurrentTime = '22:00:00' THEN
+			nStateSave			:= 1;
+		END_IF
+	1:
+		aFFTU1						:= aSpectrum[0];
+		aFFTU2						:= aSpectrum[1];
+		aFFTU3						:= aSpectrum[2];
+		
+		aFFTI1						:= aSpectrum[3];
+		aFFTI2						:= aSpectrum[4];
+		aFFTI3						:= aSpectrum[5];
+		
+		RMSI1						:= MAIN.fbBasicValues.aRMS_I[0]/2.44;
+		RMSI2						:= MAIN.fbBasicValues.aRMS_I[1]/2.44;
+		RMSI3						:= MAIN.fbBasicValues.aRMS_I[2]/2.44;
+		
+		RMSU1						:= MAIN.fbBasicValues.aRMS_U[0];
+		RMSU2						:= MAIN.fbBasicValues.aRMS_U[1];
+		RMSU3						:= MAIN.fbBasicValues.aRMS_U[2];		
+		
+		Frequency					:= LREAL_TO_REAL(MAIN.fbFrequency.aFreq[0]);
+		
+		bAddData					:= TRUE;
+		nStateSave					:= 2;
+	2:
+		IF NOT bAddData THEN
+			tTimer1(IN := TRUE,PT := T#2S);
+			IF tTimer1.Q THEN
+				nStateSave			:= 0;		
+			END_IF	
+		END_IF
+			
+		
+END_CASE
+
+CASE nStateADS OF
+	0:
+		IF bCheckADS THEN
+			nStateADS := 1;
+		ELSE
+			tTimer2(IN := TRUE,PT := T#5S);
+			IF tTimer2.Q THEN
+				nStateADS := 2;
+			END_IF
+		END_IF
+		
+	1:
+		bCheckADS := FALSE;
+		bError	:= FALSE;
+		tTimer2(IN := FALSE);
+		nStateADS := 0;
+	2:
+		bError := TRUE;
+		tTimer2(IN := FALSE);
+		IF bCheckADS THEN
+			nStateADS := 0;
+		END_IF
+END_CASE]]></ST>
+    </Implementation>
+    <LineIds Name="PRG_Database">
+      <LineId Id="7" Count="0" />
+      <LineId Id="91" Count="1" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="17" Count="0" />
+      <LineId Id="115" Count="0" />
+      <LineId Id="20" Count="1" />
+      <LineId Id="19" Count="0" />
+      <LineId Id="23" Count="0" />
+      <LineId Id="32" Count="0" />
+      <LineId Id="93" Count="1" />
+      <LineId Id="133" Count="0" />
+      <LineId Id="95" Count="3" />
+      <LineId Id="127" Count="2" />
+      <LineId Id="134" Count="0" />
+      <LineId Id="131" Count="1" />
+      <LineId Id="130" Count="0" />
+      <LineId Id="99" Count="0" />
+      <LineId Id="135" Count="1" />
+      <LineId Id="105" Count="0" />
+      <LineId Id="36" Count="0" />
+      <LineId Id="28" Count="0" />
+      <LineId Id="106" Count="0" />
+      <LineId Id="111" Count="3" />
+      <LineId Id="110" Count="0" />
+      <LineId Id="107" Count="1" />
+      <LineId Id="18" Count="0" />
+      <LineId Id="66" Count="22" />
+      <LineId Id="65" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

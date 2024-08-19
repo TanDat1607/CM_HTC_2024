@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="CM_Data" Id="{af15e22b-5a15-4213-aaa6-6abac18438b4}">
+    <Declaration><![CDATA[VAR_GLOBAL
+
+	aAccBuffer			: ARRAY[1..cMaxChannels] OF ARRAY[1..cOversamples] OF LREAL;   	
+		
+	aMagSpecResult		: ARRAY[1..cMaxChannels] OF ARRAY[1..cFFTResult] OF LREAL;	
+	aVeloSpecResult		: ARRAY[1..cMaxChannels] OF ARRAY[1..cFFTResult] OF LREAL;
+	aEnvSpecResult		: ARRAY[1..cMaxChannels] OF ARRAY[1..cFFTResult] OF LREAL;
+	
+	aEnvResult			: ARRAY[1..cMaxChannels] OF ARRAY[1..cBufferLength] OF LREAL;
+		
+	aRMSResult			: ARRAY[1..cMaxChannels] OF ARRAY[1..cOrder+1] OF LREAL;
+	aRMSEnvResult		: ARRAY[1..cMaxChannels] OF LREAL;
+
+	fFrequency			: ARRAY[1..cMaxChannels] OF ARRAY[1..cFFTResult] OF LREAL; 		// Hz	
+	aTWFBuffer			: ARRAY[1..cMaxChannels] OF ARRAY[1..cOversamples*cScaleHMI] OF LREAL;  
+	aTime				: ARRAY[1..cOversamples*cScaleHMI] OF UDINT;	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

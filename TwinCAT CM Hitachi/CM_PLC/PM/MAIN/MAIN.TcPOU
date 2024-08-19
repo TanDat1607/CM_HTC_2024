@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{99a8caad-54a0-43ac-b1ce-7242ba00a1f9}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	
+	//function block
+	fbScaling					: FB_PMA_Scaling_EL3773			
+									:=( stInitPars	:= cScalingEL3773Pars);
+
+	fbSource_Period				: FB_PMA_Source_3Ph 			
+									:=( nOwnID		:= E_AnalysisIDs.Source_Period, 
+										aDestIDs	:= [E_AnalysisIDs.Frequency_Period, 
+														E_AnalysisIDs.BasicValues_Period, 
+														E_AnalysisIDs.PowerValues_Period, 
+														E_AnalysisIDs.Harmonics_Period],
+										stInitPars	:= cSource_PeriodInitPars);
+										
+	fbSource					: FB_PMA_Source_3Ph				
+									:=( nOwnID		:= E_AnalysisIDs.Source, 
+										aDestIDs	:= [E_AnalysisIDs.PowerValues, 
+														E_AnalysisIDs.Spectrum, 
+														E_AnalysisIDs.Harmonics], 
+										stInitPars	:= cSourceInitPars);
+										
+	fbFrequency					: FB_PMA_Frequency_Period_3Ph 	
+									:=( nOwnID		:= E_AnalysisIDs.Frequency_Period,
+										stInitPars	:= cFrequencyInitPars);
+										
+	fbBasicValues				: FB_PMA_BasicValues_Period_3Ph 
+									:=( nOwnID		:= E_AnalysisIDs.BasicValues_Period, 
+										stInitPars	:= cBasicValuesInitPars);
+										
+	fbPowerValues				: FB_PMA_PowerValues_Period_3Ph 		
+									:=( nOwnID		:= E_AnalysisIDs.PowerValues_Period, 
+										stInitPars	:= cPowerValuesPedInitPars);
+										
+	fbHarmonics					: FB_PMA_Harmonics_Period_3Ph 
+									:=( nOwnID		:= E_AnalysisIDs.Harmonics_Period, 
+										stInitPars	:= cHarmonicsPedInitPars);
+	
+	bResetStatistics			: BOOL;	
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Scale();
+fbSource_Period.Call(	pBuffer_UL1 		:= ADR(stEL3773_1_Scaled.aUL1),
+						pBuffer_UL2 		:= ADR(stEL3773_1_Scaled.aUL2),
+						pBuffer_UL3 		:= ADR(stEL3773_1_Scaled.aUL3),
+						pBuffer_IL1 		:= ADR(stEL3773_1_Scaled.aIL1),
+						pBuffer_IL2 		:= ADR(stEL3773_1_Scaled.aIL2),
+						pBuffer_IL3 		:= ADR(stEL3773_1_Scaled.aIL3),
+						nDataInSizePerCh	:= SIZEOF(stEL3773_1_Scaled.aUL1),
+						nOptionPars			:= 0);
+						
+fbSource.Call(			pBuffer_UL1			:= ADR(stEL3773_1_Scaled.aUL1),
+						 pBuffer_UL2		:= ADR(stEL3773_1_Scaled.aUL2),
+						 pBuffer_UL3		:= ADR(stEL3773_1_Scaled.aUL3),
+						 pBuffer_IL1		:= ADR(stEL3773_1_Scaled.aIL1),
+						 pBuffer_IL2		:= ADR(stEL3773_1_Scaled.aIL2),
+						 pBuffer_IL3		:= ADR(stEL3773_1_Scaled.aIL3),
+						 nDataInSizePerCh	:= SIZEOF(stEL3773_1_Scaled.aUL1),
+						 nOptionPars		:= 0);			
+						 
+fbFrequency.Call(	bResetStatistics		:= bResetStatistics);
+
+fbBasicValues.Call(	fFreq					:= fbFrequency.aFreq[0], 
+					bResetStatistics		:= bResetStatistics);
+					
+fbPowerValues.Call(	fFreq					:= fbFrequency.aFreq[0], 
+					bResetEnergyCalc 		:= FALSE, 
+					bResetStatistics		:= bResetStatistics);
+					
+fbHarmonics.Call(	fFreq					:= fbFrequency.aFreq[0],
+					pHarmonicsRMS_UL1 		:= ADR(aHarmonicsPed[0]),
+					pHarmonicsRMS_UL2 		:= ADR(aHarmonicsPed[1]),
+					pHarmonicsRMS_UL3 		:= ADR(aHarmonicsPed[2]),
+					pHarmonicsRMS_IL1 		:= ADR(aHarmonicsPed[3]),
+					pHarmonicsRMS_IL2 		:= ADR(aHarmonicsPed[4]),
+					pHarmonicsRMS_IL3 		:= ADR(aHarmonicsPed[5]),
+					nHarmonicsRMSSize 		:= SIZEOF(aHarmonicsPed[0]),
+					bResetStatistics		:= bResetStatistics);
+						
+
+			]]></ST>
+    </Implementation>
+    <Action Name="Scale" Id="{58cc3a1c-e80b-47ea-8ed5-8d1731d06f8b}">
+      <Implementation>
+        <ST><![CDATA[
+fbScaling.Call_3Ph(	pInputBuffer_UL1	:= ADR(stEL3773_1_In.aUL1),
+					pInputBuffer_UL2	:= ADR(stEL3773_1_In.aUL2),
+					pInputBuffer_UL3	:= ADR(stEL3773_1_In.aUL3),
+					pInputBuffer_IL1	:= ADR(stEL3773_1_In.aIL1),
+					pInputBuffer_IL2	:= ADR(stEL3773_1_In.aIL2),
+					pInputBuffer_IL3	:= ADR(stEL3773_1_In.aIL3),
+					nInputBufferSize	:= SIZEOF(stEL3773_1_In.aUL1), 
+					pOutputBuffer_UL1	:= ADR(stEL3773_1_Scaled.aUL1),
+					pOutputBuffer_UL2	:= ADR(stEL3773_1_Scaled.aUL2),
+					pOutputBuffer_UL3	:= ADR(stEL3773_1_Scaled.aUL3),					
+					pOutputBuffer_IL1	:= ADR(stEL3773_1_Scaled.aIL1),
+					pOutputBuffer_IL2	:= ADR(stEL3773_1_Scaled.aIL2),
+					pOutputBuffer_IL3	:= ADR(stEL3773_1_Scaled.aIL3),
+					nOutputBufferSize	:= SIZEOF(stEL3773_1_Scaled.aUL1));						
+				]]></ST>
+      </Implementation>
+    </Action>
+    <LineIds Name="MAIN">
+      <LineId Id="64" Count="0" />
+      <LineId Id="17" Count="6" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="24" Count="0" />
+      <LineId Id="26" Count="6" />
+      <LineId Id="25" Count="0" />
+      <LineId Id="81" Count="0" />
+      <LineId Id="33" Count="0" />
+      <LineId Id="124" Count="0" />
+      <LineId Id="37" Count="0" />
+      <LineId Id="123" Count="0" />
+      <LineId Id="125" Count="0" />
+      <LineId Id="38" Count="0" />
+      <LineId Id="126" Count="2" />
+      <LineId Id="40" Count="7" />
+      <LineId Id="39" Count="0" />
+      <LineId Id="48" Count="0" />
+      <LineId Id="35" Count="0" />
+      <LineId Id="34" Count="0" />
+    </LineIds>
+    <LineIds Name="MAIN.Scale">
+      <LineId Id="17" Count="0" />
+      <LineId Id="2" Count="13" />
+      <LineId Id="1" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

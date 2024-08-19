@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="CM_Params" Id="{b7ffc7d5-c01a-4239-986a-7d3c590e2c97}">
+    <Declaration><![CDATA[  VAR_GLOBAL CONSTANT
+	cOversamples 		: UDINT 	:= 10;		// number of oversamples
+	cMaxChannels		: UDINT		:= 2;
+	cOrder				: UDINT		:= 1;		// Maximum order of integration: 0 = acceleration, 1 = velocity, 2 = place. 
+	cBufferLength		: UDINT		:= 1600;	// buffer size
+	cWindowLength		: UDINT		:= 3200;	// internal buffer size with 50% overlapping
+	cRMSBuffer     		: UDINT 	:= 4800;  	// e.g. keep 2 old buffers in mind and add one new buffer to calc RMS value	
+	cFFTResult 			: UDINT 	:= 2049;	// result of mag. spectrum (cFFTLength/2+1)
+	cFFTLength			: UDINT		:= 4096;	// length of FFT for mag. spectrum	
+	cScaleHMI			: UDINT     := 50;
+	cWindowParameters	: T_CM_WindowParameters := [0.0, 0.0, 0.0, 0.0, 0.0];	
+	
+    cInitSource			: ST_MA_MultiArray_InitPars 
+						:= ( 	eTypeCode 			:= eMA_TypeCode_LREAL, 
+								nDims 				:= 2, 
+								aDimSizes 			:= [cMaxChannels,cBufferLength]);	
+	
+	cInitSpectrum 		: ST_CM_MagnitudeSpectrum_InitPars 
+						:= (	nFFT_Length 		:= cFFTLength, 
+								nWindowLength 		:= cWindowLength,
+								nChannels			:= cMaxChannels,
+								bTransformToDecibel	:= FALSE, 
+								eWindowType 		:= E_CM_WindowType.eCM_HannWindow, 
+								nOverlap			:= cWindowLength/2,
+								eScalingType 		:= E_CM_ScalingType.eCM_RMS);
+								
+	cInitEnvSpec 		: ST_CM_EnvelopeSpectrum_InitPars 
+						:= (	nFFT_Length			:= cFFTLength,
+								nWindowLength		:= cWindowLength,
+								nChannels			:= cMaxChannels,
+								bTransformToDecibel	:= FALSE,
+								fDecibelThreshold	:= cCM_MinArgLog10, 
+								eWindowType			:= eCM_HannWindow,  
+								nOverlap			:= cWindowLength/2,         
+								eScalingType 		:= eCM_RMS);   
+								
+	cInitEnv	 		: ST_CM_Envelope_InitPars 
+						:= (	nFFT_Length			:= cFFTLength,
+								nWindowLength		:= cWindowLength,
+								nChannels			:= cMaxChannels);   	
+		
+	cInitIRMS			: ST_CM_IntegratedRMS_InitPars
+						:= ( 	nFFT_Length			:= cFFTLength,
+								nWindowLength		:= cWindowLength,
+								fSampleRate			:= 10000,
+								fLowerFrequencyLimit	:= 20.0,
+								fUpperFrequencyLimit	:= 4000.0,
+								nMaxBands			:= 1,
+								nOrder				:= cOrder,
+								nChannels			:= cMaxChannels,
+								eWindowType			:= E_CM_WindowType.eCM_HannWindow,
+								nOverlap			:=  cWindowLength/2,
+								bTransformToDecibel	:= FALSE);
+					
+END_VAR
+
+VAR_GLOBAL
+	fSampleTaskCycleTime		: LREAL := 1; 	// ms
+	fSampleRate					: LREAL; 		// Hz  ( sample rate = oversampling factor / cycle time )
+	fResolution					: LREAL; 		// Hz/Idx	
+	aAccAlarm					: ARRAY[1..cMaxChannels] OF LREAL;
+	aVeloAlarm					: ARRAY[1..cMaxChannels] OF LREAL;
+	aEnvAlarm					: ARRAY[1..cMaxChannels] OF LREAL;
+	
+	aAccWarning					: ARRAY[1..cMaxChannels] OF LREAL;
+	aVeloWarning				: ARRAY[1..cMaxChannels] OF LREAL;
+	aEnvWarning					: ARRAY[1..cMaxChannels] OF LREAL;
+	
+	nCurrentDate				: WORD;
+	sCurrentTime				: STRING;
+	nCurrentHour				: WORD;
+	nCurrentSec					: WORD;
+	
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>
