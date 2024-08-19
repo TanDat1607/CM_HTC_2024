@@ -1,0 +1,14 @@
+/* Ẩn thanh cuộn nhưng vẫn cho phép cuộn */
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+body {
+  overflow-y: scroll; /* Đảm bảo rằng cuộn dọc vẫn hoạt động */
+  -ms-overflow-style: none; /* IE và Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Ẩn thanh cuộn dọc trên Chrome */
+body::-webkit-scrollbar {
+  display: none;
+}
