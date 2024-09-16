@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_HMI" Id="{ff104917-72f8-4e23-81d4-b09f93f78561}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	//Read
+	Output_frequency_monitor			: REAL;//Hz
+	Output_current_monitor				: REAL;//A
+	Rotation_direction_monitor			: STRING;//o: Stop d: 0Hz output F: Forward r: Reverse
+	Inverter_power						: REAL;//kW
+	Accumulated_input_power_monitor		: REAL;//kWh
+	Load_power							: REAL;//kW
+	Accumulated_output_power_monitor	: REAL;//kWh
+	Inverter_Temperature				: REAL;//C 
+	Inverter_Voltage_Output				: REAL;//V
+	//Write
+	Run_Motor							: BOOL;
+	Rotation_direction					: BOOL;
+	Frequence							: REAL;//Hz
+	Acceleration_time					: REAL;//s
+	Deceleration_time					: REAL;//s
+	//read terminal
+	iActSpeed							: INT;
+	Temperature_motor					: REAL;
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>

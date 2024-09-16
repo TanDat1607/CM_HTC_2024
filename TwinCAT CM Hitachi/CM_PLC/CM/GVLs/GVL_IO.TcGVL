@@ -8,7 +8,6 @@
 	bRev		AT %I*	: BOOL;
 	bMotorRun			: BOOL;
 	fFreq				: REAL;
-	iActSpeed			: INT;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

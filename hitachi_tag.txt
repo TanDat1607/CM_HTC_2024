@@ -1,0 +1,24 @@
+2711h Output frequency monitor 
+2712h Output current monitor
+2713h Rotation direction monitor
+
+272Eh Input power monitor (inverter_power)
+
+2730h Accumulated input power monitor (inverter)
+2731h Accumulated input power monitor (inverter)
+2732h Output power monitor (load_power)
+
+2734h Accumulated output power monitor
+2735h Accumulated output power monitor (load)
+
+27E7h  Cooling fin temperature monitor(R)
+
+0001h Run command (W) (coil)
+0002h Rotation direction command (W) (coil)
+
+2AF9h Main speed reference setting (W) (Hz)
+
+2B02h Acceleration time setting (monitor) (w)
+2B03h Acceleration time setting (monitor) (w)
+2B04h Deceleration time setting (monitor) (W)
+2B05h Deceleration time setting (monitor) (W)
