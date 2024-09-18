@@ -4,6 +4,7 @@
     <Declaration><![CDATA[VAR_GLOBAL
 	//Read
 	Output_frequency_monitor			: REAL;//Hz
+	UpperLimit_frequency_monitor		: REAL; //Hz
 	Output_current_monitor				: REAL;//A
 	Rotation_direction_monitor			: STRING;//o: Stop d: 0Hz output F: Forward r: Reverse
 	Inverter_power						: REAL;//kW

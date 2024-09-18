@@ -12,7 +12,7 @@ namespace CM_Server.Controllers
     [ApiController]
     public class PmController : ControllerBase
     {
-        readonly ConnectMongo _connectDb;
+        readonly ConnectMongo _connectDb = new ConnectMongo();
         private const string Format = "yyyy-MM-dd HH:mm";
         private const string LogPath = ConnectDB.ConnectMongo.LogFile;
         //======================

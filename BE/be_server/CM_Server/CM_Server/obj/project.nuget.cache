@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7fvk12RyYUtzAY7lplysgO2ZWH/nWR1FXVOc+xtAAusB27Xr1KbgErcPVBqvYSmI0SWl/ONRjarXEV6KqdwRKg==",
+  "dgSpecHash": "ylba6LCxy4jcq4AWgr0udeuRa93vfYSXIFMKNdbaU+LwY/C4thT904WnA5dOA6L3J1t+oUK5IWB0F3yg1G0RRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Server_NET7\\CM_Server\\CM_Server\\CM_Server.csproj",
+  "projectFilePath": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Hitachi\\Source\\CM_HTC_2024\\BE\\be_server\\CM_Server\\CM_Server\\CM_Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DatNguyenTan\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\DatNguyenTan\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

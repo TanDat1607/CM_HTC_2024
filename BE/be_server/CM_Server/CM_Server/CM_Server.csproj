@@ -27,4 +27,10 @@
     <Compile Remove="Entity\RMS.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Settings\useriddb.txt" />
+    <None Remove="Settings\serverdb.txt" />
+    <None Remove="Settings\passworddb.txt" />
+  </ItemGroup>
+
 </Project>

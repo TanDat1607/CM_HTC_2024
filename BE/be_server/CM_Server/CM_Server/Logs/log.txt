@@ -537,3 +537,24 @@
 08/08/2024 10:13:16: Connect DB successed
 08/08/2024 10:13:35: Connect DB successed
 08/08/2024 10:14:05: Connect DB successed
+18/09/2024 10:27:26: Connect DB successed
+18/09/2024 10:27:26: Connect DB successed
+18/09/2024 10:30:19: Exception get acc datetime System.NullReferenceException: Object reference not set to an instance of an object.
+   at CM_Server.Controllers.cmController.Acc(String point, String datetime) in C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Hitachi\Source\CM_HTC_2024\BE\be_server\CM_Server\CM_Server\Controllers\cmController.cs:line 33
+18/09/2024 10:32:32: Connect DB successed
+18/09/2024 10:32:32: Connect DB successed
+18/09/2024 10:32:37: Exception get acc datetime System.NullReferenceException: Object reference not set to an instance of an object.
+   at CM_Server.Controllers.cmController.Acc(String point, String datetime) in C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Hitachi\Source\CM_HTC_2024\BE\be_server\CM_Server\CM_Server\Controllers\cmController.cs:line 33
+18/09/2024 10:34:05: Connect DB successed
+18/09/2024 10:34:05: Connect DB successed
+18/09/2024 10:34:13: Exception get acc datetime System.NullReferenceException: Object reference not set to an instance of an object.
+   at CM_Server.Controllers.cmController.Acc(String point, String datetime) in C:\Users\DatNguyenTan\OneDrive - CONG TY TNHH KY THUAT S4M\Project\2024\Condition Monitoring\Hitachi\Source\CM_HTC_2024\BE\be_server\CM_Server\CM_Server\Controllers\cmController.cs:line 33
+18/09/2024 10:36:18: Connect DB successed
+18/09/2024 10:36:18: Connect DB successed
+18/09/2024 10:36:22: Connect DB successed
+18/09/2024 10:36:22: Get point 1
+18/09/2024 11:52:43: Connect DB successed
+18/09/2024 11:52:43: Connect DB successed
+18/09/2024 11:52:59: Connect DB successed
+18/09/2024 11:53:15: Connect DB successed
+18/09/2024 11:53:56: Connect DB successed

@@ -47,6 +47,7 @@ namespace CM_Server.ConnectDB
         // get all data
         public List<Point> GetDataPointDateTime(string point, DateTime startdate, DateTime enddate)
         {
+        //    Logger.LogFile(LogFile, "Get point 1");
           List<Point> data = new List<Point>();
           var builder = Builders<Point>.Filter;
           var filter = builder.Gte(r => r.DateTime, startdate) &

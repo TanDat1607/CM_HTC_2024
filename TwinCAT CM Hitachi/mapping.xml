@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<VarLinks>
+	<OwnerA Name="TIPC^CM^CM Instance">
+		<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^Term 4 (EL3632)">
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][10]" VarB="Ch1 Sample 9^Ch1 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][1]" VarB="Ch1 Sample 0^Ch1 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][2]" VarB="Ch1 Sample 1^Ch1 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][3]" VarB="Ch1 Sample 2^Ch1 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][4]" VarB="Ch1 Sample 3^Ch1 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][5]" VarB="Ch1 Sample 4^Ch1 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][6]" VarB="Ch1 Sample 5^Ch1 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][7]" VarB="Ch1 Sample 6^Ch1 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][8]" VarB="Ch1 Sample 7^Ch1 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][9]" VarB="Ch1 Sample 8^Ch1 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[2][10]" VarB="Ch2 Sample 9^Ch2 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[2][1]" VarB="Ch2 Sample 0^Ch2 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[2][2]" VarB="Ch2 Sample 1^Ch2 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[2][3]" VarB="Ch2 Sample 2^Ch2 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[2][4]" VarB="Ch2 Sample 3^Ch2 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[2][5]" VarB="Ch2 Sample 4^Ch2 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[2][6]" VarB="Ch2 Sample 5^Ch2 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[2][7]" VarB="Ch2 Sample 6^Ch2 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[2][8]" VarB="Ch2 Sample 7^Ch2 Value"/>
+			<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[2][9]" VarB="Ch2 Sample 8^Ch2 Value"/>
+		</OwnerB>
+	</OwnerA>
+	<OwnerA Name="TIPC^PM^PM Instance">
+		<OwnerB Name="TIID^Device 3 (EtherCAT)^Term 1 (EK1100)^Term 5 (EL3773)">
+			<Link VarA="PlcTask Inputs^GVL.stEL3773_1_In^aUL1[10]" VarB="L1 Voltage Samples^U1 Samples[9]"/>
+			<Link VarA="PlcTask Inputs^GVL.stEL3773_1_In^aUL1[1]" VarB="L1 Voltage Samples^U1 Samples[0]"/>
+			<Link VarA="PlcTask Inputs^GVL.stEL3773_1_In^aUL1[2]" VarB="L1 Voltage Samples^U1 Samples[1]"/>
+			<Link VarA="PlcTask Inputs^GVL.stEL3773_1_In^aUL1[3]" VarB="L1 Voltage Samples^U1 Samples[2]"/>
+			<Link VarA="PlcTask Inputs^GVL.stEL3773_1_In^aUL1[4]" VarB="L1 Voltage Samples^U1 Samples[3]"/>
+			<Link VarA="PlcTask Inputs^GVL.stEL3773_1_In^aUL1[5]" VarB="L1 Voltage Samples^U1 Samples[4]"/>
+			<Link VarA="PlcTask Inputs^GVL.stEL3773_1_In^aUL1[6]" VarB="L1 Voltage Samples^U1 Samples[5]"/>
+			<Link VarA="PlcTask Inputs^GVL.stEL3773_1_In^aUL1[7]" VarB="L1 Voltage Samples^U1 Samples[6]"/>
+			<Link VarA="PlcTask Inputs^GVL.stEL3773_1_In^aUL1[8]" VarB="L1 Voltage Samples^U1 Samples[7]"/>
+			<Link VarA="PlcTask Inputs^GVL.stEL3773_1_In^aUL1[9]" VarB="L1 Voltage Samples^U1 Samples[8]"/>
+		</OwnerB>
+	</OwnerA>
+</VarLinks>

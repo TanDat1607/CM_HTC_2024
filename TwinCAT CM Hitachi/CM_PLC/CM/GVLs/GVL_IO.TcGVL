@@ -6,6 +6,7 @@
 	wMotorRun	AT %Q*	: WORD;
 	wFreq		AT %Q*	: WORD;
 	bRev		AT %I*	: BOOL;
+	iTemp		AT %I*	: INT;
 	bMotorRun			: BOOL;
 	fFreq				: REAL;
 END_VAR]]></Declaration>

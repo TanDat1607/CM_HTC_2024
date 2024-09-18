@@ -29,13 +29,13 @@ CASE nStateSave OF
 		RMSAcc1Add					:= aRMSResult[1][1]/9.81;
 		RMSVel1Add					:= aRMSResult[1][2]*1000;
 		RMSEnv1Add					:= aRMSEnvResult[1]/9.81;
-		
+(*		
 		aFFTAcceleration2Add		:= aMagSpecResult[2];
 		aFFTVelocity2Add			:= aVeloSpecResult[2];
 		aFFTEnvelope2Add			:= aEnvSpecResult[2];
 		RMSAcc2Add					:= aRMSResult[2][1]/9.81;
 		RMSVel2Add					:= aRMSResult[2][2]*1000;
-		RMSEnv2Add					:= aRMSEnvResult[2]/9.81;		
+		RMSEnv2Add					:= aRMSEnvResult[2]/9.81;		*)
 		bAddData					:= TRUE;
 		nStateSave					:= 2;
 	2:

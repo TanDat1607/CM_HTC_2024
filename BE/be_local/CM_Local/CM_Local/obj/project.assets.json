@@ -2017,11 +2017,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\CM_Local.csproj",
+      "projectUniqueName": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Hitachi\\Source\\CM_HTC_2024\\BE\\be_local\\CM_Local\\CM_Local\\CM_Local.csproj",
       "projectName": "CM_Local",
-      "projectPath": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\CM_Local.csproj",
+      "projectPath": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Hitachi\\Source\\CM_HTC_2024\\BE\\be_local\\CM_Local\\CM_Local\\CM_Local.csproj",
       "packagesPath": "C:\\Users\\DatNguyenTan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Source\\C#_MongoDB\\be_CM_Local_NET7\\CM_Local\\CM_Local\\obj\\",
+      "outputPath": "C:\\Users\\DatNguyenTan\\OneDrive - CONG TY TNHH KY THUAT S4M\\Project\\2024\\Condition Monitoring\\Hitachi\\Source\\CM_HTC_2024\\BE\\be_local\\CM_Local\\CM_Local\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DatNguyenTan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2046,11 +2046,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2112,13 +2107,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
-    }
-  ]
+  }
 }

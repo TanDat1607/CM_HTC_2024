@@ -3,7 +3,7 @@
   <GVL Name="CM_Params" Id="{b7ffc7d5-c01a-4239-986a-7d3c590e2c97}">
     <Declaration><![CDATA[  VAR_GLOBAL CONSTANT
 	cOversamples 		: UDINT 	:= 10;		// number of oversamples
-	cMaxChannels		: UDINT		:= 2;
+	cMaxChannels		: UDINT		:= 1;
 	cOrder				: UDINT		:= 1;		// Maximum order of integration: 0 = acceleration, 1 = velocity, 2 = place. 
 	cBufferLength		: UDINT		:= 1600;	// buffer size
 	cWindowLength		: UDINT		:= 3200;	// internal buffer size with 50% overlapping
