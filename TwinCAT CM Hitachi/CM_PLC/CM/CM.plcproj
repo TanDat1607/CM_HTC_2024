@@ -82,6 +82,7 @@
   <ItemGroup>
     <PlaceholderReference Include="Tc2_ModbusRTU">
       <DefaultResolution>Tc2_ModbusRTU, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_ModbusRTU</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="Tc2_Standard">
       <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
@@ -120,11 +121,6 @@
     <None Include="CM.tmc">
       <SubType>Content</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <LibraryReference Include="S4m_ModbusRTU,1.0,S4m_Engineering">
-      <Namespace>S4m_ModbusRTU</Namespace>
-    </LibraryReference>
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>

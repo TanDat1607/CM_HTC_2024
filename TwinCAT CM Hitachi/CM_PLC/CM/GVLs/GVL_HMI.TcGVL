@@ -5,12 +5,9 @@
 	//Read
 	Output_frequency_monitor			: REAL;//Hz
 	UpperLimit_frequency_monitor		: REAL; //Hz
+	Power_on_time_monitor				: INT;	//Hour	
 	Output_current_monitor				: REAL;//A
 	Rotation_direction_monitor			: STRING;//o: Stop d: 0Hz output F: Forward r: Reverse
-	Inverter_power						: REAL;//kW
-	Accumulated_input_power_monitor		: REAL;//kWh
-	Load_power							: REAL;//kW
-	Accumulated_output_power_monitor	: REAL;//kWh
 	Inverter_Temperature				: REAL;//C 
 	Inverter_Voltage_Output				: REAL;//V
 	//Write

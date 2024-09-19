@@ -6,11 +6,10 @@ VAR
 	//Motor read
 	state_mt	: INT;
 	Data_mt_1	: ARRAY[0..2] OF INT;//0:Output_frequency_monitor 1:Output_current_monitor 2:Rotation_direction_monitor
-	Data_mt_2	: INT;//Inverter_power
-	Data_mt_3	: ARRAY[0..2] OF INT;//0,1:Accumulated_input_power_monitor 2: Load_power
-	Data_mt_4	: ARRAY[0..1] OF INT;//Accumulated_output_power_monitor
-	Data_mt_5	: INT;//temperature
-	Data_mt_6	: INT;//voltage
+	Data_mt_2	: INT;//temperature
+	Data_mt_3	: INT;//voltage
+	Data_mt_4	: INT;//Power_on - hour 
+	Data_mt_5	: INT;//Limit Frequency
 	//Motor write
 	run_temp 							: BOOL;
 	Rotation_direction_temp				: BOOL;
@@ -45,12 +44,10 @@ ELSIF (Data_mt_1[2] = 2) THEN
 ELSIF (Data_mt_1[2] = 3) THEN
 	Rotation_direction_monitor		:= 'Reverse';
 END_IF
-Inverter_power						:= INT_TO_REAL(Data_mt_2)/100;//kW
-Accumulated_input_power_monitor		:= INT_TO_REAL(Data_mt_3[1])/10;//kWh
-Load_power							:= INT_TO_REAL(Data_mt_3[2])/100;//kW
-Accumulated_output_power_monitor	:= INT_TO_REAL(Data_mt_4[1])/10;//kWh
-Inverter_Temperature				:= INT_TO_REAL(Data_mt_5)/10;//C
-Inverter_Voltage_Output				:= INT_TO_REAL(Data_mt_6)/10;//V]]></ST>
+Inverter_Temperature				:= INT_TO_REAL(Data_mt_2)/10;//C
+Inverter_Voltage_Output				:= INT_TO_REAL(Data_mt_3)/10;//V
+Power_on_time_monitor				:= Data_mt_4;//hour
+UpperLimit_frequency_monitor		:= INT_TO_REAL(Data_mt_5)/100;//V]]></ST>
     </Implementation>
     <Action Name="Motor" Id="{00535d9d-e168-4f2f-a21e-71315020fd40}">
       <Implementation>
@@ -83,7 +80,7 @@ Inverter_Voltage_Output				:= INT_TO_REAL(Data_mt_6)/10;//V]]></ST>
 		fb_Modbus.ReadRegs(
 			UnitID:= 1, 
 			Quantity:= 1, 
-			MBAddr:= 10029, 
+			MBAddr:= 10214, 
 			cbLength:= SIZEOF(Data_mt_2), 
 			pMemoryAddr:= ADR(Data_mt_2), 
 			Execute:= TRUE, 
@@ -93,14 +90,14 @@ Inverter_Voltage_Output				:= INT_TO_REAL(Data_mt_6)/10;//V]]></ST>
 			ErrorId=> , 
 			cbRead=> );
 		IF NOT fb_Modbus.BUSY AND NOT fb_Modbus.Error THEN
-			fb_Modbus.ReadRegs(Execute:= FALSE); 
+			fb_Modbus.ReadRegs(Execute:= FALSE);
 			state_mt 			:= 3;
 		END_IF
 	3://read data3
 		fb_Modbus.ReadRegs(
 			UnitID:= 1, 
-			Quantity:= 3, 
-			MBAddr:= 10031, 
+			Quantity:= 1, 
+			MBAddr:= 10017, 
 			cbLength:= SIZEOF(Data_mt_3), 
 			pMemoryAddr:= ADR(Data_mt_3), 
 			Execute:= TRUE, 
@@ -116,8 +113,8 @@ Inverter_Voltage_Output				:= INT_TO_REAL(Data_mt_6)/10;//V]]></ST>
 	4://read data4
 		fb_Modbus.ReadRegs(
 			UnitID:= 1, 
-			Quantity:= 2, 
-			MBAddr:= 10035, 
+			Quantity:= 1, 
+			MBAddr:= 10224, 
 			cbLength:= SIZEOF(Data_mt_4), 
 			pMemoryAddr:= ADR(Data_mt_4), 
 			Execute:= TRUE, 
@@ -130,30 +127,13 @@ Inverter_Voltage_Output				:= INT_TO_REAL(Data_mt_6)/10;//V]]></ST>
 			fb_Modbus.ReadRegs(Execute:= FALSE);
 			state_mt 			:= 5;
 		END_IF
-	5://read data5
+	5://read data4
 		fb_Modbus.ReadRegs(
 			UnitID:= 1, 
 			Quantity:= 1, 
-			MBAddr:= 10214, 
+			MBAddr:= 10013, 
 			cbLength:= SIZEOF(Data_mt_5), 
 			pMemoryAddr:= ADR(Data_mt_5), 
-			Execute:= TRUE, 
-			Timeout:= T#1S, 
-			BUSY=> , 
-			Error=> , 
-			ErrorId=> , 
-			cbRead=> );
-		IF NOT fb_Modbus.BUSY AND NOT fb_Modbus.Error THEN
-			fb_Modbus.ReadRegs(Execute:= FALSE);
-			state_mt 			:= 10;
-		END_IF
-	10://read data5
-		fb_Modbus.ReadRegs(
-			UnitID:= 1, 
-			Quantity:= 1, 
-			MBAddr:= 10017, 
-			cbLength:= SIZEOF(Data_mt_6), 
-			pMemoryAddr:= ADR(Data_mt_6), 
 			Execute:= TRUE, 
 			Timeout:= T#1S, 
 			BUSY=> , 
@@ -295,9 +275,11 @@ iActSpeed	:= REAL_TO_INT(rpm);]]></ST>
     <LineIds Name="PRG_Motor_Sensor">
       <LineId Id="35" Count="0" />
       <LineId Id="159" Count="0" />
-      <LineId Id="218" Count="14" />
+      <LineId Id="218" Count="10" />
       <LineId Id="217" Count="0" />
       <LineId Id="233" Count="0" />
+      <LineId Id="263" Count="0" />
+      <LineId Id="262" Count="0" />
     </LineIds>
     <LineIds Name="PRG_Motor_Sensor.Motor">
       <LineId Id="1" Count="1" />
@@ -310,24 +292,16 @@ iActSpeed	:= REAL_TO_INT(rpm);]]></ST>
       <LineId Id="224" Count="0" />
       <LineId Id="17" Count="0" />
       <LineId Id="225" Count="1" />
-      <LineId Id="21" Count="0" />
-      <LineId Id="23" Count="11" />
-      <LineId Id="201" Count="2" />
-      <LineId Id="200" Count="0" />
-      <LineId Id="38" Count="0" />
-      <LineId Id="40" Count="11" />
-      <LineId Id="206" Count="2" />
-      <LineId Id="205" Count="0" />
-      <LineId Id="55" Count="0" />
-      <LineId Id="57" Count="11" />
-      <LineId Id="211" Count="2" />
-      <LineId Id="210" Count="0" />
       <LineId Id="72" Count="0" />
       <LineId Id="74" Count="14" />
       <LineId Id="73" Count="0" />
       <LineId Id="350" Count="0" />
       <LineId Id="353" Count="14" />
       <LineId Id="351" Count="0" />
+      <LineId Id="369" Count="15" />
+      <LineId Id="368" Count="0" />
+      <LineId Id="386" Count="15" />
+      <LineId Id="385" Count="0" />
       <LineId Id="89" Count="1" />
       <LineId Id="106" Count="0" />
       <LineId Id="103" Count="0" />

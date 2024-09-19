@@ -183,7 +183,7 @@
 	</ImageDatas>
 	<Project ProjectGUID="{A5801FC3-0310-45D1-8507-74DD53F36393}" TargetNetId="192.168.1.12.1.1" Target64Bit="true" ShowHideConfigurations="#x106">
 		<System>
-			<Settings MaxCpus="6" NonWinCpus="4">
+			<Settings MaxCpus="4">
 				<Cpu/>
 				<Cpu CpuId="1"/>
 				<Cpu CpuId="2"/>
@@ -213,7 +213,7 @@
 				<Task Id="7" Priority="8" CycleTime="10000" AmsPort="354" Affinity="#x00000002" AdtTasks="true">
 					<Name>TaskCalc</Name>
 				</Task>
-				<Task Id="8" Priority="1" CycleTime="50000" AmsPort="301" AmsNetId="192.168.0.163.1.1">
+				<Task Id="8" Priority="1" CycleTime="50000" AmsPort="301">
 					<Name>EIPTask</Name>
 					<Vars VarGrpType="1" InsertType="1">
 						<Name>Inputs</Name>
@@ -12598,9 +12598,6 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500840000403}" Id="#x02030010"/>
-		<MappingInfo Identifier="{00000000-2002-0850-0220-500822000403}" Id="#x02030030"/>
-		<MappingInfo Identifier="{00000000-2041-0850-4020-500811000403}" Id="#x02030020"/>
 		<OwnerA Name="TIPC^CM^CM Instance">
 			<OwnerB Name="TIID^Device 5 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL1094)">
 				<Link VarA="PlcTaskCM Inputs^GVL_IO.bRev" VarB="Channel 1^Input"/>
