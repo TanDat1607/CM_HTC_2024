@@ -2,12 +2,12 @@
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.44">
 	<DataTypes>
 		<DataType>
-			<Name GUID="{315C8CB9-674E-5DA7-8E01-EE0E9021C0A8}" IecBaseType="true" AutoDeleteType="true">ARRAY [1..1] OF ARRAY [1..10] OF INT</Name>
-			<BitSize>160</BitSize>
+			<Name GUID="{BCFC1FD9-63C3-A7BA-51CA-60D438A49AE6}" IecBaseType="true" AutoDeleteType="true">ARRAY [1..2] OF ARRAY [1..10] OF INT</Name>
+			<BitSize>320</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType>
 			<ArrayInfo>
 				<LBound>1</LBound>
-				<Elements>1</Elements>
+				<Elements>2</Elements>
 			</ArrayInfo>
 			<ArrayInfo Level="1">
 				<LBound>1</LBound>
@@ -181,9 +181,9 @@
 		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c00000ffc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c00000ffc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c000ff00c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
 		<ImageData Id="1003">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
 	</ImageDatas>
-	<Project ProjectGUID="{A5801FC3-0310-45D1-8507-74DD53F36393}" Target64Bit="true" ShowHideConfigurations="#x106">
+	<Project ProjectGUID="{A5801FC3-0310-45D1-8507-74DD53F36393}" TargetNetId="192.168.0.163.1.1" Target64Bit="true" ShowHideConfigurations="#x106">
 		<System>
-			<Settings MaxCpus="4">
+			<Settings MaxCpus="6" NonWinCpus="4">
 				<Cpu/>
 				<Cpu CpuId="1"/>
 				<Cpu CpuId="2"/>
@@ -213,7 +213,7 @@
 				<Task Id="7" Priority="8" CycleTime="10000" AmsPort="354" Affinity="#x00000002" AdtTasks="true">
 					<Name>TaskCalc</Name>
 				</Task>
-				<Task Id="8" Priority="1" CycleTime="50000" AmsPort="301" AmsNetId="192.168.1.12.1.1">
+				<Task Id="8" Priority="1" CycleTime="50000" AmsPort="301" AmsNetId="192.168.2.44.1.1">
 					<Name>EIPTask</Name>
 					<Vars VarGrpType="1" InsertType="1">
 						<Name>Inputs</Name>
@@ -229,7 +229,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{79FBB83F-EF34-4418-804F-B9E8A3193CDA}" Name="CM" PrjFilePath="CM\CM.plcproj" TmcFilePath="CM\CM.tmc" ReloadTmc="true" AmsPort="851" TargetArchiveSettings="#x0001" FileArchiveSettings="#x0000" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="CM\CM.tmc" TmcHash="{92A61B74-5210-B918-0977-E26E40B44E4C}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="CM\CM.tmc" TmcHash="{DA74E599-C924-D8C0-B2E8-9FED44B66AEB}">
 					<Name>CM Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
@@ -237,7 +237,7 @@
 						<Var>
 							<Name>GVL_IO.aEl3632</Name>
 							<Comment><![CDATA[ Input from hardware e.g. EL3632	]]></Comment>
-							<Type GUID="{315C8CB9-674E-5DA7-8E01-EE0E9021C0A8}">ARRAY [1..1] OF ARRAY [1..10] OF INT</Type>
+							<Type GUID="{BCFC1FD9-63C3-A7BA-51CA-60D438A49AE6}">ARRAY [1..2] OF ARRAY [1..10] OF INT</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="1" ContextId="2" AreaNo="32">
@@ -379,7 +379,7 @@
 			<PlcAuxTask Affinity="#x00000002"/>
 		</Plc>
 		<Io>
-			<Device Id="5" Disabled="true" DevType="111" DevFlags="#x0003" AmsPort="28677" AmsNetId="192.168.2.43.6.1" RemoteName="Device 5 (EtherCAT)" InfoImageId="6">
+			<Device Id="5" DevType="111" DevFlags="#x0003" AmsPort="28677" AmsNetId="192.168.2.43.6.1" RemoteName="Device 5 (EtherCAT)" InfoImageId="6">
 				<Name>Device 5 (EtherCAT)</Name>
 				<AddressInfo>
 					<Pnp>
@@ -442,7 +442,7 @@
 							<BootStrapData>0010f400f410f400</BootStrapData>
 							<Pdo Name="AI Standard Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
 								<ExcludePdo>#x1a01</ExcludePdo>
-								<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
+								<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01" Flags="#x00008020">
 									<Type>BIT</Type>
 									<Comment><![CDATA[Underrange event active]]></Comment>
 								</Entry>
@@ -12598,6 +12598,9 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 		</Io>
 	</Project>
 	<Mappings>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500840000403}" Id="#x02030010"/>
+		<MappingInfo Identifier="{00000000-2002-0850-0220-500822000403}" Id="#x02030030"/>
+		<MappingInfo Identifier="{00000000-2041-0850-4020-500811000403}" Id="#x02030020"/>
 		<OwnerA Name="TIPC^CM^CM Instance">
 			<OwnerB Name="TIID^Device 5 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL1094)">
 				<Link VarA="PlcTaskCM Inputs^GVL_IO.bRev" VarB="Channel 1^Input"/>
@@ -12616,6 +12619,54 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 				<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][7]" VarB="Ch1 Sample 6^Ch1 Value"/>
 				<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][8]" VarB="Ch1 Sample 7^Ch1 Value"/>
 				<Link VarA="PlcTask Inputs^GVL_IO.aEl3632[1][9]" VarB="Ch1 Sample 8^Ch1 Value"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 5 (EtherCAT)^Term 1 (EK1100)^Term 5 (EL6021)">
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[0]" VarB="COM TxPDO-Map Inputs^Data In 0"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[10]" VarB="COM TxPDO-Map Inputs^Data In 10"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[11]" VarB="COM TxPDO-Map Inputs^Data In 11"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[12]" VarB="COM TxPDO-Map Inputs^Data In 12"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[13]" VarB="COM TxPDO-Map Inputs^Data In 13"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[14]" VarB="COM TxPDO-Map Inputs^Data In 14"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[15]" VarB="COM TxPDO-Map Inputs^Data In 15"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[16]" VarB="COM TxPDO-Map Inputs^Data In 16"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[17]" VarB="COM TxPDO-Map Inputs^Data In 17"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[18]" VarB="COM TxPDO-Map Inputs^Data In 18"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[19]" VarB="COM TxPDO-Map Inputs^Data In 19"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[1]" VarB="COM TxPDO-Map Inputs^Data In 1"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[20]" VarB="COM TxPDO-Map Inputs^Data In 20"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[21]" VarB="COM TxPDO-Map Inputs^Data In 21"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[2]" VarB="COM TxPDO-Map Inputs^Data In 2"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[3]" VarB="COM TxPDO-Map Inputs^Data In 3"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[4]" VarB="COM TxPDO-Map Inputs^Data In 4"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[5]" VarB="COM TxPDO-Map Inputs^Data In 5"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[6]" VarB="COM TxPDO-Map Inputs^Data In 6"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[7]" VarB="COM TxPDO-Map Inputs^Data In 7"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[8]" VarB="COM TxPDO-Map Inputs^Data In 8"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^D[9]" VarB="COM TxPDO-Map Inputs^Data In 9"/>
+				<Link VarA="PlcTaskCM Inputs^PRG_Motor_Sensor.fb_Modbus.InData^Status" VarB="COM TxPDO-Map Inputs^Status"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^Ctrl" VarB="COM RxPDO-Map Outputs^Ctrl"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[0]" VarB="COM RxPDO-Map Outputs^Data Out 0"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[10]" VarB="COM RxPDO-Map Outputs^Data Out 10"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[11]" VarB="COM RxPDO-Map Outputs^Data Out 11"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[12]" VarB="COM RxPDO-Map Outputs^Data Out 12"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[13]" VarB="COM RxPDO-Map Outputs^Data Out 13"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[14]" VarB="COM RxPDO-Map Outputs^Data Out 14"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[15]" VarB="COM RxPDO-Map Outputs^Data Out 15"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[16]" VarB="COM RxPDO-Map Outputs^Data Out 16"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[17]" VarB="COM RxPDO-Map Outputs^Data Out 17"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[18]" VarB="COM RxPDO-Map Outputs^Data Out 18"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[19]" VarB="COM RxPDO-Map Outputs^Data Out 19"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[1]" VarB="COM RxPDO-Map Outputs^Data Out 1"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[20]" VarB="COM RxPDO-Map Outputs^Data Out 20"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[21]" VarB="COM RxPDO-Map Outputs^Data Out 21"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[2]" VarB="COM RxPDO-Map Outputs^Data Out 2"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[3]" VarB="COM RxPDO-Map Outputs^Data Out 3"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[4]" VarB="COM RxPDO-Map Outputs^Data Out 4"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[5]" VarB="COM RxPDO-Map Outputs^Data Out 5"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[6]" VarB="COM RxPDO-Map Outputs^Data Out 6"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[7]" VarB="COM RxPDO-Map Outputs^Data Out 7"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[8]" VarB="COM RxPDO-Map Outputs^Data Out 8"/>
+				<Link VarA="PlcTaskCM Outputs^PRG_Motor_Sensor.fb_Modbus.OutData^D[9]" VarB="COM RxPDO-Map Outputs^Data Out 9"/>
 			</OwnerB>
 		</OwnerA>
 		<OwnerA Name="TIPC^PM^PM Instance">

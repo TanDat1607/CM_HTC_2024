@@ -13,13 +13,16 @@
 	//Write
 	Run_Motor							: BOOL;
 	Rotation_direction					: BOOL;
-	Frequence							: REAL;//Hz
-	Acceleration_time					: REAL;//s
-	Deceleration_time					: REAL;//s
+	
 	//read terminal
 	iActSpeed							: INT;
 	Temperature_motor					: REAL;
 END_VAR
-]]></Declaration>
+
+VAR_GLOBAL PERSISTENT
+	Frequence							: REAL;//Hz
+	Acceleration_time					: REAL;//s
+	Deceleration_time					: REAL;//s	
+END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

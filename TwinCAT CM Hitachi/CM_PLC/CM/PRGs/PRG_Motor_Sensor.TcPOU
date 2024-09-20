@@ -269,7 +269,8 @@ CASE state_ss OF
 		pulse	:= 0;
 		state_ss := 0;
 END_CASE
-iActSpeed	:= REAL_TO_INT(rpm);]]></ST>
+iActSpeed	:= REAL_TO_INT(rpm);
+Temperature_motor	:= (INT_TO_REAL(iTemp)/32767)*1000;]]></ST>
       </Implementation>
     </Action>
     <LineIds Name="PRG_Motor_Sensor">
@@ -343,6 +344,7 @@ iActSpeed	:= REAL_TO_INT(rpm);]]></ST>
     <LineIds Name="PRG_Motor_Sensor.Sensor">
       <LineId Id="3" Count="16" />
       <LineId Id="1" Count="0" />
+      <LineId Id="20" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>
